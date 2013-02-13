@@ -77,6 +77,11 @@ var {
 /*
  * Footer wrapper
  */
+#footer {
+  background-color: #E3E1DF;
+  color: #010101;
+}
+
 /*
  * Panels may need additional margin wrangling when in the $content region
  */
@@ -258,6 +263,33 @@ ul.links li {
 /*
  * Footer region
  */
+/*
+ * UH&D footer
+ */
+ul.uhd-footer-links {
+  margin: 0;
+  padding: 0;
+}
+ul.uhd-footer-links li {
+  font-weight: 600;
+  display: inline;
+  float: left;
+  width: 50%;
+  padding-bottom: 10px;
+}
+ul.uhd-footer-links li ul {
+  margin: 0;
+  padding: 0;
+}
+ul.uhd-footer-links li ul li {
+  font-weight: normal;
+  display: block;
+  float: none;
+  width: auto;
+  padding-bottom: 0;
+  padding-left: 15px;
+}
+
 /* =============================================================================
  *   Links
  * ========================================================================== */
@@ -1097,3 +1129,76 @@ div.messages ul {
   min-height: 260px;
   width: auto;
 }
+
+/*
+ * responsive.custom.css is for custom media queries that are not set via the
+ * theme settings, such as cascading media queries.
+ *
+ * By default all the other responsive stylesheets used in Adaptivetheme use a
+ * "stacking method", however cascading media queries use a waterfall method so
+ * you can leverage the cascade and inheritance for all browsers that support
+ * media queries, regardless of screen size.
+ *
+ * @SEE http://zomigi.com/blog/essential-considerations-for-crafting-quality-media-queries/#mq-overlap-stack
+ *
+ */
+/*
+ * Really small screens and up
+ */
+/*
+ * Smartphone sizes and up
+ */
+/* @media only screen and (min-width: 320px) {} */
+/*
+ * Smartphone sizes and down
+ */
+@media only screen and (max-width: 480px) {
+  /*
+   * Float Region blocks example:
+   * In smaller screen sizes we can remove the float and widths so all blocks
+   * stack instead of displaying horizonally. The selector used here is an
+   * "attribute selector" which will match on any float block class. Use your
+   * inspector or Firebug to get the classes from the page output if you need
+   * more granular control over block alignment and stacking.
+   *
+   * "Float Region blocks" is an extension for floating blocks in regions, see
+   * your themes appearance settings, under the Extensions tab.
+   */
+  .region[class*="float-blocks"] .block {
+    float: none;
+    width: 100%;
+  }
+}
+/*
+ * Tablet sizes and up
+ */
+@media only screen and (min-width: 768px) {
+  .uhd-wordmark-wrapper {
+    width: 20%;
+    float: left;
+    margin: 0;
+  }
+
+  ul.uhd-footer-links {
+    width: 75%;
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+  ul.uhd-footer-links li {
+    width: 25%;
+  }
+  ul.uhd-footer-links li ul {
+    margin: 0;
+    padding: 0;
+  }
+  ul.uhd-footer-links li ul li {
+    display: block;
+    float: none;
+    width: auto;
+  }
+}
+/*
+ * Desktops/laptops and up
+ */
+/* @media only screen and (min-width: 1025px) {} */

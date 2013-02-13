@@ -188,7 +188,10 @@ var {
 /*
  * Footer wrapper
  */
-#footer {}
+#footer {
+  background-color: #E3E1DF;
+  color: #010101;
+}
 
 
 /*
@@ -501,6 +504,36 @@ ul.links {
  */
 .region-footer {}
 
+
+  .uhd-wordmark-wrapper {
+  }
+
+/*
+ * UH&D footer
+ */
+  ul.uhd-footer-links {
+    margin: 0;
+    padding: 0;
+    li {
+      font-weight: 600;
+      display: inline;
+      float: left;
+      width: 50%;
+      padding-bottom: 10px;
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          font-weight: normal;
+          display: block;
+          float: none;
+          width: auto;
+          padding-bottom: 0;
+          padding-left: 15px;
+        }
+      }
+    }
+  }
 
 /* =============================================================================
  *   Links
@@ -1420,6 +1453,8 @@ ul.action-links {
 #block-user-online {}
 
 
+
+
 /* =============================================================================
  *   Node Styling
  * ========================================================================== */
@@ -1922,3 +1957,5 @@ tr.error {
     width: auto;
   }
 }
+
+@import "responsive.custom"

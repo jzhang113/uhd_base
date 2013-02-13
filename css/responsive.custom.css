@@ -35,7 +35,6 @@
    * "Float Region blocks" is an extension for floating blocks in regions, see
    * your themes appearance settings, under the Extensions tab.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bneil\/sitenow\/custom\/sites\/all\/themes\/uhd\/sass\/responsive\.custom\.scss}line{font-family:\0000349}}
   .region[class*="float-blocks"] .block {
     float: none;
     width: 100%;

@@ -53,10 +53,19 @@
  * Tablet sizes and up
  */
 @media only screen and (min-width: 768px) {
+  .uhd-department-description {
+    float: left;
+    width: 75%;
+  }
+
+  .uhd-department-link {
+    float: right;
+    width: 20%;
+  }
+
   .uhd-wordmark-wrapper {
     width: 20%;
-    float: left;
-    margin: 0;
+    padding-right: none;
   }
 
   ul.uhd-footer-links {
@@ -65,10 +74,10 @@
     margin: 0;
     padding: 0;
     li {
-      //display: inline;
-      //float: left;
+      float: left;
       width: 25%;
       ul {
+        display: block;
         margin: 0;
         padding: 0;
         li {

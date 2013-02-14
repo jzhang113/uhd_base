@@ -1976,4 +1976,26 @@ tr.error {
   }
 }
 
+/* =============================================================================
+ *   Prototyping - temporary
+ * ========================================================================== */
+#nav-link {
+  float: right;
+  display: block;
+  padding: 5px 10px 5px 10px;
+  background-color: lighten(#333333, 20%);
+  color: $light;
+  margin: 0 20px 0 0;
+  @include border-radius(2px);
+}
+
+#back-to-top {
+  display: block;
+  background-color: lighten(#333333, 20%);
+  color: lighten(#107acb, 20%);
+  margin-top: -15px;
+  padding: 10px 0 10px 10px;
+}
+
+
 @import "responsive.custom"

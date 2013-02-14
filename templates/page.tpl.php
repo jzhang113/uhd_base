@@ -165,6 +165,7 @@
     </div>
 
     <div id="content-wrapper"><div class="container">
+      <a id="nav-link" href="#block-system-main-menu">Nav</a>
       <div id="columns"><div class="columns-inner clearfix">
 
         <div id="content-column"><div class="content-inner">

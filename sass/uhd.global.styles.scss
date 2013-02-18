@@ -1985,7 +1985,7 @@ tr.error {
   padding: 5px 10px 5px 10px;
   background-color: lighten(#333333, 20%);
   color: $light;
-  margin: 0 20px 0 0;
+  margin: 5px;
   @include border-radius(2px);
 }
 

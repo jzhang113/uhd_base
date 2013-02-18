@@ -13,7 +13,7 @@
 <div class="panel-display homly clearfix <?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
 
   <div class="homly-container homly-top clearfix">
-    <div class="homly-top-region homly-top panel-panel">
+    <div class="homly-top-region homly-headertop panel-panel">
       <div class="homly-top-region-inner homly-top-inner panel-panel-inner">
         <?php print $content['headertop']; ?>
       </div>

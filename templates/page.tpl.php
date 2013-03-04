@@ -255,6 +255,43 @@
         <div class="container clearfix">
           <footer<?php print $footer_attributes; ?>>
             <?php print render($page['footer']); ?>
+            
+            <div id="uhd_base_footer">
+              <div class="uhd-wordmark-wrapper">
+                <img src="<?php print drupal_get_path('theme', 'uhd_base') . '/images/full-wordmark-kw.png'; ?>" title="University Housing &amp; Dining at The University of Iowa" alt="<?php print $site_name_and_slogan ?>" />
+              </div>
+              <ul class="uhd-footer-links">
+                <li><h3>UH&amp;D Administration</h3>
+                  <ul>
+                    <li><a href="#">Employment</a></li>
+                    <li><a href="#">Structure</a></li>
+                    <li><a href="#">Policies</a></li>
+                  </ul>
+                </li>
+                <li><h3>Dining</h3>
+                  <ul>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Menus</a></li>
+                    <li><a href="#">Dining Tools</a></li>
+                  </ul>
+                </li>
+                <li><h3>Housing</h3>
+                  <ul>
+                    <li><a href="#">Life@Iowa</a></li>
+                    <li><a href="#">Residence Halls</a></li>
+                    <li><a href="#">Living Learning Communities</a></li>
+                  </ul>
+                </li>
+                <li><h3>Catering</h3>
+                  <ul>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Menus</a></li>
+                    <li><a href="#">Reservations</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
           </footer>
         </div>
       </div>

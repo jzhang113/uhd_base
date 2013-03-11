@@ -258,7 +258,7 @@
             
             <div id="uhd_base_footer">
               <div class="uhd-wordmark-wrapper">
-                <img src="<?php print drupal_get_path('theme', 'uhd_base') . '/images/full-wordmark-kw.png'; ?>" title="University Housing &amp; Dining at The University of Iowa" alt="University Housing &amp; Dining at The University of Iowa" />
+                <img src="<?php print $GLOBALS['base_url'] . '/' . drupal_get_path('theme', 'uhd_base') . '/images/full-wordmark-kw.png'; ?>" title="University Housing &amp; Dining at The University of Iowa" alt="University Housing &amp; Dining at The University of Iowa" />
               </div>
               <ul class="uhd-footer-links">
                 <li><h3>UH&amp;D Administration</h3>

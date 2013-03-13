@@ -257,32 +257,32 @@
             <?php print render($page['footer']); ?>
             
             <div id="uhd_base_footer">
-              <div class="uhd-wordmark-wrapper">
-                <img src="<?php print $GLOBALS['base_url'] . '/' . drupal_get_path('theme', 'uhd_base') . '/images/full-wordmark-wt.png'; ?>" title="University Housing &amp; Dining at The University of Iowa" alt="University Housing &amp; Dining at The University of Iowa" />
-              </div>
               <ul class="uhd-footer-links">
-                <li><h3>UH&amp;D Administration</h3>
+                <li class="home">
+                  <a href="http://uhd.uiowa.edu/"><img src="<?php print $GLOBALS['base_url'] . '/' . drupal_get_path('theme', 'uhd_base') . '/images/full-wordmark-wt.png'; ?>" title="University Housing &amp; Dining at The University of Iowa" alt="University Housing &amp; Dining at The University of Iowa" /></a>
+                </li>
+                <li class="admin"><h3>UH&amp;D Administration</h3>
                   <ul>
                     <li><a href="#">Employment</a></li>
                     <li><a href="#">Structure</a></li>
                     <li><a href="#">Policies</a></li>
                   </ul>
                 </li>
-                <li><h3>Dining</h3>
+                <li class="dining"><h3>Dining</h3>
                   <ul>
                     <li><a href="#">Locations</a></li>
                     <li><a href="#">Menus</a></li>
                     <li><a href="#">Dining Tools</a></li>
                   </ul>
                 </li>
-                <li><h3>Housing</h3>
+                <li class="housing"><h3>Housing</h3>
                   <ul>
                     <li><a href="#">Life@Iowa</a></li>
                     <li><a href="#">Residence Halls</a></li>
                     <li><a href="#">Living Learning Communities</a></li>
                   </ul>
                 </li>
-                <li><h3>Catering</h3>
+                <li class="catering"><h3>Catering</h3>
                   <ul>
                     <li><a href="#">Locations</a></li>
                     <li><a href="#">Menus</a></li>

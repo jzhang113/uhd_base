@@ -188,10 +188,7 @@ var {
 /*
  * Footer wrapper
  */
-#footer {
-  background-color: #E3E1DF;
-  color: #010101;
-}
+#footer {}
 
 
 /*
@@ -284,6 +281,9 @@ var {
  * Footer wrapper
  */
 #footer-wrapper {
+  background-color: $grey_dark_very;
+  border-top: 6px solid $hawk_gold;
+
   .container {}
 }
 
@@ -504,7 +504,19 @@ ul.links {
  */
 .region-footer {
 
-  color: white;
+  .more-info {
+    margin: 12px 0;
+
+    h2 {
+      text-transform: uppercase;
+      color: $grey_dark_pretty;
+    }
+
+    p {
+      margin: 0;
+      color: white;
+    }
+  }
 }
 
 

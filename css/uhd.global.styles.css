@@ -1,1312 +1,4 @@
 /*
- *  Font Awesome 3.0.2
- *  the iconic font designed for use with Twitter Bootstrap
- *  -------------------------------------------------------
- *  The full suite of pictographic icons, examples, and documentation
- *  can be found at: http://fortawesome.github.com/Font-Awesome/
- *
- *  License
- *  -------------------------------------------------------
- *  - The Font Awesome font is licensed under the SIL Open Font License - http://scripts.sil.org/OFL
- *  - Font Awesome CSS, LESS, and SASS files are licensed under the MIT License -
- *    http://opensource.org/licenses/mit-license.html
- *  - The Font Awesome pictograms are licensed under the CC BY 3.0 License - http://creativecommons.org/licenses/by/3.0/
- *  - Attribution is no longer required in Font Awesome 3.0, but much appreciated:
- *    "Font Awesome by Dave Gandy - http://fortawesome.github.com/Font-Awesome"
- *
- *  Contact
- *  -------------------------------------------------------
- *  Email: dave@davegandy.com
- *  Twitter: http://twitter.com/fortaweso_me
- *  Work: Lead Product Designer @ http://kyruus.com
- */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../font/fontawesome-webfont.eot?v=3.0.1");
-  src: url("../font/fontawesome-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("../font/fontawesome-webfont.woff?v=3.0.1") format("woff"), url("../font/fontawesome-webfont.ttf?v=3.0.1") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/*  Font Awesome styles
-    ------------------------------------------------------- */
-[class^="icon-"],
-[class*=" icon-"] {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-  -webkit-font-smoothing: antialiased;
-  /* sprites.less reset */
-  display: inline;
-  width: auto;
-  height: auto;
-  line-height: normal;
-  vertical-align: baseline;
-  background-image: none;
-  background-position: 0% 0%;
-  background-repeat: repeat;
-  margin-top: 0;
-}
-
-/* more sprites.less reset */
-.icon-white,
-.nav-pills > .active > a > [class^="icon-"],
-.nav-pills > .active > a > [class*=" icon-"],
-.nav-list > .active > a > [class^="icon-"],
-.nav-list > .active > a > [class*=" icon-"],
-.navbar-inverse .nav > .active > a > [class^="icon-"],
-.navbar-inverse .nav > .active > a > [class*=" icon-"],
-.dropdown-menu > li > a:hover > [class^="icon-"],
-.dropdown-menu > li > a:hover > [class*=" icon-"],
-.dropdown-menu > .active > a > [class^="icon-"],
-.dropdown-menu > .active > a > [class*=" icon-"],
-.dropdown-submenu:hover > a > [class^="icon-"],
-.dropdown-submenu:hover > a > [class*=" icon-"] {
-  background-image: none;
-}
-
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
-  text-decoration: inherit;
-  display: inline-block;
-  speak: none;
-}
-
-/* makes sure icons active on rollover in links */
-a [class^="icon-"],
-a [class*=" icon-"] {
-  display: inline-block;
-}
-
-/* makes the font 33% larger relative to the icon container */
-.icon-large:before {
-  vertical-align: -10%;
-  font-size: 1.3333333333333333em;
-}
-
-.btn [class^="icon-"],
-.btn [class*=" icon-"], .nav [class^="icon-"],
-.nav [class*=" icon-"] {
-  display: inline;
-  /* keeps button heights with and without icons the same */
-}
-.btn [class^="icon-"].icon-large,
-.btn [class*=" icon-"].icon-large, .nav [class^="icon-"].icon-large,
-.nav [class*=" icon-"].icon-large {
-  line-height: .9em;
-}
-.btn [class^="icon-"].icon-spin,
-.btn [class*=" icon-"].icon-spin, .nav [class^="icon-"].icon-spin,
-.nav [class*=" icon-"].icon-spin {
-  display: inline-block;
-}
-
-.nav-tabs [class^="icon-"],
-.nav-tabs [class*=" icon-"], .nav-pills [class^="icon-"],
-.nav-pills [class*=" icon-"] {
-  /* keeps button heights with and without icons the same */
-}
-.nav-tabs [class^="icon-"], .nav-tabs [class^="icon-"].icon-large,
-.nav-tabs [class*=" icon-"],
-.nav-tabs [class*=" icon-"].icon-large, .nav-pills [class^="icon-"], .nav-pills [class^="icon-"].icon-large,
-.nav-pills [class*=" icon-"],
-.nav-pills [class*=" icon-"].icon-large {
-  line-height: .9em;
-}
-
-li [class^="icon-"],
-li [class*=" icon-"], .nav li [class^="icon-"],
-.nav li [class*=" icon-"] {
-  display: inline-block;
-  width: 1.25em;
-  text-align: center;
-}
-li [class^="icon-"].icon-large,
-li [class*=" icon-"].icon-large, .nav li [class^="icon-"].icon-large,
-.nav li [class*=" icon-"].icon-large {
-  /* increased font size for icon-large */
-  width: 1.5625em;
-}
-
-ul.icons {
-  list-style-type: none;
-  text-indent: -0.75em;
-}
-ul.icons li [class^="icon-"],
-ul.icons li [class*=" icon-"] {
-  width: .75em;
-}
-
-.icon-muted {
-  color: #eeeeee;
-}
-
-.icon-border {
-  border: solid 1px #eeeeee;
-  padding: .2em .25em .15em;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.icon-2x {
-  font-size: 2em;
-}
-.icon-2x.icon-border {
-  border-width: 2px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-}
-
-.icon-3x {
-  font-size: 3em;
-}
-.icon-3x.icon-border {
-  border-width: 3px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-.icon-4x {
-  font-size: 4em;
-}
-.icon-4x.icon-border {
-  border-width: 4px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-}
-
-.pull-right {
-  float: right;
-}
-
-.pull-left {
-  float: left;
-}
-
-[class^="icon-"].pull-left,
-[class*=" icon-"].pull-left {
-  margin-right: .3em;
-}
-[class^="icon-"].pull-right,
-[class*=" icon-"].pull-right {
-  margin-left: .3em;
-}
-
-.btn [class^="icon-"].pull-left.icon-2x, .btn [class^="icon-"].pull-right.icon-2x,
-.btn [class*=" icon-"].pull-left.icon-2x,
-.btn [class*=" icon-"].pull-right.icon-2x {
-  margin-top: .18em;
-}
-.btn [class^="icon-"].icon-spin.icon-large,
-.btn [class*=" icon-"].icon-spin.icon-large {
-  line-height: .8em;
-}
-
-.btn.btn-small [class^="icon-"].pull-left.icon-2x, .btn.btn-small [class^="icon-"].pull-right.icon-2x,
-.btn.btn-small [class*=" icon-"].pull-left.icon-2x,
-.btn.btn-small [class*=" icon-"].pull-right.icon-2x {
-  margin-top: .25em;
-}
-
-.btn.btn-large [class^="icon-"],
-.btn.btn-large [class*=" icon-"] {
-  margin-top: 0;
-}
-.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large [class^="icon-"].pull-right.icon-2x,
-.btn.btn-large [class*=" icon-"].pull-left.icon-2x,
-.btn.btn-large [class*=" icon-"].pull-right.icon-2x {
-  margin-top: .05em;
-}
-.btn.btn-large [class^="icon-"].pull-left.icon-2x,
-.btn.btn-large [class*=" icon-"].pull-left.icon-2x {
-  margin-right: .2em;
-}
-.btn.btn-large [class^="icon-"].pull-right.icon-2x,
-.btn.btn-large [class*=" icon-"].pull-right.icon-2x {
-  margin-left: .2em;
-}
-
-.icon-spin {
-  display: inline-block;
-  -moz-animation: spin 2s infinite linear;
-  -o-animation: spin 2s infinite linear;
-  -webkit-animation: spin 2s infinite linear;
-  animation: spin 2s infinite linear;
-}
-
-@-moz-keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg);
-  }
-
-  100% {
-    -moz-transform: rotate(359deg);
-  }
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(359deg);
-  }
-}
-
-@-o-keyframes spin {
-  0% {
-    -o-transform: rotate(0deg);
-  }
-
-  100% {
-    -o-transform: rotate(359deg);
-  }
-}
-
-@-ms-keyframes spin {
-  0% {
-    -ms-transform: rotate(0deg);
-  }
-
-  100% {
-    -ms-transform: rotate(359deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(359deg);
-  }
-}
-
-@-moz-document url-prefix() {
-  .icon-spin {
-    height: .9em;
-  }
-
-  .btn .icon-spin {
-    height: auto;
-  }
-
-  .icon-spin.icon-large {
-    height: 1.25em;
-  }
-
-  .btn .icon-spin.icon-large {
-    height: .75em;
-  }
-}
-
-/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-    readers do not read off random characters that represent icons */
-.icon-glass:before {
-  content: "\f000";
-}
-
-.icon-music:before {
-  content: "\f001";
-}
-
-.icon-search:before {
-  content: "\f002";
-}
-
-.icon-envelope:before {
-  content: "\f003";
-}
-
-.icon-heart:before {
-  content: "\f004";
-}
-
-.icon-star:before {
-  content: "\f005";
-}
-
-.icon-star-empty:before {
-  content: "\f006";
-}
-
-.icon-user:before {
-  content: "\f007";
-}
-
-.icon-film:before {
-  content: "\f008";
-}
-
-.icon-th-large:before {
-  content: "\f009";
-}
-
-.icon-th:before {
-  content: "\f00a";
-}
-
-.icon-th-list:before {
-  content: "\f00b";
-}
-
-.icon-ok:before {
-  content: "\f00c";
-}
-
-.icon-remove:before {
-  content: "\f00d";
-}
-
-.icon-zoom-in:before {
-  content: "\f00e";
-}
-
-.icon-zoom-out:before {
-  content: "\f010";
-}
-
-.icon-off:before {
-  content: "\f011";
-}
-
-.icon-signal:before {
-  content: "\f012";
-}
-
-.icon-cog:before {
-  content: "\f013";
-}
-
-.icon-trash:before {
-  content: "\f014";
-}
-
-.icon-home:before {
-  content: "\f015";
-}
-
-.icon-file:before {
-  content: "\f016";
-}
-
-.icon-time:before {
-  content: "\f017";
-}
-
-.icon-road:before {
-  content: "\f018";
-}
-
-.icon-download-alt:before {
-  content: "\f019";
-}
-
-.icon-download:before {
-  content: "\f01a";
-}
-
-.icon-upload:before {
-  content: "\f01b";
-}
-
-.icon-inbox:before {
-  content: "\f01c";
-}
-
-.icon-play-circle:before {
-  content: "\f01d";
-}
-
-.icon-repeat:before {
-  content: "\f01e";
-}
-
-/* \f020 doesn't work in Safari. all shifted one down */
-.icon-refresh:before {
-  content: "\f021";
-}
-
-.icon-list-alt:before {
-  content: "\f022";
-}
-
-.icon-lock:before {
-  content: "\f023";
-}
-
-.icon-flag:before {
-  content: "\f024";
-}
-
-.icon-headphones:before {
-  content: "\f025";
-}
-
-.icon-volume-off:before {
-  content: "\f026";
-}
-
-.icon-volume-down:before {
-  content: "\f027";
-}
-
-.icon-volume-up:before {
-  content: "\f028";
-}
-
-.icon-qrcode:before {
-  content: "\f029";
-}
-
-.icon-barcode:before {
-  content: "\f02a";
-}
-
-.icon-tag:before {
-  content: "\f02b";
-}
-
-.icon-tags:before {
-  content: "\f02c";
-}
-
-.icon-book:before {
-  content: "\f02d";
-}
-
-.icon-bookmark:before {
-  content: "\f02e";
-}
-
-.icon-print:before {
-  content: "\f02f";
-}
-
-.icon-camera:before {
-  content: "\f030";
-}
-
-.icon-font:before {
-  content: "\f031";
-}
-
-.icon-bold:before {
-  content: "\f032";
-}
-
-.icon-italic:before {
-  content: "\f033";
-}
-
-.icon-text-height:before {
-  content: "\f034";
-}
-
-.icon-text-width:before {
-  content: "\f035";
-}
-
-.icon-align-left:before {
-  content: "\f036";
-}
-
-.icon-align-center:before {
-  content: "\f037";
-}
-
-.icon-align-right:before {
-  content: "\f038";
-}
-
-.icon-align-justify:before {
-  content: "\f039";
-}
-
-.icon-list:before {
-  content: "\f03a";
-}
-
-.icon-indent-left:before {
-  content: "\f03b";
-}
-
-.icon-indent-right:before {
-  content: "\f03c";
-}
-
-.icon-facetime-video:before {
-  content: "\f03d";
-}
-
-.icon-picture:before {
-  content: "\f03e";
-}
-
-.icon-pencil:before {
-  content: "\f040";
-}
-
-.icon-map-marker:before {
-  content: "\f041";
-}
-
-.icon-adjust:before {
-  content: "\f042";
-}
-
-.icon-tint:before {
-  content: "\f043";
-}
-
-.icon-edit:before {
-  content: "\f044";
-}
-
-.icon-share:before {
-  content: "\f045";
-}
-
-.icon-check:before {
-  content: "\f046";
-}
-
-.icon-move:before {
-  content: "\f047";
-}
-
-.icon-step-backward:before {
-  content: "\f048";
-}
-
-.icon-fast-backward:before {
-  content: "\f049";
-}
-
-.icon-backward:before {
-  content: "\f04a";
-}
-
-.icon-play:before {
-  content: "\f04b";
-}
-
-.icon-pause:before {
-  content: "\f04c";
-}
-
-.icon-stop:before {
-  content: "\f04d";
-}
-
-.icon-forward:before {
-  content: "\f04e";
-}
-
-.icon-fast-forward:before {
-  content: "\f050";
-}
-
-.icon-step-forward:before {
-  content: "\f051";
-}
-
-.icon-eject:before {
-  content: "\f052";
-}
-
-.icon-chevron-left:before {
-  content: "\f053";
-}
-
-.icon-chevron-right:before {
-  content: "\f054";
-}
-
-.icon-plus-sign:before {
-  content: "\f055";
-}
-
-.icon-minus-sign:before {
-  content: "\f056";
-}
-
-.icon-remove-sign:before {
-  content: "\f057";
-}
-
-.icon-ok-sign:before {
-  content: "\f058";
-}
-
-.icon-question-sign:before {
-  content: "\f059";
-}
-
-.icon-info-sign:before {
-  content: "\f05a";
-}
-
-.icon-screenshot:before {
-  content: "\f05b";
-}
-
-.icon-remove-circle:before {
-  content: "\f05c";
-}
-
-.icon-ok-circle:before {
-  content: "\f05d";
-}
-
-.icon-ban-circle:before {
-  content: "\f05e";
-}
-
-.icon-arrow-left:before {
-  content: "\f060";
-}
-
-.icon-arrow-right:before {
-  content: "\f061";
-}
-
-.icon-arrow-up:before {
-  content: "\f062";
-}
-
-.icon-arrow-down:before {
-  content: "\f063";
-}
-
-.icon-share-alt:before {
-  content: "\f064";
-}
-
-.icon-resize-full:before {
-  content: "\f065";
-}
-
-.icon-resize-small:before {
-  content: "\f066";
-}
-
-.icon-plus:before {
-  content: "\f067";
-}
-
-.icon-minus:before {
-  content: "\f068";
-}
-
-.icon-asterisk:before {
-  content: "\f069";
-}
-
-.icon-exclamation-sign:before {
-  content: "\f06a";
-}
-
-.icon-gift:before {
-  content: "\f06b";
-}
-
-.icon-leaf:before {
-  content: "\f06c";
-}
-
-.icon-fire:before {
-  content: "\f06d";
-}
-
-.icon-eye-open:before {
-  content: "\f06e";
-}
-
-.icon-eye-close:before {
-  content: "\f070";
-}
-
-.icon-warning-sign:before {
-  content: "\f071";
-}
-
-.icon-plane:before {
-  content: "\f072";
-}
-
-.icon-calendar:before {
-  content: "\f073";
-}
-
-.icon-random:before {
-  content: "\f074";
-}
-
-.icon-comment:before {
-  content: "\f075";
-}
-
-.icon-magnet:before {
-  content: "\f076";
-}
-
-.icon-chevron-up:before {
-  content: "\f077";
-}
-
-.icon-chevron-down:before {
-  content: "\f078";
-}
-
-.icon-retweet:before {
-  content: "\f079";
-}
-
-.icon-shopping-cart:before {
-  content: "\f07a";
-}
-
-.icon-folder-close:before {
-  content: "\f07b";
-}
-
-.icon-folder-open:before {
-  content: "\f07c";
-}
-
-.icon-resize-vertical:before {
-  content: "\f07d";
-}
-
-.icon-resize-horizontal:before {
-  content: "\f07e";
-}
-
-.icon-bar-chart:before {
-  content: "\f080";
-}
-
-.icon-twitter-sign:before {
-  content: "\f081";
-}
-
-.icon-facebook-sign:before {
-  content: "\f082";
-}
-
-.icon-camera-retro:before {
-  content: "\f083";
-}
-
-.icon-key:before {
-  content: "\f084";
-}
-
-.icon-cogs:before {
-  content: "\f085";
-}
-
-.icon-comments:before {
-  content: "\f086";
-}
-
-.icon-thumbs-up:before {
-  content: "\f087";
-}
-
-.icon-thumbs-down:before {
-  content: "\f088";
-}
-
-.icon-star-half:before {
-  content: "\f089";
-}
-
-.icon-heart-empty:before {
-  content: "\f08a";
-}
-
-.icon-signout:before {
-  content: "\f08b";
-}
-
-.icon-linkedin-sign:before {
-  content: "\f08c";
-}
-
-.icon-pushpin:before {
-  content: "\f08d";
-}
-
-.icon-external-link:before {
-  content: "\f08e";
-}
-
-.icon-signin:before {
-  content: "\f090";
-}
-
-.icon-trophy:before {
-  content: "\f091";
-}
-
-.icon-github-sign:before {
-  content: "\f092";
-}
-
-.icon-upload-alt:before {
-  content: "\f093";
-}
-
-.icon-lemon:before {
-  content: "\f094";
-}
-
-.icon-phone:before {
-  content: "\f095";
-}
-
-.icon-check-empty:before {
-  content: "\f096";
-}
-
-.icon-bookmark-empty:before {
-  content: "\f097";
-}
-
-.icon-phone-sign:before {
-  content: "\f098";
-}
-
-.icon-twitter:before {
-  content: "\f099";
-}
-
-.icon-facebook:before {
-  content: "\f09a";
-}
-
-.icon-github:before {
-  content: "\f09b";
-}
-
-.icon-unlock:before {
-  content: "\f09c";
-}
-
-.icon-credit-card:before {
-  content: "\f09d";
-}
-
-.icon-rss:before {
-  content: "\f09e";
-}
-
-.icon-hdd:before {
-  content: "\f0a0";
-}
-
-.icon-bullhorn:before {
-  content: "\f0a1";
-}
-
-.icon-bell:before {
-  content: "\f0a2";
-}
-
-.icon-certificate:before {
-  content: "\f0a3";
-}
-
-.icon-hand-right:before {
-  content: "\f0a4";
-}
-
-.icon-hand-left:before {
-  content: "\f0a5";
-}
-
-.icon-hand-up:before {
-  content: "\f0a6";
-}
-
-.icon-hand-down:before {
-  content: "\f0a7";
-}
-
-.icon-circle-arrow-left:before {
-  content: "\f0a8";
-}
-
-.icon-circle-arrow-right:before {
-  content: "\f0a9";
-}
-
-.icon-circle-arrow-up:before {
-  content: "\f0aa";
-}
-
-.icon-circle-arrow-down:before {
-  content: "\f0ab";
-}
-
-.icon-globe:before {
-  content: "\f0ac";
-}
-
-.icon-wrench:before {
-  content: "\f0ad";
-}
-
-.icon-tasks:before {
-  content: "\f0ae";
-}
-
-.icon-filter:before {
-  content: "\f0b0";
-}
-
-.icon-briefcase:before {
-  content: "\f0b1";
-}
-
-.icon-fullscreen:before {
-  content: "\f0b2";
-}
-
-.icon-group:before {
-  content: "\f0c0";
-}
-
-.icon-link:before {
-  content: "\f0c1";
-}
-
-.icon-cloud:before {
-  content: "\f0c2";
-}
-
-.icon-beaker:before {
-  content: "\f0c3";
-}
-
-.icon-cut:before {
-  content: "\f0c4";
-}
-
-.icon-copy:before {
-  content: "\f0c5";
-}
-
-.icon-paper-clip:before {
-  content: "\f0c6";
-}
-
-.icon-save:before {
-  content: "\f0c7";
-}
-
-.icon-sign-blank:before {
-  content: "\f0c8";
-}
-
-.icon-reorder:before {
-  content: "\f0c9";
-}
-
-.icon-list-ul:before {
-  content: "\f0ca";
-}
-
-.icon-list-ol:before {
-  content: "\f0cb";
-}
-
-.icon-strikethrough:before {
-  content: "\f0cc";
-}
-
-.icon-underline:before {
-  content: "\f0cd";
-}
-
-.icon-table:before {
-  content: "\f0ce";
-}
-
-.icon-magic:before {
-  content: "\f0d0";
-}
-
-.icon-truck:before {
-  content: "\f0d1";
-}
-
-.icon-pinterest:before {
-  content: "\f0d2";
-}
-
-.icon-pinterest-sign:before {
-  content: "\f0d3";
-}
-
-.icon-google-plus-sign:before {
-  content: "\f0d4";
-}
-
-.icon-google-plus:before {
-  content: "\f0d5";
-}
-
-.icon-money:before {
-  content: "\f0d6";
-}
-
-.icon-caret-down:before {
-  content: "\f0d7";
-}
-
-.icon-caret-up:before {
-  content: "\f0d8";
-}
-
-.icon-caret-left:before {
-  content: "\f0d9";
-}
-
-.icon-caret-right:before {
-  content: "\f0da";
-}
-
-.icon-columns:before {
-  content: "\f0db";
-}
-
-.icon-sort:before {
-  content: "\f0dc";
-}
-
-.icon-sort-down:before {
-  content: "\f0dd";
-}
-
-.icon-sort-up:before {
-  content: "\f0de";
-}
-
-.icon-envelope-alt:before {
-  content: "\f0e0";
-}
-
-.icon-linkedin:before {
-  content: "\f0e1";
-}
-
-.icon-undo:before {
-  content: "\f0e2";
-}
-
-.icon-legal:before {
-  content: "\f0e3";
-}
-
-.icon-dashboard:before {
-  content: "\f0e4";
-}
-
-.icon-comment-alt:before {
-  content: "\f0e5";
-}
-
-.icon-comments-alt:before {
-  content: "\f0e6";
-}
-
-.icon-bolt:before {
-  content: "\f0e7";
-}
-
-.icon-sitemap:before {
-  content: "\f0e8";
-}
-
-.icon-umbrella:before {
-  content: "\f0e9";
-}
-
-.icon-paste:before {
-  content: "\f0ea";
-}
-
-.icon-lightbulb:before {
-  content: "\f0eb";
-}
-
-.icon-exchange:before {
-  content: "\f0ec";
-}
-
-.icon-cloud-download:before {
-  content: "\f0ed";
-}
-
-.icon-cloud-upload:before {
-  content: "\f0ee";
-}
-
-.icon-user-md:before {
-  content: "\f0f0";
-}
-
-.icon-stethoscope:before {
-  content: "\f0f1";
-}
-
-.icon-suitcase:before {
-  content: "\f0f2";
-}
-
-.icon-bell-alt:before {
-  content: "\f0f3";
-}
-
-.icon-coffee:before {
-  content: "\f0f4";
-}
-
-.icon-food:before {
-  content: "\f0f5";
-}
-
-.icon-file-alt:before {
-  content: "\f0f6";
-}
-
-.icon-building:before {
-  content: "\f0f7";
-}
-
-.icon-hospital:before {
-  content: "\f0f8";
-}
-
-.icon-ambulance:before {
-  content: "\f0f9";
-}
-
-.icon-medkit:before {
-  content: "\f0fa";
-}
-
-.icon-fighter-jet:before {
-  content: "\f0fb";
-}
-
-.icon-beer:before {
-  content: "\f0fc";
-}
-
-.icon-h-sign:before {
-  content: "\f0fd";
-}
-
-.icon-plus-sign-alt:before {
-  content: "\f0fe";
-}
-
-.icon-double-angle-left:before {
-  content: "\f100";
-}
-
-.icon-double-angle-right:before {
-  content: "\f101";
-}
-
-.icon-double-angle-up:before {
-  content: "\f102";
-}
-
-.icon-double-angle-down:before {
-  content: "\f103";
-}
-
-.icon-angle-left:before {
-  content: "\f104";
-}
-
-.icon-angle-right:before {
-  content: "\f105";
-}
-
-.icon-angle-up:before {
-  content: "\f106";
-}
-
-.icon-angle-down:before {
-  content: "\f107";
-}
-
-.icon-desktop:before {
-  content: "\f108";
-}
-
-.icon-laptop:before {
-  content: "\f109";
-}
-
-.icon-tablet:before {
-  content: "\f10a";
-}
-
-.icon-mobile-phone:before {
-  content: "\f10b";
-}
-
-.icon-circle-blank:before {
-  content: "\f10c";
-}
-
-.icon-quote-left:before {
-  content: "\f10d";
-}
-
-.icon-quote-right:before {
-  content: "\f10e";
-}
-
-.icon-spinner:before {
-  content: "\f110";
-}
-
-.icon-circle:before {
-  content: "\f111";
-}
-
-.icon-reply:before {
-  content: "\f112";
-}
-
-.icon-github-alt:before {
-  content: "\f113";
-}
-
-.icon-folder-close-alt:before {
-  content: "\f114";
-}
-
-.icon-folder-open-alt:before {
-  content: "\f115";
-}
-
-/*
  * @file
  * global.styles
  *
@@ -1339,10 +31,12 @@ ul.icons li [class*=" icon-"] {
  * element. If you need to set default font properties of any kind use the BODY
  * element as these can be overridden using font theme settings.
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\0000341}}
 html {
   background: white;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\0000345}}
 body {
   font-family: "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-size: 87.5%;
@@ -1351,6 +45,7 @@ body {
 /* =============================================================================
  *   HTML Elements
  * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003140}}
 pre,
 code,
 tt,
@@ -1385,11 +80,6 @@ var {
 /*
  * Footer wrapper
  */
-#footer {
-  background-color: #E3E1DF;
-  color: #010101;
-}
-
 /*
  * Panels may need additional margin wrangling when in the $content region
  */
@@ -1430,6 +120,12 @@ var {
 /*
  * Footer wrapper
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003283}}
+#footer-wrapper {
+  background-color: #222222;
+  border-top: 6px solid #fee100;
+}
+
 /* =============================================================================
  *   Branding
  * ========================================================================== */
@@ -1439,9 +135,11 @@ var {
 /*
  * Logo
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003304}}
 #logo {
   padding: 10px 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003307}}
 #logo img {
   vertical-align: bottom;
 }
@@ -1452,12 +150,15 @@ var {
 /*
  * Site name (h1)
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003322}}
 #site-name {
   margin: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003328}}
 #site-name a:link, #site-name a:visited {
   text-decoration: none;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003333}}
 #site-name a:hover, #site-name a:focus {
   text-decoration: underline;
 }
@@ -1465,6 +166,7 @@ var {
 /*
  * Site slogan (h2)
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003343}}
 #site-slogan {
   margin: 0;
 }
@@ -1478,6 +180,7 @@ var {
 /*
  * The main page title (h1)
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003361}}
 #page-title {
   margin: 0;
 }
@@ -1491,12 +194,14 @@ var {
 /*
  * Aggregator feed source
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003379}}
 #aggregator .feed-source .feed-icon {
   display: inline;
   float: none;
   margin-right: 10px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003387}}
 .feed-details dt,
 .feed-details dd {
   display: inline;
@@ -1509,13 +214,16 @@ var {
 /*
  * Generic styles for links. See the ul.links declaration in node and comment stylesheets
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003402}}
 ul.links {
   margin: 0;
   padding: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003406}}
 ul.links.inline {
   display: block;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003410}}
 ul.links li {
   display: inline;
   list-style: none;
@@ -1525,6 +233,7 @@ ul.links li {
 /*
  * Search results are an ordered list so reset the margin
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003421}}
 .search-results {
   margin: 0;
 }
@@ -1571,48 +280,67 @@ ul.links li {
 /*
  * Footer region
  */
-.region-footer {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003507}}
+.region-footer .more-info {
+  margin: 12px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003510}}
+.region-footer .more-info h2 {
+  text-transform: uppercase;
+  color: #666666;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003515}}
+.region-footer .more-info p {
+  margin: 0;
   color: white;
 }
 
 /*
  * UH&D footer
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003526}}
 ul.uhd-footer-links {
   margin: 0;
   padding: 0;
   list-style: none;
   width: 100% !important;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003533}}
 ul.uhd-footer-links li {
   margin: 8px 0;
   padding: 0 12px;
   border-left: 2px solid black;
   width: 17% !important;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003539}}
 ul.uhd-footer-links li.home {
   padding-left: 0;
   border-left: none;
   width: 20%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003544}}
 ul.uhd-footer-links li.home a img {
   width: 90%;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003548}}
 ul.uhd-footer-links li.home a:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003553}}
 ul.uhd-footer-links li h3 {
   margin: 0;
   color: #666666;
   text-transform: uppercase;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003559}}
 ul.uhd-footer-links li ul {
   margin: 0;
   padding: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003563}}
 ul.uhd-footer-links li ul li {
   margin: 0;
   padding: 0 0 0 1em;
@@ -1621,12 +349,15 @@ ul.uhd-footer-links li ul li {
   width: 100% !important;
   border-left: none;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003572}}
 ul.uhd-footer-links li ul li a {
   text-decoration: none;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003577}}
 ul.uhd-footer-links li ul li a:link, ul.uhd-footer-links li ul li a:visited {
   color: #cccccc;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003582}}
 ul.uhd-footer-links li ul li a:hover, ul.uhd-footer-links li ul li a:focus {
   color: white;
 }
@@ -1634,9 +365,11 @@ ul.uhd-footer-links li ul li a:hover, ul.uhd-footer-links li ul li a:focus {
 /* =============================================================================
  *   Links
  * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003595}}
 a {
   text-decoration: none;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003605}}
 a:hover, a:focus {
   text-decoration: underline;
 }
@@ -1651,15 +384,18 @@ a:hover, a:focus {
  *  - #secondary-menu (secondary/user menu)
  * You can target all of these with .nav or div[id$="menu-bar"]
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003623}}
 .nav {
   clear: both;
   margin: 10px 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003628}}
 .nav ul,
 .nav ul.menu {
   margin: 0;
   padding: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003634}}
 .nav li,
 .nav ul.menu li {
   display: inline;
@@ -1668,12 +404,14 @@ a:hover, a:focus {
   margin: 0;
   padding: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003643}}
 .nav li a,
 .nav ul.menu li a {
   display: block;
   white-space: nowrap;
   padding: 0 10px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003654}}
 .nav .block {
   margin-bottom: 0;
 }
@@ -1681,9 +419,11 @@ a:hover, a:focus {
 /* =============================================================================
  *   Superfish
  * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003664}}
 ul.sf-menu {
   margin-bottom: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003667}}
 ul.sf-menu a {
   border-left: 0;
   border-top: 0;
@@ -1692,9 +432,11 @@ ul.sf-menu a {
   height: 2.5em;
   line-height: 2.5em;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003681}}
 ul.sf-menu li:hover, ul.sf-menu li.sfHover {
   outline: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003689}}
 ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
   outline: 0;
 }
@@ -1702,10 +444,12 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Superfish blocks
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003703}}
 .block-superfish ul {
   margin: 0 !important;
   padding: 0 !important;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003714}}
 .block-superfish li {
   margin: 0 !important;
   padding: 0 !important;
@@ -1714,18 +458,22 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Vertical style
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003724}}
 .sf-vertical {
   width: 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003727}}
 .sf-vertical li {
   width: 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003733}}
 .sf-vertical li:hover ul, .sf-vertical li.sfHover ul {
   left: 100%;
   top: 0;
   margin: 0;
   padding: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003740}}
 .sf-vertical li a {
   padding: 0 10px;
 }
@@ -1733,6 +481,7 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Navbar style
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003750}}
 .sf-navbar {
   padding-bottom: 0 !important;
 }
@@ -1740,6 +489,7 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /*
  * Sensible padding for the default style
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003758}}
 .sf-menu.sf-style-default a {
   padding: 0 10px;
 }
@@ -1747,17 +497,21 @@ ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
 /* =============================================================================
  *   Menus, usually blocks
  * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003767}}
 ul.menu {
   padding-left: 15px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003770}}
 ul.menu ul {
   padding-left: 15px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003778}}
 ul.menu li {
   margin: 0;
 }
 
 /* If li.content exists it's a problem, so reset the padding */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003807}}
 .block .menu li.content {
   padding: 0;
 }
@@ -1765,11 +519,13 @@ ul.menu li {
 /* =============================================================================
  *   Book navigation menu
  * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003824}}
 .book-navigation .page-up {
   /* Prevent text wrapping to a new line, assumes English "up" is used (two characters) */
   min-width: 2em;
   white-space: nowrap;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003830}}
 .book-navigation .menu {
   margin-left: 0;
 }
@@ -1777,25 +533,31 @@ ul.menu li {
 /* =============================================================================
  *   Breadcrumbs
  * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003840}}
 #breadcrumb {
   margin: 10px 0;
   /* If the label is set to show in theme settings the label class is added */
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003844}}
 #breadcrumb .breadcrumb-label {
   font-size: 1em;
   display: inline;
   padding-right: 10px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003849}}
 #breadcrumb .breadcrumb-label:after {
   content: ":";
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003854}}
 #breadcrumb ol {
   margin: 0;
   padding: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003859}}
 #breadcrumb .with-breadcrumb-label ol {
   display: inline;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003863}}
 #breadcrumb li {
   list-style: none;
   display: inline;
@@ -1804,26 +566,31 @@ ul.menu li {
 /* =============================================================================
  *   Pagers
  * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003890}}
 ul.pager {
   clear: both;
   margin: 0;
   text-align: center;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003897}}
 .item-list ul.pager li {
   margin: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003902}}
 ul.pager li {
   background-image: none;
   display: inline;
   list-style-type: none;
   padding: .5em;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003908}}
 ul.pager li.pager-current {
   font-weight: 700;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003914}}
 .block ul.pager li {
   margin: 0;
 }
@@ -1834,6 +601,7 @@ ul.pager li.pager-current {
 /* =============================================================================
  *   Skip Navigation
  * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003951}}
 #skip-link {
   left: 50%;
   margin-left: -6.5em;
@@ -1843,6 +611,7 @@ ul.pager li.pager-current {
   width: 12em;
   z-index: 50;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003960}}
 #skip-link a {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -1853,6 +622,7 @@ ul.pager li.pager-current {
   text-align: center;
   text-decoration: none;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003971}}
 #skip-link a:link, #skip-link a:visited {
   background: #444;
   background: rgba(0, 0, 0, 0.6);
@@ -1863,6 +633,7 @@ ul.pager li.pager-current {
   text-align: center;
   text-decoration: none;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003983}}
 #skip-link a:hover, #skip-link a:focus, #skip-link a:active {
   outline: 0;
 }
@@ -1870,20 +641,24 @@ ul.pager li.pager-current {
 /* =============================================================================
  *   Tabs (local tasks)
  * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003994}}
 #tasks {
   margin-bottom: 15px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\00003999}}
 ul.primary {
   border-bottom-color: #cccccc;
   margin: 20px 0;
   padding: 0 0 0 5px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031004}}
 ul.primary li {
   display: block;
   float: left;
   margin: 0 1px -1px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031009}}
 ul.primary li a {
   background-color: whitesmoke;
   border-color: #cccccc;
@@ -1894,10 +669,12 @@ ul.primary li a {
   height: 1.5em;
   line-height: 1.5em;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031020}}
 ul.primary li a:hover, ul.primary li a:focus {
   background-color: #eeeeee;
   border-color: #cccccc;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031030}}
 ul.primary li.active a,
 ul.primary li.active a:hover,
 ul.primary li.active a:focus {
@@ -1905,16 +682,19 @@ ul.primary li.active a:focus {
   border-bottom-color: white;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031038}}
 ul.secondary {
   border-bottom: 1px solid #cccccc;
   margin: 1em 0 0;
   padding: 0 .3em 1em;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031043}}
 ul.secondary li {
   border-right: 0;
   list-style: none;
   padding: 0 10px 0 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031050}}
 ul.secondary li a:hover, ul.secondary li a.active {
   border-bottom: none;
   text-decoration: underline;
@@ -1923,6 +703,7 @@ ul.secondary li a:hover, ul.secondary li a.active {
 /* =============================================================================
  *   Action links
  * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031063}}
 ul.action-links {
   margin: 20px 0 0;
   list-style: none;
@@ -1943,6 +724,7 @@ ul.action-links {
 /*
  * Labels are h2 in Adaptivetheme. Use a strong selector to mitigate unwanted ineritance issues
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031096}}
 .field-label {
   font-size: 1em;
   font-weight: 700;
@@ -1960,14 +742,17 @@ ul.action-links {
 /*
  * Taxonomy
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031125}}
 .field-type-taxonomy-term-reference {
   /* The same bottom margin as p, blockquote, ul, ol and dl */
   margin-bottom: 1.5em;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031130}}
 .field-type-taxonomy-term-reference.field-label-inline .field-items {
   margin: 0;
   padding: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031135}}
 .field-type-taxonomy-term-reference.field-label-inline .field-item {
   display: inline;
   list-style: none;
@@ -2025,6 +810,7 @@ ul.action-links {
 /*
  * Float left setting
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031250}}
 .ia-l .field-type-image figure,
 .iat-l .field-type-image figure {
   margin: 5px 20px 15px 0;
@@ -2033,6 +819,7 @@ ul.action-links {
 /*
  * Centered setting
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031259}}
 .ia-c .field-type-image figure,
 .iat-c .field-type-image figure {
   margin: 5px auto 15px;
@@ -2041,6 +828,7 @@ ul.action-links {
 /*
  * Float right setting
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031268}}
 .ia-r .field-type-image figure,
 .iat-r .field-type-image figure {
   margin: 5px 0 15px 20px;
@@ -2052,6 +840,7 @@ ul.action-links {
 /*
  * Main wrapper for most blocks, block_system_main does not have it
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031281}}
 .block {
   margin-bottom: 20px;
 }
@@ -2074,6 +863,7 @@ ul.action-links {
 /*
  * Block title
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031319}}
 .block-title {
   margin: 0;
 }
@@ -2084,10 +874,12 @@ ul.action-links {
 /*
  * Match item list and block menu margin and padding
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031336}}
 .block-content ul,
 .block-content ol {
   padding: 0 0 0 15px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031340}}
 .block-content li {
   margin: 0;
   padding: 0;
@@ -2177,9 +969,11 @@ ul.action-links {
 /* =============================================================================
  *   Node Styling
  * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031515}}
 .node {
   margin-bottom: 20px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031532}}
 .node .node-title {
   margin: 0;
 }
@@ -2195,12 +989,15 @@ ul.action-links {
 /*
  * Wrapper for the list of comments and its titles
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031590}}
 #comments {
   margin: 1.5em 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031594}}
 #comments h2.comment-title {
   margin: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031598}}
 #comments h2.comment-form {
   margin: 0;
 }
@@ -2208,6 +1005,7 @@ ul.action-links {
 /*
  * Wrapper for a single comment
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031608}}
 .comment {
   margin-bottom: 20px;
 }
@@ -2215,6 +1013,7 @@ ul.action-links {
 /*
  * Comment title
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031639}}
 .comment-title {
   margin: 0;
 }
@@ -2228,6 +1027,7 @@ ul.action-links {
 /*
  * "New" marker for comments that are new for the current user
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031671}}
 .new {
   color: #cc0000;
 }
@@ -2235,6 +1035,7 @@ ul.action-links {
 /*
  * Nested comments are indented
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031679}}
 .indented {
   margin-left: 40px;
 }
@@ -2245,14 +1046,17 @@ ul.action-links {
 /*
  * Wrapper for a form element (or group of form elements) and its label
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031695}}
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
   border: 1px solid #cc0000;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031699}}
 .form-item label {
   font-weight: 700;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031706}}
 .form-item .description {
   font-size: 0.85em;
 }
@@ -2260,6 +1064,7 @@ ul.action-links {
 /*
  * Highlight marks and form required mark
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031720}}
 .marker,
 .form-required {
   color: #cc0000;
@@ -2268,6 +1073,7 @@ ul.action-links {
 /*
  * The submit button
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031734}}
 .container-inline div,
 .container-inline label {
   display: inline;
@@ -2276,6 +1082,7 @@ ul.action-links {
 /*
  * Define consistent borders
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031742}}
 fieldset {
   border: 1px solid #cccccc;
 }
@@ -2286,6 +1093,7 @@ fieldset {
 /*
  * Buttons used by contrib modules like Media
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031756}}
 a.button {
   -moz-border-bottom-colors: none;
   -moz-border-left-colors: none;
@@ -2308,6 +1116,7 @@ a.button {
 /*
  * Password confirmation
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031780}}
 .password-parent,
 .confirm-parent {
   margin: 0;
@@ -2316,15 +1125,18 @@ a.button {
 /* =============================================================================
  *   Tables
  * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031789}}
 table {
   margin: 10px 0;
   padding: 0;
   width: 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031794}}
 table.sticky-header {
   z-index: 10;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031805}}
 table,
 thead,
 tbody,
@@ -2334,23 +1146,27 @@ td {
   border-color: #cccccc;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031812}}
 table,
 td,
 th {
   vertical-align: middle;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031819}}
 caption,
 th,
 td {
   text-align: left;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031824}}
 thead tr {
   font-weight: 700;
   background-color: #e5e5e5;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031831}}
 td,
 th {
   border-bottom: 0;
@@ -2358,23 +1174,29 @@ th {
   padding: 5px 7px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031841}}
 tbody tr {
   border-top: 1px solid #cccccc;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031846}}
 tr {
   /* Table row striping */
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031848}}
 tr.odd {
   background: white;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031855}}
 tr.info, tr.even, tr:nth-child(2n+2) {
   border-bottom: 0;
   background-color: whitesmoke;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031864}}
 tr.odd td.active {
   background-color: #eeeeee;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031868}}
 tr.even td.active {
   background-color: #ebebeb;
 }
@@ -2383,6 +1205,7 @@ tr.even td.active {
  * Forum tables
  * Core sets white-space to nowrap, which makes no sense
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031896}}
 #forum td .created,
 #forum td .posts,
 #forum td .topics,
@@ -2395,10 +1218,12 @@ tr.even td.active {
 /* =============================================================================
  *   Messages
  * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031907}}
 div.messages {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031912}}
 div.messages ul {
   margin-top: 0;
   margin-bottom: 0;
@@ -2407,6 +1232,7 @@ div.messages ul {
 /*
  * Unpublished nodes
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031953}}
 .node-unpublished p.unpublished,
 .comment-unpublished p.unpublished {
   color: pink;
@@ -2423,6 +1249,7 @@ div.messages ul {
   text-transform: uppercase;
   word-wrap: break-word;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/_custom\.scss}line{font-family:\00003195}}
 .ie6-7 .node-unpublished p.unpublished > *, .ie6-7
 .comment-unpublished p.unpublished > * {
   position: relative;
@@ -2431,23 +1258,28 @@ div.messages ul {
 /* =============================================================================
  *    Maintenance pages
  * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031964}}
 .maintenance-page .container {
   padding: 40px 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031969}}
 .maintenance-page #site-name,
 .maintenance-page #page-title {
   margin: 0;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031976}}
 .db-offline .container {
   margin: 0 auto;
   padding: 40px 0;
   width: 100%;
   max-width: 960px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031983}}
 .db-offline div.messages {
   margin: 20px 0 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000031987}}
 .db-offline #content {
   padding: 20px 0;
 }
@@ -2458,6 +1290,7 @@ div.messages ul {
 /*
  * Admin menu overrides
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000032000}}
 #admin-menu {
   margin: 0;
   padding: 0;
@@ -2466,6 +1299,7 @@ div.messages ul {
 /*
  * Devel Module
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000032009}}
 .dev-query {
   background: #eeeeee;
   padding: 30px;
@@ -2474,9 +1308,11 @@ div.messages ul {
 /*
  * Styleguide module tweaks
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000032018}}
 #styleguide-header {
   padding: 0 10px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000032021}}
 #styleguide-header .item-list {
   font-family: inherit;
   margin: 0 20px 20px 0;
@@ -2487,6 +1323,7 @@ div.messages ul {
 /* =============================================================================
  *   Prototyping - temporary
  * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000032032}}
 #nav-link {
   float: right;
   display: block;
@@ -2496,9 +1333,12 @@ div.messages ul {
   margin: 5px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
   border-radius: 2px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/uhd\.global\.styles\.scss}line{font-family:\000032042}}
 #back-to-top {
   display: block;
   background-color: #666666;
@@ -2541,6 +1381,7 @@ div.messages ul {
    * "Float Region blocks" is an extension for floating blocks in regions, see
    * your themes appearance settings, under the Extensions tab.
    */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/_responsive\.custom\.scss}line{font-family:\0000345}}
   .region[class*="float-blocks"] .block {
     float: none;
     width: 100%;
@@ -2550,44 +1391,53 @@ div.messages ul {
  * Tablet sizes and up
  */
 @media only screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/_responsive\.custom\.scss}line{font-family:\0000356}}
   #nav-link {
     display: none;
   }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/_responsive\.custom\.scss}line{font-family:\0000360}}
   #back-to-top {
     display: none;
   }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/_responsive\.custom\.scss}line{font-family:\0000364}}
   .uhd-department-description {
     float: left;
     width: 75%;
   }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/_responsive\.custom\.scss}line{font-family:\0000369}}
   .uhd-department-link {
     float: right;
     width: 20%;
   }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/_responsive\.custom\.scss}line{font-family:\0000374}}
   .uhd-wordmark-wrapper {
     width: 20%;
     padding-right: none;
   }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/_responsive\.custom\.scss}line{font-family:\0000379}}
   ul.uhd-footer-links {
     width: 75%;
     float: right;
     margin: 0;
     padding: 0;
   }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/_responsive\.custom\.scss}line{font-family:\0000384}}
   ul.uhd-footer-links li {
     float: left;
     width: 25%;
   }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/_responsive\.custom\.scss}line{font-family:\0000387}}
   ul.uhd-footer-links li ul {
     display: block;
     margin: 0;
     padding: 0;
   }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/custom\/sites\/all\/themes\/uhd_base\/sass\/_responsive\.custom\.scss}line{font-family:\0000391}}
   ul.uhd-footer-links li ul li {
     display: block;
     float: none;

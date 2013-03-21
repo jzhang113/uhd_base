@@ -284,7 +284,17 @@ var {
   background-color: $grey_dark_very;
   border-top: 6px solid $hawk_gold;
 
-  .container {}
+  .container {
+
+    #footer {
+      background-color: $grey_dark_very;
+
+      .region-footer {
+        margin-bottom: 12px;
+        border-bottom: 2px solid $none_more_black;
+      }
+    }
+  }
 }
 
 

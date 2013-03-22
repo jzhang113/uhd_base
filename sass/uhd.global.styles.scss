@@ -1459,7 +1459,87 @@ ul.action-links {
 /*
  * "Main menu" block
  */
-#block-system-main-menu {}
+#block-system-main-menu {
+  background-color: lighten($grey_dark_very, 8%);
+
+  // top level menu
+  ul {
+    margin-top: 0;
+    padding: 0;
+    
+    li {
+      position: relative;
+      list-style-image: none;
+      list-style-type: none;
+
+      // default anchor styles
+      a {
+        display: block;
+        padding: 10px 24px;
+        border-bottom: 1px solid $grey_dark_very;
+        color: white;
+        text-decoration: none;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 12px;
+          left: 4px;
+          margin-top: 0;
+          @include sprites-sprite(menu-right-white, $dimensions: true);
+        }
+
+        &:hover {
+          background-color: lighten($grey_dark_very, 12%);
+        }
+      }
+
+      &.active-trail {
+        background-color: $grey_dark_very;
+
+        a {
+          border-bottom: 1px solid lighten($grey_dark_very, 5%);
+
+          &.active-trail:before {
+            @include sprites-sprite(menu-down-white, $dimensions: true);
+          }
+        }
+      }
+
+      // second level menus
+      ul {
+        margin: 0;
+        padding: 0;
+
+        // override styles for default anchor styles
+        a {
+          padding-left: 24px;
+          
+          &:before {
+            background-image: none;
+          }
+
+          &.active {
+            color: $hawk_gold;
+
+            &:before {
+              background-image: none !important;
+            }
+
+            &:after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: 4px;
+              margin-top: -8px;
+              @include sprites-sprite(menu-right-gold, $dimensions: true);
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 
 /*

@@ -1,3 +1,7 @@
+.sprites-sprite, #block-system-main-menu ul li a:before, #block-system-main-menu ul li.active-trail a.active-trail:before, #block-system-main-menu ul li ul a.active:after {
+  background: url('images/sprites-s67eb030dc4.png') no-repeat;
+}
+
 /*
  * @file
  * global.styles
@@ -118,11 +122,11 @@ var {
  * Footer wrapper
  */
 #footer-wrapper {
-  background-color: #222222;
+  background-color: #333333;
   border-top: 6px solid #fee100;
 }
 #footer-wrapper .container #footer {
-  background-color: #222222;
+  background-color: #333333;
 }
 #footer-wrapper .container #footer .region-footer {
   margin-bottom: 12px;
@@ -854,6 +858,76 @@ ul.action-links {
 /*
  * "Main menu" block
  */
+#block-system-main-menu {
+  background-color: #474747;
+}
+#block-system-main-menu ul {
+  margin-top: 0;
+  padding: 0;
+}
+#block-system-main-menu ul li {
+  position: relative;
+  list-style-image: none;
+  list-style-type: none;
+}
+#block-system-main-menu ul li a {
+  display: block;
+  padding: 10px 24px;
+  border-bottom: 1px solid #333333;
+  color: white;
+  text-decoration: none;
+}
+#block-system-main-menu ul li a:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 4px;
+  margin-top: 0;
+  background-position: 0 0;
+  height: 12px;
+  width: 12px;
+}
+#block-system-main-menu ul li a:hover {
+  background-color: #525252;
+}
+#block-system-main-menu ul li.active-trail {
+  background-color: #333333;
+}
+#block-system-main-menu ul li.active-trail a {
+  border-bottom: 1px solid #404040;
+}
+#block-system-main-menu ul li.active-trail a.active-trail:before {
+  background-position: 0 -36px;
+  height: 12px;
+  width: 12px;
+}
+#block-system-main-menu ul li ul {
+  margin: 0;
+  padding: 0;
+}
+#block-system-main-menu ul li ul a {
+  padding-left: 24px;
+}
+#block-system-main-menu ul li ul a:before {
+  background-image: none;
+}
+#block-system-main-menu ul li ul a.active {
+  color: #fee100;
+}
+#block-system-main-menu ul li ul a.active:before {
+  background-image: none !important;
+}
+#block-system-main-menu ul li ul a.active:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  margin-top: -8px;
+  background-position: 0 -24px;
+  height: 12px;
+  width: 12px;
+}
+
 /*
  * "Management" block for Drupal management menu
  */

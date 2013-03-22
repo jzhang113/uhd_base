@@ -494,7 +494,13 @@ ul.links {
 /*
  * First sidebar
  */
-.region-sidebar-first {}
+.region-sidebar-first {
+
+  .block-inner {
+    margin: 0;
+    background: transparent;
+  }
+}
 
 
 /*

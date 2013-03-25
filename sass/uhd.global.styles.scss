@@ -273,6 +273,8 @@ var {
  * Wraps the main content column
  */
 #content-wrapper {
+  margin-top: 60px;
+
   .container {}
 }
 
@@ -342,7 +344,7 @@ var {
   
   a {
     text-transform: uppercase;
-    line-height: 2.6em;
+    line-height: 2em;
 
     &:link,
     &:visited {

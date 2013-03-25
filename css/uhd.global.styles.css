@@ -127,6 +127,10 @@ var {
 /*
  * Wraps the main content column
  */
+#content-wrapper {
+  margin-top: 60px;
+}
+
 /*
  * Wraps the tertiary content/postfix region
  */
@@ -172,7 +176,7 @@ var {
 }
 #site-name a {
   text-transform: uppercase;
-  line-height: 2.6em;
+  line-height: 2em;
 }
 #site-name a:link, #site-name a:visited {
   color: black;

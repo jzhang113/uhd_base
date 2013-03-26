@@ -386,7 +386,7 @@ var {
   display: table-cell;
 
   #breadcrumb {
-    margin: 0;
+    margin: 18px 0 0 0;
 
     .breadcrumb-wrapper{
       margin: 0;
@@ -1098,6 +1098,7 @@ ul.primary {
   margin: 0;
   padding: 0 0 0 5px;
   border-bottom: none;
+  @include opacity(0.7);
 
   li {
     display: block;
@@ -1106,7 +1107,7 @@ ul.primary {
 
 
     a {
-      background-color: $hawk_gold;
+      background-color: $grey_dark_medium;
       border: none;
       margin: 0 1px 2px 0;
       padding: 0 10px;
@@ -1119,8 +1120,8 @@ ul.primary {
 
       &:hover,
       &:focus {
-        background-color: lighten($hawk_gold, 5%);
-        border-top: 2px solid $hawk_gold;
+        background-color: lighten($grey_dark_medium, 10%);
+        border-top: 2px solid lighten($grey_dark_medium, 10%);
         margin-bottom: 0;
       }
     }
@@ -1131,9 +1132,9 @@ ul.primary {
     a:hover,
     a:focus {
       margin-bottom: 0;
-      background-color: $hawk_gold;
+      background-color: $grey_dark_medium;
       border: none;
-      border-top: 2px solid $hawk_gold;
+      border-top: 2px solid $grey_dark_medium;
       color: black;
     }
   }

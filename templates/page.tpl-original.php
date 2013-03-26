@@ -165,16 +165,8 @@
     </div>
 
     <div id="content-wrapper"><div class="container">
-      <div id="uhd-title-bar">
-        <?php if ($breadcrumb): ?>
-          <?php print $breadcrumb; ?>
-        <?php endif; ?>
-        <?php if ($title): ?>
-          <h1 id="page-title"><?php print $title; ?></h1>
-        <?php endif; ?>
-      </div>
-
       <div id="columns"><div class="columns-inner clearfix">
+
         <div id="content-column"><div class="content-inner">
 
           <?php if ($page['secondary_content']): ?>
@@ -189,7 +181,9 @@
 
           <<?php print $tag; ?> id="main-content">
 
-            <!-- Breadcrumbs don't live here anymore -->
+            <?php if ($breadcrumb): ?>
+              <?php print $breadcrumb; ?>
+            <?php endif; ?>
 
             <?php if ($messages || $page['help']): ?>
               <?php print $messages; ?>
@@ -219,7 +213,9 @@
                   </div>
                 <?php endif; ?>
 
-              
+                <?php if ($title): ?>
+                  <h1 id="page-title"><?php print $title; ?></h1>
+                <?php endif; ?>
 
               </header>
             <?php endif; ?>

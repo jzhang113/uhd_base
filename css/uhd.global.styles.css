@@ -1,5 +1,5 @@
 .sprites-sprite, #block-system-main-menu ul li a:before, #block-system-main-menu ul li.active-trail a.active-trail:before, #block-system-main-menu ul li ul a.active:after {
-  background: url('images/sprites-s67eb030dc4.png') no-repeat;
+  background: url('images/sprites-s2976db5128.png') no-repeat;
 }
 
 /*
@@ -127,10 +127,6 @@ var {
 /*
  * Wraps the main content column
  */
-#content-wrapper {
-  margin-top: 60px;
-}
-
 /*
  * Wraps the tertiary content/postfix region
  */
@@ -207,8 +203,58 @@ var {
 /*
  * The main page title (h1)
  */
-#page-title {
+#uhd-title-bar {
+  position: relative;
+  display: table-cell;
+}
+#uhd-title-bar #breadcrumb {
+  margin: 18px 0 0 0;
+}
+#uhd-title-bar #breadcrumb .breadcrumb-wrapper {
   margin: 0;
+}
+#uhd-title-bar #breadcrumb .breadcrumb-wrapper ol#crumbs li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color: #fee100;
+  min-height: 20px;
+  min-width: 20px;
+}
+#uhd-title-bar #breadcrumb .breadcrumb-wrapper ol#crumbs li a {
+  display: block;
+  padding: 4px;
+  color: #333333;
+  font-weight: bold;
+  text-decoration: none;
+}
+#uhd-title-bar #breadcrumb .breadcrumb-wrapper ol#crumbs li a:hover, #uhd-title-bar #breadcrumb .breadcrumb-wrapper ol#crumbs li a:focus {
+  color: #666666;
+}
+#uhd-title-bar #breadcrumb .breadcrumb-wrapper ol#crumbs li.crumb-first a {
+  background: url("images/home-icon-black.png") 6px 4px no-repeat;
+  text-indent: -9999px;
+  min-width: 24px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+#uhd-title-bar #breadcrumb .breadcrumb-wrapper ol#crumbs li.crumb-first a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+#uhd-title-bar #breadcrumb .breadcrumb-wrapper ol#crumbs li.crumb-last a {
+  padding-right: 8px;
+}
+#uhd-title-bar h1#page-title {
+  margin: 0 0 18px 0;
+  font-size: 3.6em;
+  padding: 0 8px;
+  text-transform: uppercase;
+  background-color: #333333;
+  color: white;
+  -webkit-box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* =============================================================================

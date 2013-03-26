@@ -273,8 +273,6 @@ var {
  * Wraps the main content column
  */
 #content-wrapper {
-  margin-top: 60px;
-
   .container {}
 }
 
@@ -381,8 +379,79 @@ var {
 /*
  * The main page title (h1)
  */
-#page-title {
-  margin: 0;
+
+
+#uhd-title-bar {
+  position: relative;
+  display: table-cell;
+
+  #breadcrumb {
+    margin: 18px 0 0 0;
+
+    .breadcrumb-wrapper{
+      margin: 0;
+
+      ol#crumbs {
+
+        li {
+          display: inline-block;
+          margin: 0;
+          padding: 0;
+          background-color: $hawk_gold;
+          min-height: 20px;
+          min-width: 20px;
+          
+
+          a {
+            display: block;
+            padding: 4px;
+            color: $grey_dark_very;
+            font-weight: bold;
+            text-decoration: none;
+
+            &:hover, &:focus {
+              color: $grey_dark_pretty;
+            }
+          }
+
+          // home link
+          &.crumb-first {
+            //@include border-top-left-radius(4px);
+
+            a {
+              background: url('images/home-icon-black.png') 6px 4px no-repeat;
+              text-indent: -9999px;
+              min-width: 24px;
+              @include opacity(0.7);
+              
+              &:hover {
+                @include opacity(0.5);
+              }
+            }
+          }
+
+          &.crumb-last {
+            //@include border-top-right-radius(4px);
+
+            a {
+              padding-right: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  h1#page-title {
+    margin: 0 0 18px 0;
+    font-size: 3.6em;
+    padding: 0 8px;
+    //padding-left: 48px;
+    text-transform: uppercase;
+    background-color: $grey_dark_very;
+    color: white;
+    @include box-shadow(4px 2px 8px rgba(0,0,0,.3));
+  }
 }
 
 
@@ -2158,3 +2227,11 @@ tr.error {
 
 
 @import "responsive.custom"
+
+
+/* ------------------------------------------------------------
+   ------------------------------------------------------------ */
+
+// #block-masquerade-masquerade {
+//   float: right;
+// }

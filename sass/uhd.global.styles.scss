@@ -386,7 +386,7 @@ var {
   display: table-cell;
 
   #breadcrumb {
-    margin: 18px 0 0 0;
+    margin: 0;
 
     .breadcrumb-wrapper{
       margin: 0;
@@ -1090,34 +1090,38 @@ ul.pager li {
  * ========================================================================== */
 
 #tasks {
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 
-
 ul.primary {
-  border-bottom-color: $border;
-  margin: 20px 0;
+  float: right;
+  margin: 0;
   padding: 0 0 0 5px;
+  border-bottom: none;
 
   li {
     display: block;
     float: left;
     margin: 0 1px -1px;
 
+
     a {
-      background-color: $ultralight;
-      border-color: $border;
-      margin-right: 1px;
+      background-color: $hawk_gold;
+      border: none;
+      margin: 0 1px 2px 0;
       padding: 0 10px;
       display: block;
       float: left;
       height: 1.5em;
       line-height: 1.5em;
+      color: $grey_dark_very;
+      @include border-bottom-radius(4px);
 
       &:hover,
       &:focus {
-        background-color: $light;
-        border-color: $border;
+        background-color: lighten($hawk_gold, 5%);
+        border-top: 2px solid $hawk_gold;
+        margin-bottom: 0;
       }
     }
   }
@@ -1126,15 +1130,17 @@ ul.primary {
     a,
     a:hover,
     a:focus {
-      background-color: $page;
-      border-bottom-color: $page;
+      margin-bottom: 0;
+      background-color: $hawk_gold;
+      border: none;
+      border-top: 2px solid $hawk_gold;
+      color: black;
     }
   }
 }
 
-
 ul.secondary {
-  border-bottom: 1px solid $border;
+  //border-bottom: 1px solid $border;
   margin: 1em 0 0;
   padding: 0 .3em 1em;
 

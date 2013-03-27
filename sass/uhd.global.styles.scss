@@ -2250,12 +2250,19 @@ tr.error {
 }
 
 
-@import "responsive.custom"
+@import "responsive.custom";
 
 
 /* ------------------------------------------------------------
    ------------------------------------------------------------ */
 
-// #block-masquerade-masquerade {
-//   float: right;
-// }
+.block-masquerade {
+  margin: 10px;
+  padding: 10px;
+  background-color: $grey_dark_medium;
+  @include border-radius(8px);
+
+  &:hover {
+    background-color: lighten($grey_dark_medium, 10%);
+  }
+}

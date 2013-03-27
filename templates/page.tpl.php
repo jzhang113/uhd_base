@@ -129,6 +129,27 @@
       <div class="container clearfix">
         <header<?php print $header_attributes; ?>>
           <a id="nav-link" href="#block-system-main-menu">Nav</a>
+
+          <!-- start: Sites menu -->
+          <ul id="uhd-sites-links">
+            <li class="housing">
+              <a href="http://housing.uiowa.edu/">Housing</a>
+            </li>
+            <li class="dining">
+              <a href="http://dining.uiowa.edu/">Dining</a>
+            </li>
+            <li class="catering">
+              <a href="http://catering.uiowa.edu/">Catering</a>
+            </li>
+            <li class="vending">
+              <a href="http://vending.uiowa.edu/">Vending</a>
+            </li>
+            <li class="mothership">
+              <a href="http://uhd.uiowa.edu/">Admin</a>
+            </li>
+          </ul>
+          <!-- end: Sites menu -->
+
           <?php if ($site_logo || $site_name || $site_slogan): ?>
             <!-- start: Branding -->
             <div<?php print $branding_attributes; ?>>
@@ -170,9 +191,7 @@
         <?php if ($breadcrumb): ?>
           <?php print $breadcrumb; ?>
         <?php endif; ?>
-        <?php if ($title): ?>
-          <h1 id="page-title"><?php print $title; ?></h1>
-        <?php endif; ?>
+        
       </div>
 
       <div id="columns"><div class="columns-inner clearfix">
@@ -199,6 +218,10 @@
                   <?php endif; ?>
 
                 </div>
+              <?php endif; ?>
+
+              <?php if ($title): ?>
+                <h1 id="page-title"><?php print $title; ?></h1>
               <?php endif; ?>
 
             </header>

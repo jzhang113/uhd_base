@@ -179,7 +179,9 @@ var {
 /*
  * Wraps the main-content-header, the content region and feed-icons. Use this wrapper to style the entire main content column
  */
-#main-content {}
+#main-content {
+  margin-top: 14px;
+}
 
 
 /*
@@ -233,6 +235,26 @@ var {
 
   .container {
 
+    #header {
+
+      ul#uhd-sites-links {
+        float: right;
+        margin: 0 0 -12px 0;
+        list-style-type: none;
+
+        li {
+          display: inline-block;
+          min-width: 72px;
+          //height: 50px;
+
+          a {
+            display: block;
+            line-height: 50px;
+            border-left: 1px solid white;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -441,17 +463,12 @@ var {
       }
     }
   }
+}
 
-  h1#page-title {
-    margin: 0 0 18px 0;
-    font-size: 3.6em;
-    padding: 0 8px;
-    //padding-left: 48px;
-    text-transform: uppercase;
-    background-color: $grey_dark_very;
-    color: white;
-    @include box-shadow(4px 2px 8px rgba(0,0,0,.3));
-  }
+h1#page-title {
+  float: left;
+  margin: 14px 0 0 14px;
+  padding: 0;
 }
 
 
@@ -1095,7 +1112,7 @@ ul.pager li {
 
 ul.primary {
   float: right;
-  margin: 0;
+  margin: 0 2px 0 0;
   padding: 0 0 0 5px;
   border-bottom: none;
   @include opacity(0.7);
@@ -2152,7 +2169,7 @@ tr.error {
 
   #site-name,
   #page-title {
-    margin: 0;
+    
   }
 }
 

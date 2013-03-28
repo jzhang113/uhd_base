@@ -237,24 +237,60 @@ var {
 
     #header {
 
+      h2#org-title {
+        float: left;
+        margin: 8px;
+        text-transform: uppercase;
+      }
+
       ul#uhd-sites-links {
         float: right;
-        margin: 0 0 -12px 0;
+        margin: 0 0 -6px 0;
+        padding: 0;
         list-style-type: none;
 
         li {
-          display: inline-block;
-          min-width: 72px;
-          //height: 50px;
+          display: table-cell;
+          margin: 0;
+          padding: 0; 
+          
+          border-bottom: 6px solid transparent;
 
           a {
             display: block;
-            line-height: 50px;
-            border-left: 1px solid white;
+            margin: 0;
+            padding: 8px 12px;
+            line-height: 32px;
+            text-align: center;
+            text-decoration: none;
+            color: $grey_dark_very;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: small;
+            
+            &:hover, &:focus {
+              color: $grey_dark_pretty;
+            }
+          }
+
+          &:hover {
+            border-bottom: 6px solid lighten($hawk_gold, 33%);
           }
         }
       }
     }
+  }
+}
+body.site-name-university-housing ul#uhd-sites-links li.housing,
+body.site-name-university-dining ul#uhd-sites-links li.dining,
+body.site-name-university-catering ul#uhd-sites-links li.catering,
+body.site-name-university-vending ul#uhd-sites-links li.vending,
+body.site-name-mothership ul#uhd-sites-links li.mothership {
+  border-bottom: 6px solid $none_more_black !important;
+  @include sprites-sprite(menu-up-black, $dimensions: true, $offset-x: 50%, $offset-y: 38px); 
+
+  a, a:hover {
+    color: $none_more_black !important;
   }
 }
 
@@ -349,6 +385,10 @@ var {
 
   img {
     vertical-align: bottom;
+
+    &:hover {
+      @include opacity(0.9);
+    }
   }
 }
 

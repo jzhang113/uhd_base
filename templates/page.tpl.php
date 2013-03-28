@@ -136,7 +136,7 @@
 
           <!-- start: UH&D sites menu -->
           <ul id="uhd-sites-links">
-            <li class="housing">
+            <li class="housing first">
               <a href="http://housing.uiowa.edu/">Housing</a>
             </li>
             <li class="dining">
@@ -148,7 +148,7 @@
             <li class="vending">
               <a href="http://vending.uiowa.edu/">Vending</a>
             </li>
-            <li class="mothership">
+            <li class="mothership last">
               <a href="http://uhd.uiowa.edu/">Admin</a>
             </li>
           </ul>

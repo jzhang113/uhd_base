@@ -301,7 +301,7 @@
                 <li class="home">
                   <a href="http://uhd.uiowa.edu/"><img src="<?php print $GLOBALS['base_url'] . '/' . drupal_get_path('theme', 'uhd_base') . '/images/full-wordmark-wt.png'; ?>" title="University Housing &amp; Dining at The University of Iowa" alt="University Housing &amp; Dining at The University of Iowa" /></a>
                 </li>
-                <li class="admin"><h3>UH&amp;D Administration</h3>
+                <li class="admin"><h3>UH&amp;D Admin</h3>
                   <ul>
                     <li><a href="#">Employment</a></li>
                     <li><a href="#">Structure</a></li>
@@ -327,6 +327,12 @@
                     <li><a href="#">Locations</a></li>
                     <li><a href="#">Menus</a></li>
                     <li><a href="#">Reservations</a></li>
+                  </ul>
+                </li>
+                <li class="last vending"><h3>Vending</h3>
+                  <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
                   </ul>
                 </li>
               </ul>

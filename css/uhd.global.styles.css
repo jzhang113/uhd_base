@@ -972,6 +972,7 @@ ul.action-links {
  * "Main menu" block
  */
 #block-system-main-menu {
+  padding-top: 20px;
   background-color: #474747;
 }
 #block-system-main-menu ul {
@@ -1013,6 +1014,9 @@ ul.action-links {
   background-position: 0 -336px;
   height: 12px;
   width: 12px;
+}
+#block-system-main-menu ul li.first.menu-depth-1 a {
+  border-top: 1px solid #333333;
 }
 #block-system-main-menu ul li ul {
   margin: 0;

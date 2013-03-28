@@ -1675,7 +1675,8 @@ ul.action-links {
 
         // override styles for default anchor styles
         a {
-          padding-left: 24px;
+          padding-left: 48px;
+          text-indent: -12px;
           
           &:before {
             background-image: none;

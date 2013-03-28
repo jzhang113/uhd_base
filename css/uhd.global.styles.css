@@ -1023,7 +1023,8 @@ ul.action-links {
   padding: 0;
 }
 #block-system-main-menu ul li ul a {
-  padding-left: 24px;
+  padding-left: 48px;
+  text-indent: -12px;
 }
 #block-system-main-menu ul li ul a:before {
   background-image: none;

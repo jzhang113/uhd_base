@@ -130,7 +130,11 @@
         <header<?php print $header_attributes; ?>>
           <a id="nav-link" href="#block-system-main-menu">Nav</a>
 
-          <!-- start: Sites menu -->
+          <!-- start: UH&D title -->
+          <h2 id="org-title">University Housing &amp; Dining</h2>
+          <!-- end: UH&D title -->
+
+          <!-- start: UH&D sites menu -->
           <ul id="uhd-sites-links">
             <li class="housing">
               <a href="http://housing.uiowa.edu/">Housing</a>
@@ -150,34 +154,7 @@
           </ul>
           <!-- end: Sites menu -->
 
-          <?php if ($site_logo || $site_name || $site_slogan): ?>
-            <!-- start: Branding -->
-            <div<?php print $branding_attributes; ?>>
-
-              <?php if ($site_logo): ?>
-                <div id="logo" data-stellar-ratio=".5">
-                  <?php print $site_logo; ?>
-                </div>
-              <?php endif; ?>
-
-              <?php if ($site_name || $site_slogan): ?>
-                <!-- start: Site name and Slogan hgroup -->
-                <hgroup<?php print $hgroup_attributes; ?>>
-
-                  <?php if ($site_name): ?>
-                    <h1<?php print $site_name_attributes; ?>><?php print $site_name; ?></h1>
-                  <?php endif; ?>
-
-                  <?php if ($site_slogan): ?>
-                    <h2<?php print $site_slogan_attributes; ?>><?php print $site_slogan; ?></h2>
-                  <?php endif; ?>
-
-                </hgroup><!-- /end #name-and-slogan -->
-              <?php endif; ?>
-
-
-            </div><!-- /end #branding -->
-          <?php endif; ?>
+          <!--HERE-->
 
         <?php print render($page['header']); ?>
 
@@ -191,7 +168,38 @@
         <?php if ($breadcrumb): ?>
           <?php print $breadcrumb; ?>
         <?php endif; ?>
-        
+
+
+        <?php if ($site_logo || $site_name || $site_slogan): ?>
+          <!-- start: Branding -->
+          <div<?php print $branding_attributes; ?>>
+
+            <?php if ($site_logo): ?>
+              <div id="logo" data-stellar-ratio=".5">
+                <?php print $site_logo; ?>
+              </div>
+            <?php endif; ?>
+
+            <?php if ($site_name || $site_slogan): ?>
+              <!-- start: Site name and Slogan hgroup -->
+              <hgroup<?php print $hgroup_attributes; ?>>
+
+                <?php if ($site_name): ?>
+                  <h1<?php print $site_name_attributes; ?>><?php print $site_name; ?></h1>
+                <?php endif; ?>
+
+                <?php if ($site_slogan): ?>
+                  <h2<?php print $site_slogan_attributes; ?>><?php print $site_slogan; ?></h2>
+                <?php endif; ?>
+
+              </hgroup><!-- /end #name-and-slogan -->
+            <?php endif; ?>
+
+
+          </div><!-- /end #branding -->
+        <?php endif; ?>
+
+
       </div>
 
       <div id="columns"><div class="columns-inner clearfix">

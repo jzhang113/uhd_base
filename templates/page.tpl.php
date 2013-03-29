@@ -308,18 +308,18 @@
                     <li><a href="#">Policies</a></li>
                   </ul>
                 </li>
-                <li class="dining"><h3>Dining</h3>
-                  <ul>
-                    <li><a href="#">Locations</a></li>
-                    <li><a href="#">Menus</a></li>
-                    <li><a href="#">Dining Tools</a></li>
-                  </ul>
-                </li>
                 <li class="housing"><h3>Housing</h3>
                   <ul>
                     <li><a href="#">Life@Iowa</a></li>
                     <li><a href="#">Residence Halls</a></li>
                     <li><a href="#">Living Learning Communities</a></li>
+                  </ul>
+                </li>
+                <li class="dining"><h3>Dining</h3>
+                  <ul>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Menus</a></li>
+                    <li><a href="#">Dining Tools</a></li>
                   </ul>
                 </li>
                 <li class="catering"><h3>Catering</h3>

@@ -228,9 +228,27 @@
                 </div>
               <?php endif; ?>
 
-              <?php if ($title): ?>
+
+
+
+
+
+              <?php if (field_get_items('node', $node, 'field_general_page_banner_image')): ?>
+                <!-- print the stupid banner image here -->
+                <?php print render(field_view_field('node', $node, 'field_general_page_banner_image', array('label' => 'hidden'))); ?>
+                <h1 id="page-title" class="page-banner-image-exists"><?php print $title; ?></h1>
+              <?php else: ?>
                 <h1 id="page-title"><?php print $title; ?></h1>
               <?php endif; ?>
+
+
+
+
+
+
+
+
+
 
             </header>
           <?php endif; ?>

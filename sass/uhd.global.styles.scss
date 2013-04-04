@@ -514,6 +514,13 @@ h1#page-title {
   float: left;
   margin: 14px 0 0 14px;
   padding: 0;
+  font-size: 360%;
+
+  &.page-banner-image-exists {
+    margin-top: -1.6em;
+    color: white;
+    @include opacity(0.95);
+  }
 }
 
 
@@ -1157,34 +1164,34 @@ ul.pager li {
 
 ul.primary {
   float: right;
-  margin: 0 2px 0 0;
+  margin: -26px 0 0 0;
   padding: 0 0 0 5px;
   border-bottom: none;
-  @include opacity(0.7);
 
   li {
     display: block;
     float: left;
-    margin: 0 1px -1px;
+    margin-left: 3px;
 
 
     a {
-      background-color: $grey_dark_medium;
+      background-color: $grey_light_very;
       border: none;
-      margin: 0 1px 2px 0;
+      margin: 0;
+      margin-top: 2px;
       padding: 0 10px;
       display: block;
       float: left;
-      height: 1.5em;
-      line-height: 1.5em;
+      height: 24px;
+      line-height: 24px;
       color: $grey_dark_very;
-      @include border-bottom-radius(4px);
+      @include border-top-radius(4px);
 
       &:hover,
       &:focus {
-        background-color: lighten($grey_dark_medium, 10%);
-        border-top: 2px solid lighten($grey_dark_medium, 10%);
-        margin-bottom: 0;
+        background-color: lighten($grey_light_very, 10%);
+        border-bottom: 2px solid lighten($grey_light_very, 10%);
+        margin-top: 0;
       }
     }
   }
@@ -1193,10 +1200,10 @@ ul.primary {
     a,
     a:hover,
     a:focus {
-      margin-bottom: 0;
-      background-color: $grey_dark_medium;
+      margin-top: 0;
+      background-color: white;
       border: none;
-      border-top: 2px solid $grey_dark_medium;
+      border-bottom: 2px solid white;
       color: black;
     }
   }

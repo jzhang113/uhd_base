@@ -278,6 +278,13 @@ h1#page-title {
   float: left;
   margin: 14px 0 0 14px;
   padding: 0;
+  font-size: 360%;
+}
+h1#page-title.page-banner-image-exists {
+  margin-top: -1.6em;
+  color: white;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
+  opacity: 0.95;
 }
 
 /* =============================================================================
@@ -687,46 +694,45 @@ ul.pager li.pager-current {
 
 ul.primary {
   float: right;
-  margin: 0 2px 0 0;
+  margin: -26px 0 0 0;
   padding: 0 0 0 5px;
   border-bottom: none;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-  opacity: 0.7;
 }
 ul.primary li {
   display: block;
   float: left;
-  margin: 0 1px -1px;
+  margin-left: 3px;
 }
 ul.primary li a {
-  background-color: #999999;
+  background-color: #cccccc;
   border: none;
-  margin: 0 1px 2px 0;
+  margin: 0;
+  margin-top: 2px;
   padding: 0 10px;
   display: block;
   float: left;
-  height: 1.5em;
-  line-height: 1.5em;
+  height: 24px;
+  line-height: 24px;
   color: #333333;
-  -moz-border-radius-bottomleft: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
 }
 ul.primary li a:hover, ul.primary li a:focus {
-  background-color: #b3b3b3;
-  border-top: 2px solid #b3b3b3;
-  margin-bottom: 0;
+  background-color: #e6e6e6;
+  border-bottom: 2px solid #e6e6e6;
+  margin-top: 0;
 }
 ul.primary li.active a,
 ul.primary li.active a:hover,
 ul.primary li.active a:focus {
-  margin-bottom: 0;
-  background-color: #999999;
+  margin-top: 0;
+  background-color: white;
   border: none;
-  border-top: 2px solid #999999;
+  border-bottom: 2px solid white;
   color: black;
 }
 

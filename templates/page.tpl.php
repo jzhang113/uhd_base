@@ -145,11 +145,11 @@
             <li class="catering">
               <a href="http://catering.uiowa.edu/">Catering</a>
             </li>
-            <li class="vending">
+            <!-- <li class="vending">
               <a href="http://vending.uiowa.edu/">Vending</a>
-            </li>
+            </li> -->
             <li class="mothership last">
-              <a href="http://uhd.uiowa.edu/">Admin</a>
+              <a href="http://uhd.uiowa.edu/">UH&amp;D Admin</a>
             </li>
           </ul>
           <!-- end: Sites menu -->
@@ -340,19 +340,19 @@
                     <li><a href="#">Dining Tools</a></li>
                   </ul>
                 </li>
-                <li class="catering"><h3>Catering</h3>
+                <li class="last catering"><h3>Catering</h3>
                   <ul>
                     <li><a href="#">Locations</a></li>
                     <li><a href="#">Menus</a></li>
                     <li><a href="#">Reservations</a></li>
                   </ul>
                 </li>
-                <li class="last vending"><h3>Vending</h3>
+                <!-- <li class="last vending"><h3>Vending</h3>
                   <ul>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Contact</a></li>
                   </ul>
-                </li>
+                </li> -->
               </ul>
             </div>
 

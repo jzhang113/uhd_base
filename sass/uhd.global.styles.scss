@@ -512,14 +512,18 @@ body.site-name-mothership ul#uhd-sites-links li.mothership {
 
 h1#page-title {
   float: left;
-  margin: 14px 0 0 14px;
+  margin: 0;
   padding: 0;
-  font-size: 360%;
+  font-size: 3em;
 
   &.page-banner-image-exists {
-    margin-top: -1.6em;
+    margin-top: -2em;
+    padding: 8px 12px;
     color: white;
     @include opacity(0.95);
+    //@include text-shadow(rgba($none_more_black, 0.9), 4px 4px 4px);
+    @include text-shadow(rgba(black, 0.2) 1px 1px 0, rgba(black, 0.2) 2px 2px 0, rgba(black, 0.2) 3px 3px 0);
+    //background-color: rgba(black, 0.2);
   }
 }
 

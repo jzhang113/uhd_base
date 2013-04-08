@@ -1527,3 +1527,96 @@ div.messages ul {
 .block-masquerade:hover {
   background-color: #b3b3b3;
 }
+
+p.button-test a {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5eb9d8), color-stop(100%, #2795ba));
+  background-image: -webkit-linear-gradient(#5eb9d8, #2795ba);
+  background-image: -moz-linear-gradient(#5eb9d8, #2795ba);
+  background-image: -o-linear-gradient(#5eb9d8, #2795ba);
+  background-image: linear-gradient(#5eb9d8, #2795ba);
+  color: #fff;
+  padding: 0.5em 1em;
+  border: 1px solid #0c87b1;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+}
+p.button-test a:visited {
+  color: #fff;
+}
+p.button-test a:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
+  background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
+  background-image: -moz-linear-gradient(#2e98bc, #1a627b);
+  background-image: -o-linear-gradient(#2e98bc, #1a627b);
+  background-image: linear-gradient(#2e98bc, #1a627b);
+  border: 1px solid #075069;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* --- Locations radio buttons */
+#location-filter-wrapper ul {
+  list-style-type: none;
+}
+#location-filter-wrapper ul li {
+  display: inline-block;
+}
+#location-filter-wrapper ul li a {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5eb9d8), color-stop(100%, #2795ba));
+  background-image: -webkit-linear-gradient(#5eb9d8, #2795ba);
+  background-image: -moz-linear-gradient(#5eb9d8, #2795ba);
+  background-image: -o-linear-gradient(#5eb9d8, #2795ba);
+  background-image: linear-gradient(#5eb9d8, #2795ba);
+  color: #fff;
+  padding: 0.5em 1em;
+  border: 1px solid #0c87b1;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+}
+#location-filter-wrapper ul li a:visited {
+  color: #fff;
+}
+#location-filter-wrapper ul li a:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
+  background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
+  background-image: -moz-linear-gradient(#2e98bc, #1a627b);
+  background-image: -o-linear-gradient(#2e98bc, #1a627b);
+  background-image: linear-gradient(#2e98bc, #1a627b);
+  border: 1px solid #075069;
+  color: #fff;
+  text-decoration: none;
+}
+#location-filter-wrapper ul li a.active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000000), color-stop(100%, #000000));
+  background-image: -webkit-linear-gradient(#000000, #000000);
+  background-image: -moz-linear-gradient(#000000, #000000);
+  background-image: -o-linear-gradient(#000000, #000000);
+  background-image: linear-gradient(#000000, #000000);
+  color: #fff;
+  padding: 0.5em 1em;
+  border: 1px solid black;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+}
+#location-filter-wrapper ul li a.active:visited {
+  color: #fff;
+}
+#location-filter-wrapper ul li a.active:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000000), color-stop(100%, #000000));
+  background-image: -webkit-linear-gradient(#000000, #000000);
+  background-image: -moz-linear-gradient(#000000, #000000);
+  background-image: -o-linear-gradient(#000000, #000000);
+  background-image: linear-gradient(#000000, #000000);
+  border: 1px solid black;
+  color: #fff;
+  text-decoration: none;
+}

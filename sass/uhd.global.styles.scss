@@ -2329,3 +2329,35 @@ tr.error {
     background-color: lighten($grey_dark_medium, 10%);
   }
 }
+
+p.button-test a {
+  @include plain-button;
+}
+
+/* --- Locations radio buttons */
+#location-filter-wrapper {
+  
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+
+      a {
+        @include plain-button();
+
+        &.active {
+          @include plain-button(#000, #000, #000);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+

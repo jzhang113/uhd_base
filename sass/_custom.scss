@@ -213,3 +213,26 @@ $gutter-width: 14px;
        -webkit-filter: grayscale(0%);
   }
 }
+
+
+//
+// Buttons
+//
+@mixin plain-button($bgcolor1: #5eb9d8, $bgcolor2: #2795ba, $bdcolor: #0c87b1) {
+  @include background-image(linear-gradient($bgcolor1, $bgcolor2));
+  color: #fff;
+  padding: 0.5em 1em;
+  border: 1px solid $bdcolor;
+  @include border-radius(1em);
+
+  &:visited {
+    color: #fff;
+  }
+  
+  &:hover {
+    @include background-image(linear-gradient(darken($bgcolor1, 15%), darken($bgcolor2, 15%)));
+    border: 1px solid darken($bdcolor, 15%); 
+    color: #fff;
+    text-decoration: none;
+  }
+}

@@ -167,6 +167,7 @@ var {
 #columns {
   background-color: white;
   @include box-shadow(4px 2px 8px rgba(0,0,0,.3));
+  @include border-top-left-radius(14px);
 }
 
 
@@ -513,17 +514,14 @@ body.site-name-mothership ul#uhd-sites-links li.mothership {
 h1#page-title {
   float: left;
   margin: 0;
-  padding: 0;
+  padding: 8px 12px;
   font-size: 3em;
 
   &.page-banner-image-exists {
     margin-top: -2em;
-    padding: 8px 12px;
     color: white;
-    @include opacity(0.95);
-    //@include text-shadow(rgba($none_more_black, 0.9), 4px 4px 4px);
-    @include text-shadow(rgba(black, 0.2) 1px 1px 0, rgba(black, 0.2) 2px 2px 0, rgba(black, 0.2) 3px 3px 0);
-    //background-color: rgba(black, 0.2);
+    @include opacity(0.99);
+    @include text-shadow(rgba(black, 0.4) 1px 1px 0, rgba(black, 0.4) 2px 2px 0, rgba(black, 0.4) 3px 3px 0);
   }
 }
 
@@ -1629,7 +1627,10 @@ ul.action-links {
  */
 #block-system-main-menu {
   padding-top: 20px;
+  padding-bottom: 12px;
   background-color: lighten($grey_dark_very, 8%);
+  @include border-top-left-radius(8px);
+  @include border-bottom-right-radius(8px);
 
   // top level menu
   ul {

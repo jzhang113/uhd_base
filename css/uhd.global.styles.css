@@ -78,6 +78,9 @@ var {
   -webkit-box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.3);
   box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.3);
+  -moz-border-radius-topleft: 14px;
+  -webkit-border-top-left-radius: 14px;
+  border-top-left-radius: 14px;
 }
 
 /*
@@ -277,16 +280,15 @@ body.site-name-mothership ul#uhd-sites-links li.mothership a:hover {
 h1#page-title {
   float: left;
   margin: 0;
-  padding: 0;
+  padding: 8px 12px;
   font-size: 3em;
 }
 h1#page-title.page-banner-image-exists {
   margin-top: -2em;
-  padding: 8px 12px;
   color: white;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
-  opacity: 0.95;
-  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 0, rgba(0, 0, 0, 0.2) 2px 2px 0, rgba(0, 0, 0, 0.2) 3px 3px 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=99);
+  opacity: 0.99;
+  text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0, rgba(0, 0, 0, 0.4) 2px 2px 0, rgba(0, 0, 0, 0.4) 3px 3px 0;
 }
 
 /* =============================================================================
@@ -981,7 +983,14 @@ ul.action-links {
  */
 #block-system-main-menu {
   padding-top: 20px;
+  padding-bottom: 12px;
   background-color: #474747;
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 #block-system-main-menu ul {
   margin: 0;

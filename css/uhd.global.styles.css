@@ -1529,6 +1529,7 @@ div.messages ul {
 }
 
 p.button-test a {
+  display: block;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5eb9d8), color-stop(100%, #2795ba));
   background-image: -webkit-linear-gradient(#5eb9d8, #2795ba);
   background-image: -moz-linear-gradient(#5eb9d8, #2795ba);
@@ -1542,6 +1543,7 @@ p.button-test a {
   -ms-border-radius: 1em;
   -o-border-radius: 1em;
   border-radius: 1em;
+  text-align: center;
 }
 p.button-test a:visited {
   color: #fff;
@@ -1565,6 +1567,7 @@ p.button-test a:hover {
   display: inline-block;
 }
 #location-filter-wrapper ul li a {
+  display: block;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5eb9d8), color-stop(100%, #2795ba));
   background-image: -webkit-linear-gradient(#5eb9d8, #2795ba);
   background-image: -moz-linear-gradient(#5eb9d8, #2795ba);
@@ -1578,6 +1581,9 @@ p.button-test a:hover {
   -ms-border-radius: 1em;
   -o-border-radius: 1em;
   border-radius: 1em;
+  text-align: center;
+  min-width: 100px;
+  font-weight: bold;
 }
 #location-filter-wrapper ul li a:visited {
   color: #fff;
@@ -1593,6 +1599,7 @@ p.button-test a:hover {
   text-decoration: none;
 }
 #location-filter-wrapper ul li a.active {
+  display: block;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000000), color-stop(100%, #000000));
   background-image: -webkit-linear-gradient(#000000, #000000);
   background-image: -moz-linear-gradient(#000000, #000000);
@@ -1606,6 +1613,7 @@ p.button-test a:hover {
   -ms-border-radius: 1em;
   -o-border-radius: 1em;
   border-radius: 1em;
+  text-align: center;
 }
 #location-filter-wrapper ul li a.active:visited {
   color: #fff;

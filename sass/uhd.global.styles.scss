@@ -2345,6 +2345,8 @@ p.button-test a {
 
       a {
         @include plain-button();
+        min-width: 100px;
+        font-weight: bold;
 
         &.active {
           @include plain-button(#000, #000, #000);

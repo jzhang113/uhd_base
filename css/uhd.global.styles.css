@@ -396,6 +396,37 @@ ul.links li {
   margin: 0;
   color: white;
 }
+.region-footer .more-info a.plain-button {
+  display: block;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5eb9d8), color-stop(100%, #2795ba));
+  background-image: -webkit-linear-gradient(#5eb9d8, #2795ba);
+  background-image: -moz-linear-gradient(#5eb9d8, #2795ba);
+  background-image: -o-linear-gradient(#5eb9d8, #2795ba);
+  background-image: linear-gradient(#5eb9d8, #2795ba);
+  color: #fff;
+  padding: 0.5em 1em;
+  border: 1px solid #0c87b1;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+.region-footer .more-info a.plain-button:visited {
+  color: #fff;
+}
+.region-footer .more-info a.plain-button:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
+  background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
+  background-image: -moz-linear-gradient(#2e98bc, #1a627b);
+  background-image: -o-linear-gradient(#2e98bc, #1a627b);
+  background-image: linear-gradient(#2e98bc, #1a627b);
+  border: 1px solid #075069;
+  color: #fff;
+  text-decoration: none;
+}
 
 /*
  * UH&D footer
@@ -1544,6 +1575,7 @@ p.button-test a {
   -o-border-radius: 1em;
   border-radius: 1em;
   text-align: center;
+  font-weight: bold;
 }
 p.button-test a:visited {
   color: #fff;
@@ -1582,6 +1614,7 @@ p.button-test a:hover {
   -o-border-radius: 1em;
   border-radius: 1em;
   text-align: center;
+  font-weight: bold;
   min-width: 100px;
   font-weight: bold;
 }
@@ -1614,6 +1647,7 @@ p.button-test a:hover {
   -o-border-radius: 1em;
   border-radius: 1em;
   text-align: center;
+  font-weight: bold;
 }
 #location-filter-wrapper ul li a.active:visited {
   color: #fff;

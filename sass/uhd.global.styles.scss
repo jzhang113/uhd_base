@@ -685,6 +685,10 @@ ul.links {
       margin: 0;
       color: white;
     }
+
+    a.plain-button {
+      @include plain-button;
+    }
   }
 }
 

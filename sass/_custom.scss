@@ -230,6 +230,7 @@ $gutter-width: 14px;
   border: 1px solid $bdcolor;
   @include border-radius(1em);
   text-align: center;
+  font-weight: bold;
 
   &:visited {
     color: #fff;

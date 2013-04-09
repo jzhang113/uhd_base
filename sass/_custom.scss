@@ -220,7 +220,7 @@ $gutter-width: 14px;
 
 
 //
-// Buttons
+// Buttons & pills
 //
 @mixin plain-button($bgcolor1: #5eb9d8, $bgcolor2: #2795ba, $bdcolor: #0c87b1) {
   display: block;
@@ -242,4 +242,14 @@ $gutter-width: 14px;
     color: #fff;
     text-decoration: none;
   }
+}
+
+@mixin plain-pill($bgcolor: #900) {
+  display: block;
+  background-color: $bgcolor;
+  color: #fff;
+  padding: 1px 8px;
+  @include border-radius(0.75em);
+  text-align: center;
+  font-weight: bold;
 }

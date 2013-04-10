@@ -1691,7 +1691,8 @@ ul.action-links {
 
         // override styles for default anchor styles
         a {
-          padding-left: 48px;
+          //padding-left: 48px;
+          padding: 6px 24px 6px 48px;
           text-indent: -12px;
           
           &:before {
@@ -2326,12 +2327,8 @@ tr.error {
 .block-masquerade {
   margin: 12px 24px 12px 0;
   padding: 12px 24px;
-  background-color: $grey_dark_medium;
+  background-color: $grey_light_very;
   @include border-right-radius(8px);
-
-  &:hover {
-    background-color: lighten($grey_dark_medium, 10%);
-  }
 }
 
 p.button-test a {

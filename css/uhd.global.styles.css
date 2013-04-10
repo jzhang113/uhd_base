@@ -1071,7 +1071,7 @@ ul.action-links {
   padding: 0;
 }
 #block-system-main-menu ul li ul a {
-  padding-left: 48px;
+  padding: 6px 24px 6px 48px;
   text-indent: -12px;
 }
 #block-system-main-menu ul li ul a:before {
@@ -1548,16 +1548,13 @@ div.messages ul {
 .block-masquerade {
   margin: 12px 24px 12px 0;
   padding: 12px 24px;
-  background-color: #999999;
+  background-color: #cccccc;
   -moz-border-radius-topright: 8px;
   -webkit-border-top-right-radius: 8px;
   border-top-right-radius: 8px;
   -moz-border-radius-bottomright: 8px;
   -webkit-border-bottom-right-radius: 8px;
   border-bottom-right-radius: 8px;
-}
-.block-masquerade:hover {
-  background-color: #b3b3b3;
 }
 
 p.button-test a {

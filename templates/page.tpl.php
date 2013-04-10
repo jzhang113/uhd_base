@@ -204,7 +204,7 @@
 
       <div id="columns"><div class="columns-inner clearfix">
         <div id="content-column"><div class="content-inner">
-          
+
 
 
           <?php if ($title || $primary_local_tasks || $secondary_local_tasks || $action_links = render($action_links)): ?>
@@ -317,7 +317,7 @@
         <div class="container clearfix">
           <footer<?php print $footer_attributes; ?>>
             <?php print render($page['footer']); ?>
-            
+
             <div id="uhd_base_footer">
               <ul class="uhd-footer-links">
                 <li class="home">

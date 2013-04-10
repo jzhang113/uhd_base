@@ -2324,10 +2324,10 @@ tr.error {
    ------------------------------------------------------------ */
 
 .block-masquerade {
-  margin: 10px;
-  padding: 10px;
+  margin: 12px 24px 12px 0;
+  padding: 12px 24px;
   background-color: $grey_dark_medium;
-  @include border-radius(8px);
+  @include border-right-radius(8px);
 
   &:hover {
     background-color: lighten($grey_dark_medium, 10%);

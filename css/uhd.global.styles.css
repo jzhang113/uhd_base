@@ -1546,14 +1546,15 @@ div.messages ul {
 /* ------------------------------------------------------------
    ------------------------------------------------------------ */
 .block-masquerade {
-  margin: 10px;
-  padding: 10px;
+  margin: 12px 24px 12px 0;
+  padding: 12px 24px;
   background-color: #999999;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 .block-masquerade:hover {
   background-color: #b3b3b3;

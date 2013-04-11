@@ -239,7 +239,7 @@
                 <!-- load file info -->
                 <?php $file = file_load($imagefield[0]['fid']); ?>
                 <!-- render file entity -->
-                <?php print render(file_view($file, 'housing_basic_masthead'));?>
+                <?php print render(file_view($file, 'uhd_basic_masthead'));?>
                 <h1 id="page-title" class="page-banner-image-exists"><?php print $title; ?></h1>
               <?php else: ?>
                 <h1 id="page-title"><?php print $title; ?></h1>

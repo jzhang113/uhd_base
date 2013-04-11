@@ -1684,6 +1684,40 @@ ul.action-links {
         border-top: 1px solid $grey_dark_very;
       }
 
+
+      /* Top-level item is chosen... */
+      &.active-trail {
+        > a.active {
+          color: $hawk_gold;
+          background-color: $none_more_black;
+
+          &:before {
+            // content: "";
+            // position: absolute;
+            // top: 12px;
+            // left: 4px;
+            // margin-top: 0;
+            @include sprites-sprite(menu-right-white, $dimensions: true);
+          }
+        }
+      }
+      /* ...and if it has children... */
+      &.expanded {
+
+        > a.active {
+          color: $hawk_gold;
+
+          &:before {
+            @include sprites-sprite(menu-down-white, $dimensions: true);
+          }
+
+        }
+      }
+
+
+
+
+
       // second level menus
       ul {
         margin: 0;
@@ -1700,20 +1734,20 @@ ul.action-links {
           }
 
           &.active {
-            color: $hawk_gold;
+            background-color: $none_more_black;
 
             &:before {
               background-image: none !important;
             }
 
-            &:after {
-              content: "";
-              position: absolute;
-              top: 50%;
-              right: 4px;
-              margin-top: -8px;
-              @include sprites-sprite(menu-right-gold, $dimensions: true);
-            }
+            // &:after {
+            //   content: "";
+            //   position: absolute;
+            //   top: 50%;
+            //   right: 4px;
+            //   margin-top: -8px;
+            //   @include sprites-sprite(menu-right-gold, $dimensions: true);
+            // }
           }
         }
       }
@@ -2326,7 +2360,7 @@ tr.error {
 
 .block-masquerade {
   margin: 12px 24px 12px 0;
-  padding: 12px 24px;
+  padding: 12px;
   background-color: $grey_light_very;
   @include border-right-radius(8px);
 }

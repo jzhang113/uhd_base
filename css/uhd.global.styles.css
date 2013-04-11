@@ -2,7 +2,7 @@
 body.site-name-university-dining ul#uhd-sites-links li.dining,
 body.site-name-university-catering ul#uhd-sites-links li.catering,
 body.site-name-university-vending ul#uhd-sites-links li.vending,
-body.site-name-mothership ul#uhd-sites-links li.mothership, #block-system-main-menu ul li a:before, #block-system-main-menu ul li.active-trail a.active-trail:before, #block-system-main-menu ul li ul a.active:after {
+body.site-name-mothership ul#uhd-sites-links li.mothership, #block-system-main-menu ul li a:before, #block-system-main-menu ul li.active-trail a.active-trail:before, #block-system-main-menu ul li.active-trail > a.active:before, #block-system-main-menu ul li.expanded > a.active:before {
   background: url('images/sprites-s744dbb7827.png') no-repeat;
 }
 
@@ -1031,6 +1031,8 @@ ul.action-links {
   position: relative;
   list-style-image: none;
   list-style-type: none;
+  /* Top-level item is chosen... */
+  /* ...and if it has children... */
 }
 #block-system-main-menu ul li a {
   display: block;
@@ -1066,6 +1068,23 @@ ul.action-links {
 #block-system-main-menu ul li.first.menu-depth-1 a {
   border-top: 1px solid #333333;
 }
+#block-system-main-menu ul li.active-trail > a.active {
+  color: #fee100;
+  background-color: black;
+}
+#block-system-main-menu ul li.active-trail > a.active:before {
+  background-position: 0 0;
+  height: 12px;
+  width: 12px;
+}
+#block-system-main-menu ul li.expanded > a.active {
+  color: #fee100;
+}
+#block-system-main-menu ul li.expanded > a.active:before {
+  background-position: 0 -336px;
+  height: 12px;
+  width: 12px;
+}
 #block-system-main-menu ul li ul {
   margin: 0;
   padding: 0;
@@ -1078,20 +1097,10 @@ ul.action-links {
   background-image: none;
 }
 #block-system-main-menu ul li ul a.active {
-  color: #fee100;
+  background-color: black;
 }
 #block-system-main-menu ul li ul a.active:before {
   background-image: none !important;
-}
-#block-system-main-menu ul li ul a.active:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 4px;
-  margin-top: -8px;
-  background-position: 0 -252px;
-  height: 12px;
-  width: 12px;
 }
 
 /*
@@ -1547,7 +1556,7 @@ div.messages ul {
    ------------------------------------------------------------ */
 .block-masquerade {
   margin: 12px 24px 12px 0;
-  padding: 12px 24px;
+  padding: 12px;
   background-color: #cccccc;
   -moz-border-radius-topright: 8px;
   -webkit-border-top-right-radius: 8px;

@@ -198,6 +198,7 @@ $gutter-width: 14px;
   }
 }
 
+
 //-----------------------------------------------------------------------------
 // Greyscale an image in rest state
 //-----------------------------------------------------------------------------
@@ -222,7 +223,7 @@ $gutter-width: 14px;
   color: #fff;
   padding: 0.5em 1em;
   border: 1px solid $bdcolor;
-  @include border-radius(1em);
+  @include border-radius(1.25em);
   text-align: center;
   font-weight: bold;
 
@@ -242,8 +243,8 @@ $gutter-width: 14px;
   display: block;
   background-color: $bgcolor;
   color: #fff;
-  padding: 1px 8px;
-  @include border-radius(0.75em);
+  padding: 0.25em 1em;
+  @include border-radius(1em);
   text-align: center;
   font-weight: bold;
 }

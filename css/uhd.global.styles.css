@@ -406,11 +406,11 @@ ul.links li {
   color: #fff;
   padding: 0.5em 1em;
   border: 1px solid #0c87b1;
-  -webkit-border-radius: 1em;
-  -moz-border-radius: 1em;
-  -ms-border-radius: 1em;
-  -o-border-radius: 1em;
-  border-radius: 1em;
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  -ms-border-radius: 1.25em;
+  -o-border-radius: 1.25em;
+  border-radius: 1.25em;
   text-align: center;
   font-weight: bold;
 }
@@ -1031,8 +1031,9 @@ ul.action-links {
   position: relative;
   list-style-image: none;
   list-style-type: none;
-  /* Top-level item is chosen... */
-  /* ...and if it has children... */
+  /* Defaults for selected, top-level (and below) items */
+  /* Special case: top-level item is chosen */
+  /* Special case:  Selected, top-level item has children */
 }
 #block-system-main-menu ul li a {
   display: block;
@@ -1054,6 +1055,9 @@ ul.action-links {
 #block-system-main-menu ul li a:hover {
   background-color: #525252;
 }
+#block-system-main-menu ul li.first.menu-depth-1 a {
+  border-top: 1px solid #333333;
+}
 #block-system-main-menu ul li.active-trail {
   background-color: #333333;
 }
@@ -1065,9 +1069,6 @@ ul.action-links {
   height: 12px;
   width: 12px;
 }
-#block-system-main-menu ul li.first.menu-depth-1 a {
-  border-top: 1px solid #333333;
-}
 #block-system-main-menu ul li.active-trail > a.active {
   color: #fee100;
   background-color: black;
@@ -1076,9 +1077,6 @@ ul.action-links {
   background-position: 0 0;
   height: 12px;
   width: 12px;
-}
-#block-system-main-menu ul li.expanded > a.active {
-  color: #fee100;
 }
 #block-system-main-menu ul li.expanded > a.active:before {
   background-position: 0 -336px;
@@ -1576,11 +1574,11 @@ p.button-test a {
   color: #fff;
   padding: 0.5em 1em;
   border: 1px solid #0c87b1;
-  -webkit-border-radius: 1em;
-  -moz-border-radius: 1em;
-  -ms-border-radius: 1em;
-  -o-border-radius: 1em;
-  border-radius: 1em;
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  -ms-border-radius: 1.25em;
+  -o-border-radius: 1.25em;
+  border-radius: 1.25em;
   text-align: center;
   font-weight: bold;
 }
@@ -1594,78 +1592,6 @@ p.button-test a:hover {
   background-image: -o-linear-gradient(#2e98bc, #1a627b);
   background-image: linear-gradient(#2e98bc, #1a627b);
   border: 1px solid #075069;
-  color: #fff;
-  text-decoration: none;
-}
-
-/* --- Locations radio buttons */
-#location-filter-wrapper ul {
-  list-style-type: none;
-}
-#location-filter-wrapper ul li {
-  display: inline-block;
-}
-#location-filter-wrapper ul li a {
-  display: block;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5eb9d8), color-stop(100%, #2795ba));
-  background-image: -webkit-linear-gradient(#5eb9d8, #2795ba);
-  background-image: -moz-linear-gradient(#5eb9d8, #2795ba);
-  background-image: -o-linear-gradient(#5eb9d8, #2795ba);
-  background-image: linear-gradient(#5eb9d8, #2795ba);
-  color: #fff;
-  padding: 0.5em 1em;
-  border: 1px solid #0c87b1;
-  -webkit-border-radius: 1em;
-  -moz-border-radius: 1em;
-  -ms-border-radius: 1em;
-  -o-border-radius: 1em;
-  border-radius: 1em;
-  text-align: center;
-  font-weight: bold;
-  min-width: 100px;
-  font-weight: bold;
-}
-#location-filter-wrapper ul li a:visited {
-  color: #fff;
-}
-#location-filter-wrapper ul li a:hover {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
-  background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
-  background-image: -moz-linear-gradient(#2e98bc, #1a627b);
-  background-image: -o-linear-gradient(#2e98bc, #1a627b);
-  background-image: linear-gradient(#2e98bc, #1a627b);
-  border: 1px solid #075069;
-  color: #fff;
-  text-decoration: none;
-}
-#location-filter-wrapper ul li a.active {
-  display: block;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000000), color-stop(100%, #000000));
-  background-image: -webkit-linear-gradient(#000000, #000000);
-  background-image: -moz-linear-gradient(#000000, #000000);
-  background-image: -o-linear-gradient(#000000, #000000);
-  background-image: linear-gradient(#000000, #000000);
-  color: #fff;
-  padding: 0.5em 1em;
-  border: 1px solid black;
-  -webkit-border-radius: 1em;
-  -moz-border-radius: 1em;
-  -ms-border-radius: 1em;
-  -o-border-radius: 1em;
-  border-radius: 1em;
-  text-align: center;
-  font-weight: bold;
-}
-#location-filter-wrapper ul li a.active:visited {
-  color: #fff;
-}
-#location-filter-wrapper ul li a.active:hover {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000000), color-stop(100%, #000000));
-  background-image: -webkit-linear-gradient(#000000, #000000);
-  background-image: -moz-linear-gradient(#000000, #000000);
-  background-image: -o-linear-gradient(#000000, #000000);
-  background-image: linear-gradient(#000000, #000000);
-  border: 1px solid black;
   color: #fff;
   text-decoration: none;
 }

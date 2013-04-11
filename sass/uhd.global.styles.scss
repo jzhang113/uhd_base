@@ -1636,7 +1636,7 @@ ul.action-links {
   @include border-top-left-radius(8px);
   @include border-bottom-right-radius(8px);
 
-  // top level menu
+  // Top level menu
   ul {
     margin: 0;
     padding: 0;
@@ -1646,7 +1646,7 @@ ul.action-links {
       list-style-image: none;
       list-style-type: none;
 
-      // default anchor styles
+      // Default anchor styles
       a {
         display: block;
         padding: 10px 24px;
@@ -1668,6 +1668,11 @@ ul.action-links {
         }
       }
 
+      &.first.menu-depth-1 a {
+        border-top: 1px solid $grey_dark_very;
+      }
+
+      /* Defaults for selected, top-level (and below) items */
       &.active-trail {
         background-color: $grey_dark_very;
 
@@ -1680,45 +1685,29 @@ ul.action-links {
         }
       }
 
-      &.first.menu-depth-1 a {
-        border-top: 1px solid $grey_dark_very;
-      }
-
-
-      /* Top-level item is chosen... */
+      /* Special case: top-level item is chosen */
       &.active-trail {
         > a.active {
           color: $hawk_gold;
           background-color: $none_more_black;
 
           &:before {
-            // content: "";
-            // position: absolute;
-            // top: 12px;
-            // left: 4px;
-            // margin-top: 0;
             @include sprites-sprite(menu-right-white, $dimensions: true);
           }
         }
       }
-      /* ...and if it has children... */
-      &.expanded {
 
+      /* Special case:  Selected, top-level item has children */
+      &.expanded {
         > a.active {
-          color: $hawk_gold;
 
           &:before {
             @include sprites-sprite(menu-down-white, $dimensions: true);
           }
-
         }
       }
 
-
-
-
-
-      // second level menus
+      // Second level menus
       ul {
         margin: 0;
         padding: 0;
@@ -1739,15 +1728,6 @@ ul.action-links {
             &:before {
               background-image: none !important;
             }
-
-            // &:after {
-            //   content: "";
-            //   position: absolute;
-            //   top: 50%;
-            //   right: 4px;
-            //   margin-top: -8px;
-            //   @include sprites-sprite(menu-right-gold, $dimensions: true);
-            // }
           }
         }
       }
@@ -2367,28 +2347,6 @@ tr.error {
 
 p.button-test a {
   @include plain-button;
-}
-
-/* --- Locations radio buttons */
-#location-filter-wrapper {
-  
-  ul {
-    list-style-type: none;
-
-    li {
-      display: inline-block;
-
-      a {
-        @include plain-button();
-        min-width: 100px;
-        font-weight: bold;
-
-        &.active {
-          @include plain-button(#000, #000, #000);
-        }
-      }
-    }
-  }
 }
 
 

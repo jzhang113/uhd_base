@@ -248,3 +248,14 @@ $gutter-width: 14px;
   text-align: center;
   font-weight: bold;
 }
+
+
+//-----------------------------------------------------------------------------
+// List view styling
+//-----------------------------------------------------------------------------
+@mixin list-view-styles {
+  margin-bottom: 8px;
+  padding: 8px 0 16px 0;
+  border-bottom: 1px dotted $grey_light_pretty;
+  @include clearfix();
+}

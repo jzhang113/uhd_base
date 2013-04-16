@@ -227,33 +227,11 @@
 
                 </div>
               <?php endif; ?>
-
-
-
-
-
-
-              <?php if ((isset($node)) && (field_get_items('node', $node, 'field_general_page_banner_image'))): ?>
-                <!-- get field info -->
-                <?php $imagefield = field_get_items('node', $node, 'field_general_page_banner_image'); ?>
-                <!-- load file info -->
-                <?php $file = file_load($imagefield[0]['fid']); ?>
-                <!-- render file entity -->
-                <?php print render(file_view($file, 'uhd_basic_masthead'));?>
-                <h1 id="page-title" class="page-banner-image-exists"><?php print $title; ?></h1>
+              <!-- Check to see if the title is being controlled elsewhere. -->
+              <?php if (!empty($title_override)): ?>
               <?php else: ?>
                 <h1 id="page-title"><?php print $title; ?></h1>
               <?php endif; ?>
-
-
-
-
-
-
-
-
-
-
             </header>
           <?php endif; ?>
 

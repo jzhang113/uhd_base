@@ -1595,3 +1595,25 @@ p.button-test a:hover {
   color: #fff;
   text-decoration: none;
 }
+
+/* =============================================================================
+ *   Editing interface
+ * ========================================================================== */
+.panels-choose-layout img {
+  border: 6px solid transparent;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
+}
+.panels-choose-layout img:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  border: 6px solid #cccccc;
+}
+.panels-choose-layout .current-layout img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  border: 6px solid #fee100;
+}
+.panels-choose-layout .current-layout img:hover {
+  border: 6px solid #fee100;
+}

@@ -2349,8 +2349,33 @@ p.button-test a {
   @include plain-button;
 }
 
+/* =============================================================================
+ *   Editing interface
+ * ========================================================================== */
+.panels-choose-layout {
 
+  img {
+    border: 6px solid transparent;
+    @include opacity(0.75);
 
+    &:hover {
+      @include opacity(1.0);
+      border: 6px solid $grey_light_very;
+    }
+  }
+
+  .current-layout {
+
+    img {
+      @include opacity(1.0);
+      border: 6px solid $hawk_gold;
+
+      &:hover {
+        border: 6px solid $hawk_gold;
+      }
+    }
+  }
+}
 
 
 

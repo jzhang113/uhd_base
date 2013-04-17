@@ -152,7 +152,7 @@
               <a href="http://uhd.uiowa.edu/">UH&amp;D Admin</a>
             </li>
           </ul>
-          <!-- end: Sites menu -->
+          <!-- end: UH&D sites menu -->
 
           <!--HERE-->
 

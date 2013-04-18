@@ -2331,27 +2331,17 @@ tr.error {
   padding: 10px 0 10px 10px;
 }
 
-
 @import "responsive.custom";
 
 
-/* ------------------------------------------------------------
-   ------------------------------------------------------------ */
 
-.block-masquerade {
-  margin: 12px 24px 12px 0;
-  padding: 12px;
-  background-color: $grey_light_very;
-  @include border-right-radius(8px);
-}
 
-p.button-test a {
-  @include plain-button;
-}
 
 /* =============================================================================
  *   Editing interface
  * ========================================================================== */
+
+/* --- Selection of panel layout */
 .panels-choose-layout {
 
   img {
@@ -2377,6 +2367,13 @@ p.button-test a {
   }
 }
 
+/* --- Masquerade form */
+.block-masquerade {
+  margin: 12px 24px 12px 0;
+  padding: 12px;
+  background-color: $grey_light_very;
+  @include border-right-radius(8px);
+}
 
 
 

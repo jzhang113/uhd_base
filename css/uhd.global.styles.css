@@ -1550,55 +1550,10 @@ div.messages ul {
  * Desktops/laptops and up
  */
 /* @media only screen and (min-width: 1025px) {} */
-/* ------------------------------------------------------------
-   ------------------------------------------------------------ */
-.block-masquerade {
-  margin: 12px 24px 12px 0;
-  padding: 12px;
-  background-color: #cccccc;
-  -moz-border-radius-topright: 8px;
-  -webkit-border-top-right-radius: 8px;
-  border-top-right-radius: 8px;
-  -moz-border-radius-bottomright: 8px;
-  -webkit-border-bottom-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-
-p.button-test a {
-  display: block;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5eb9d8), color-stop(100%, #2795ba));
-  background-image: -webkit-linear-gradient(#5eb9d8, #2795ba);
-  background-image: -moz-linear-gradient(#5eb9d8, #2795ba);
-  background-image: -o-linear-gradient(#5eb9d8, #2795ba);
-  background-image: linear-gradient(#5eb9d8, #2795ba);
-  color: #fff;
-  padding: 0.5em 1em;
-  border: 1px solid #0c87b1;
-  -webkit-border-radius: 1.25em;
-  -moz-border-radius: 1.25em;
-  -ms-border-radius: 1.25em;
-  -o-border-radius: 1.25em;
-  border-radius: 1.25em;
-  text-align: center;
-  font-weight: bold;
-}
-p.button-test a:visited {
-  color: #fff;
-}
-p.button-test a:hover {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
-  background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
-  background-image: -moz-linear-gradient(#2e98bc, #1a627b);
-  background-image: -o-linear-gradient(#2e98bc, #1a627b);
-  background-image: linear-gradient(#2e98bc, #1a627b);
-  border: 1px solid #075069;
-  color: #fff;
-  text-decoration: none;
-}
-
 /* =============================================================================
  *   Editing interface
  * ========================================================================== */
+/* --- Selection of panel layout */
 .panels-choose-layout img {
   border: 6px solid transparent;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
@@ -1616,4 +1571,17 @@ p.button-test a:hover {
 }
 .panels-choose-layout .current-layout img:hover {
   border: 6px solid #fee100;
+}
+
+/* --- Masquerade form */
+.block-masquerade {
+  margin: 12px 24px 12px 0;
+  padding: 12px;
+  background-color: #cccccc;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }

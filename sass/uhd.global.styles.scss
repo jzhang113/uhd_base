@@ -2384,5 +2384,33 @@ tr.error {
 }
 
 
+/* =============================================================================
+ *   UHD header content
+ * ========================================================================== */
+
+/* --- Basic page */
+body.page-node {
+
+  .uhd-header-content {
+    position: relative;
+    margin-bottom: 12px;
+
+    .field-name-field-general-page-banner-image {
+      img {
+        margin: -14px 0 0 -14px;  // _HACK: Look for a better way to find the origin.
+        max-width: 855px;  // _HACK:  Perhaps it will do until Phase 2: The Reckoning
+      }
+    }
+
+    h1#page-title {
+      position: absolute;
+      bottom: 12px;
+      color: white;
+      z-index: 490;
+      @include text-shadow(rgba(black, 0.4) 1px 1px 0, rgba(black, 0.4) 2px 2px 0, rgba(black, 0.4) 3px 3px 0);
+    }
+  }
+}
+
 
 

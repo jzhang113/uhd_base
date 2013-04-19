@@ -40,11 +40,12 @@
 
 html {
   background: $page;
+  font-size: 62.5%;
 }
 
 body {
   font-family: $sans-serif-small; // Set from _custom.scss font variables
-  font-size: 87.5%;
+  @include font-size(1.4);
 }
 
 
@@ -182,6 +183,7 @@ var {
  */
 #main-content {
   margin-top: 14px;
+  @include font-size(1.6);
 }
 
 

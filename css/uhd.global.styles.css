@@ -1613,3 +1613,124 @@ body.page-node .uhd-header-content h1#page-title {
   z-index: 490;
   text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0, rgba(0, 0, 0, 0.4) 2px 2px 0, rgba(0, 0, 0, 0.4) 3px 3px 0;
 }
+
+/* --- Location node (housing or dining) */
+body.node-type-location .uhd-header-content {
+  position: relative;
+  margin-bottom: 12px;
+}
+body.node-type-location .uhd-header-content h1#page-title {
+  position: absolute;
+  bottom: 12px;
+  color: white;
+  z-index: 490;
+  text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0, rgba(0, 0, 0, 0.4) 2px 2px 0, rgba(0, 0, 0, 0.4) 3px 3px 0;
+}
+body.node-type-location .uhd-header-content ul {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  margin: 0;
+  z-index: 499;
+  list-style-type: none;
+}
+body.node-type-location .uhd-header-content ul li {
+  margin: 0 0 12px 0;
+  text-align: right;
+}
+body.node-type-location .uhd-header-content ul li a {
+  position: relative;
+  border: 1px solid white !important;
+}
+body.node-type-location .uhd-header-content ul li a:after {
+  content: "  >";
+}
+body.node-type-location .uhd-header-content ul li a.inside-link {
+  display: block;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5eb9d8), color-stop(100%, #2795ba));
+  background-image: -webkit-linear-gradient(#5eb9d8, #2795ba);
+  background-image: -moz-linear-gradient(#5eb9d8, #2795ba);
+  background-image: -o-linear-gradient(#5eb9d8, #2795ba);
+  background-image: linear-gradient(#5eb9d8, #2795ba);
+  color: #fff;
+  padding: 0.5em 1em;
+  border: 1px solid #0c87b1;
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  -ms-border-radius: 1.25em;
+  -o-border-radius: 1.25em;
+  border-radius: 1.25em;
+  text-align: center;
+  font-weight: bold;
+  padding-left: 48px;
+  font-size: 140%;
+  text-align: left;
+}
+body.node-type-location .uhd-header-content ul li a.inside-link:visited {
+  color: #fff;
+}
+body.node-type-location .uhd-header-content ul li a.inside-link:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
+  background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
+  background-image: -moz-linear-gradient(#2e98bc, #1a627b);
+  background-image: -o-linear-gradient(#2e98bc, #1a627b);
+  background-image: linear-gradient(#2e98bc, #1a627b);
+  border: 1px solid #075069;
+  color: #fff;
+  text-decoration: none;
+}
+body.node-type-location .uhd-header-content ul li a.inside-link:before {
+  content: url("images/inside-location.png");
+  position: absolute;
+  z-index: 666;
+  left: 8px;
+  top: 4px;
+}
+body.node-type-location .uhd-header-content ul li a.maps-mail-link {
+  display: block;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5eb9d8), color-stop(100%, #2795ba));
+  background-image: -webkit-linear-gradient(#5eb9d8, #2795ba);
+  background-image: -moz-linear-gradient(#5eb9d8, #2795ba);
+  background-image: -o-linear-gradient(#5eb9d8, #2795ba);
+  background-image: linear-gradient(#5eb9d8, #2795ba);
+  color: #fff;
+  padding: 0.5em 1em;
+  border: 1px solid #0c87b1;
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  -ms-border-radius: 1.25em;
+  -o-border-radius: 1.25em;
+  border-radius: 1.25em;
+  text-align: center;
+  font-weight: bold;
+  padding-left: 54px;
+  font-size: 120%;
+  text-align: left;
+}
+body.node-type-location .uhd-header-content ul li a.maps-mail-link:visited {
+  color: #fff;
+}
+body.node-type-location .uhd-header-content ul li a.maps-mail-link:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
+  background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
+  background-image: -moz-linear-gradient(#2e98bc, #1a627b);
+  background-image: -o-linear-gradient(#2e98bc, #1a627b);
+  background-image: linear-gradient(#2e98bc, #1a627b);
+  border: 1px solid #075069;
+  color: #fff;
+  text-decoration: none;
+}
+body.node-type-location .uhd-header-content ul li a.maps-mail-link:before {
+  content: url("images/mail-and-map.png");
+  position: absolute;
+  z-index: 666;
+  left: 12px;
+  top: 2px;
+}
+body.node-type-location .uhd-header-content .field-name-field-location-header-image img {
+  margin: -14px 0 0 -14px;
+  max-width: 855px;
+}
+body.node-type-location h2.field-label {
+  font-size: 1.6em;
+}

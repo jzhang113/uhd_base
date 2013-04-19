@@ -256,6 +256,7 @@ $gutter-width: 14px;
 @mixin list-view-styles {
   margin: 8px 0;
   padding: 10px;
+  @include border-radius(8px);
   @include clearfix();
 
   &.views-row-odd, &.odd {

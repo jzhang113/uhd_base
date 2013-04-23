@@ -454,7 +454,6 @@ body.site-name-mothership ul#uhd-sites-links li.mothership {
   position: absolute;
   top: 0;
   z-index: 500;
-  width: 100%;
 
   // #breadcrumb {
   //   margin: 18px 0 0 0;
@@ -1177,6 +1176,7 @@ ul.pager li {
 
 #tasks {
   margin-bottom: 0;
+  z-index: 999;
 }
 
 ul.primary {

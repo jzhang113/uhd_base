@@ -81,6 +81,9 @@ body.site-name-mothership ul#uhd-sites-links li.mothership, #block-system-main-m
   #content-wrapper .container {
     padding-top: 23px !important;
   }
+  #content-wrapper .container #uhd-title-bar {
+    width: 100%;
+  }
 
   #footer-wrapper {
     border-top: 2px solid #fee100 !important;
@@ -423,7 +426,6 @@ body.site-name-mothership ul#uhd-sites-links li.mothership a:hover {
   position: absolute;
   top: 0;
   z-index: 500;
-  width: 100%;
 }
 
 h1#page-title {
@@ -882,6 +884,7 @@ ul.pager li.pager-current {
  * ========================================================================== */
 #tasks {
   margin-bottom: 0;
+  z-index: 999;
 }
 
 ul.primary {

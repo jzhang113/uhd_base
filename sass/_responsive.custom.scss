@@ -26,9 +26,12 @@
 /* @media only screen and (min-width: 320px) {} */
 
 
-/*
- * Smartphone sizes and down
- */
+/* =================================================================================================
+   Smartphone sizes and down
+   ================================================================================================= */
+
+   // N.B. All !importants should disappear when the desktop styles are moved in here, too
+
 @media only screen and (max-width: 480px) {
 
   /*
@@ -46,7 +49,94 @@
     float: none;
     width: 100%;
   }
-}
+
+  // div#header-wrapper {
+  //   border-bottom-width: 4px;
+
+  //   h2#org-title {
+  //     font-size: 100%;
+  //   }
+
+  //   ul#uhd-sites-links { 
+  //     display: none; 
+  //   }
+  // }
+
+
+
+  
+
+
+  div#branding {
+    margin: 0 6px !important;
+    width: 40%;
+    height: 40%;
+  }
+  #columns {
+    border-top-left-radius: 0 !important;
+  }
+  
+  h1#page-title {
+    font-size: 120%
+  }
+
+  nav#block-system-main-menu {
+    margin: 0 !important;
+    padding: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    
+  }
+
+  #header-wrapper {
+    border-bottom: 2px solid $hawk_gold !important;
+
+    .container {
+
+      #header {
+
+        h2#org-title {
+          margin: 4px 8px !important;
+          @include font-size(1.0);
+        }
+
+        ul#uhd-sites-links {
+          display: none;
+        }
+      }
+    }
+  }
+
+  #content-wrapper {
+
+    .container {
+      padding-top: 23px !important;
+
+    }
+  }
+
+  #footer-wrapper {
+    border-top: 2px solid $hawk_gold !important;
+
+    .container {
+      padding-top: 32px !important;
+
+      .more-info {
+        margin: 0 !important;
+      }
+      .uhd-department-link {
+        margin-top: 8px;
+      }
+
+      ul.uhd-footer-links {
+        li {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+} // END smartphone ------------------------------------------------------------------------------------------------
+  
 
 
 /*
@@ -54,11 +144,11 @@
  */
 @media only screen and (min-width: 768px) {
   #nav-link {
-    display: none;
+    display: none !important;
   }
 
-  #back-to-top {
-    display: none;
+  .back-to-top-link {
+    display: none !important;
   }
 
   .uhd-department-description {

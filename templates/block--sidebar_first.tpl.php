@@ -90,7 +90,9 @@
 
   <?php print $content_processed; ?>
 
-  <a id="back-to-top" href="#top">Back to top</a>
-
   <?php print render($title_suffix); ?>
+
 <?php print $inner_suffix . $outer_suffix; ?>
+<div class="back-to-top-link">
+	<a href="#top">Back to top</a>
+</div>

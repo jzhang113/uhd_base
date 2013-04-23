@@ -454,6 +454,7 @@ body.site-name-mothership ul#uhd-sites-links li.mothership {
   position: absolute;
   top: 0;
   z-index: 500;
+  width: 100%;
 
   // #breadcrumb {
   //   margin: 18px 0 0 0;
@@ -2320,31 +2321,6 @@ tr.error {
   }
 }
 
-/* =============================================================================
- *   Prototyping - temporary
- * ========================================================================== */
-#nav-link {
-  float: right;
-  display: block;
-  padding: 5px 10px 5px 10px;
-  background-color: lighten(#333333, 20%);
-  color: $light;
-  margin: 5px;
-  @include border-radius(2px);
-}
-
-#back-to-top {
-  display: block;
-  background-color: lighten(#333333, 20%);
-  color: lighten(#107acb, 20%);
-  margin-top: -15px;
-  padding: 10px 0 10px 10px;
-}
-
-@import "responsive.custom";
-
-
-
 
 
 /* =============================================================================
@@ -2384,6 +2360,7 @@ tr.error {
   background-color: $grey_light_very;
   @include border-right-radius(8px);
 }
+
 
 
 /* =============================================================================
@@ -2490,5 +2467,55 @@ body.node-type-location {
 
   h2.field-label {
     font-size: 1.6em;  // _HACK:  Needs to be based in rem or something and not ancient myth and hearsay.
+  }
+}
+
+
+
+
+
+
+
+
+#nav-link {
+  position: relative;
+  float: right;
+  //@include plain-button($grey_dark_very, $grey_dark_pretty, white);
+  @include plain-button;
+  margin: 4px 8px;
+  padding: 2px 12px 2px 42px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    margin-top: 0;
+    @include sprites-sprite(hamburger-menu, $dimensions: true);
+  }
+}
+
+.back-to-top-link {
+  display: block;
+  width: 100%;
+  background-color: white;
+  @include clearfix;
+
+  a {
+    position: relative;
+    float: right;
+    //@include plain-button($grey_dark_very, $grey_dark_pretty, white);
+    @include plain-button;
+    margin: 4px;
+    padding: 4px 12px 4px 30px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      margin-top: 0;
+      @include sprites-sprite(menu-up-white, $dimensions: true);
+    }
   }
 }

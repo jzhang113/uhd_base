@@ -2,10 +2,154 @@
 body.site-name-university-dining ul#uhd-sites-links li.dining,
 body.site-name-university-catering ul#uhd-sites-links li.catering,
 body.site-name-university-vending ul#uhd-sites-links li.vending,
-body.site-name-mothership ul#uhd-sites-links li.mothership, #block-system-main-menu ul li a:before, #block-system-main-menu ul li.active-trail a.active-trail:before, #block-system-main-menu ul li.active-trail > a.active:before, #block-system-main-menu ul li.expanded > a.active:before {
-  background: url('images/sprites-s744dbb7827.png') no-repeat;
+body.site-name-mothership ul#uhd-sites-links li.mothership, #block-system-main-menu ul li a:before, #block-system-main-menu ul li.active-trail a.active-trail:before, #block-system-main-menu ul li.active-trail > a.active:before, #block-system-main-menu ul li.expanded > a.active:before, #nav-link:before, .back-to-top-link a:before {
+  background: url('images/sprites-s607b03c010.png') no-repeat;
 }
 
+/*
+ * responsive.custom.css is for custom media queries that are not set via the
+ * theme settings, such as cascading media queries.
+ *
+ * By default all the other responsive stylesheets used in Adaptivetheme use a
+ * "stacking method", however cascading media queries use a waterfall method so
+ * you can leverage the cascade and inheritance for all browsers that support
+ * media queries, regardless of screen size.
+ *
+ * @SEE http://zomigi.com/blog/essential-considerations-for-crafting-quality-media-queries/#mq-overlap-stack
+ *
+ */
+/*
+ * Really small screens and up
+ */
+/*
+ * Smartphone sizes and up
+ */
+/* @media only screen and (min-width: 320px) {} */
+/* =================================================================================================
+   Smartphone sizes and down
+   ================================================================================================= */
+@media only screen and (max-width: 480px) {
+  /*
+   * Float Region blocks example:
+   * In smaller screen sizes we can remove the float and widths so all blocks
+   * stack instead of displaying horizonally. The selector used here is an
+   * "attribute selector" which will match on any float block class. Use your
+   * inspector or Firebug to get the classes from the page output if you need
+   * more granular control over block alignment and stacking.
+   *
+   * "Float Region blocks" is an extension for floating blocks in regions, see
+   * your themes appearance settings, under the Extensions tab.
+   */
+  .region[class*="float-blocks"] .block {
+    float: none;
+    width: 100%;
+  }
+
+  div#branding {
+    margin: 0 6px !important;
+    width: 40%;
+    height: 40%;
+  }
+
+  #columns {
+    border-top-left-radius: 0 !important;
+  }
+
+  h1#page-title {
+    font-size: 120%;
+  }
+
+  nav#block-system-main-menu {
+    margin: 0 !important;
+    padding: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #header-wrapper {
+    border-bottom: 2px solid #fee100 !important;
+  }
+  #header-wrapper .container #header h2#org-title {
+    margin: 4px 8px !important;
+    font-size: 10px;
+    font-size: 1rem;
+  }
+  #header-wrapper .container #header ul#uhd-sites-links {
+    display: none;
+  }
+
+  #content-wrapper .container {
+    padding-top: 23px !important;
+  }
+
+  #footer-wrapper {
+    border-top: 2px solid #fee100 !important;
+  }
+  #footer-wrapper .container {
+    padding-top: 32px !important;
+  }
+  #footer-wrapper .container .more-info {
+    margin: 0 !important;
+  }
+  #footer-wrapper .container .uhd-department-link {
+    margin-top: 8px;
+  }
+  #footer-wrapper .container ul.uhd-footer-links li {
+    width: 100% !important;
+  }
+}
+/*
+ * Tablet sizes and up
+ */
+@media only screen and (min-width: 768px) {
+  #nav-link {
+    display: none !important;
+  }
+
+  .back-to-top-link {
+    display: none !important;
+  }
+
+  .uhd-department-description {
+    float: left;
+    width: 75%;
+  }
+
+  .uhd-department-link {
+    float: right;
+    width: 20%;
+  }
+
+  .uhd-wordmark-wrapper {
+    width: 20%;
+    padding-right: none;
+  }
+
+  ul.uhd-footer-links {
+    width: 75%;
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+  ul.uhd-footer-links li {
+    float: left;
+    width: 25%;
+  }
+  ul.uhd-footer-links li ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  ul.uhd-footer-links li ul li {
+    display: block;
+    float: none;
+    width: auto;
+  }
+}
+/*
+ * Desktops/laptops and up
+ */
+/* @media only screen and (min-width: 1025px) {} */
 /*
  * @file
  * global.styles
@@ -279,6 +423,7 @@ body.site-name-mothership ul#uhd-sites-links li.mothership a:hover {
   position: absolute;
   top: 0;
   z-index: 500;
+  width: 100%;
 }
 
 h1#page-title {
@@ -1447,122 +1592,6 @@ div.messages ul {
 }
 
 /* =============================================================================
- *   Prototyping - temporary
- * ========================================================================== */
-#nav-link {
-  float: right;
-  display: block;
-  padding: 5px 10px 5px 10px;
-  background-color: #666666;
-  color: #eeeeee;
-  margin: 5px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-}
-
-#back-to-top {
-  display: block;
-  background-color: #666666;
-  color: #50abf1;
-  margin-top: -15px;
-  padding: 10px 0 10px 10px;
-}
-
-/*
- * responsive.custom.css is for custom media queries that are not set via the
- * theme settings, such as cascading media queries.
- *
- * By default all the other responsive stylesheets used in Adaptivetheme use a
- * "stacking method", however cascading media queries use a waterfall method so
- * you can leverage the cascade and inheritance for all browsers that support
- * media queries, regardless of screen size.
- *
- * @SEE http://zomigi.com/blog/essential-considerations-for-crafting-quality-media-queries/#mq-overlap-stack
- *
- */
-/*
- * Really small screens and up
- */
-/*
- * Smartphone sizes and up
- */
-/* @media only screen and (min-width: 320px) {} */
-/*
- * Smartphone sizes and down
- */
-@media only screen and (max-width: 480px) {
-  /*
-   * Float Region blocks example:
-   * In smaller screen sizes we can remove the float and widths so all blocks
-   * stack instead of displaying horizonally. The selector used here is an
-   * "attribute selector" which will match on any float block class. Use your
-   * inspector or Firebug to get the classes from the page output if you need
-   * more granular control over block alignment and stacking.
-   *
-   * "Float Region blocks" is an extension for floating blocks in regions, see
-   * your themes appearance settings, under the Extensions tab.
-   */
-  .region[class*="float-blocks"] .block {
-    float: none;
-    width: 100%;
-  }
-}
-/*
- * Tablet sizes and up
- */
-@media only screen and (min-width: 768px) {
-  #nav-link {
-    display: none;
-  }
-
-  #back-to-top {
-    display: none;
-  }
-
-  .uhd-department-description {
-    float: left;
-    width: 75%;
-  }
-
-  .uhd-department-link {
-    float: right;
-    width: 20%;
-  }
-
-  .uhd-wordmark-wrapper {
-    width: 20%;
-    padding-right: none;
-  }
-
-  ul.uhd-footer-links {
-    width: 75%;
-    float: right;
-    margin: 0;
-    padding: 0;
-  }
-  ul.uhd-footer-links li {
-    float: left;
-    width: 25%;
-  }
-  ul.uhd-footer-links li ul {
-    display: block;
-    margin: 0;
-    padding: 0;
-  }
-  ul.uhd-footer-links li ul li {
-    display: block;
-    float: none;
-    width: auto;
-  }
-}
-/*
- * Desktops/laptops and up
- */
-/* @media only screen and (min-width: 1025px) {} */
-/* =============================================================================
  *   Editing interface
  * ========================================================================== */
 /* --- Selection of panel layout */
@@ -1737,4 +1766,103 @@ body.node-type-location .uhd-header-content .field-name-field-location-header-im
 }
 body.node-type-location h2.field-label {
   font-size: 1.6em;
+}
+
+#nav-link {
+  position: relative;
+  float: right;
+  display: block;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5eb9d8), color-stop(100%, #2795ba));
+  background-image: -webkit-linear-gradient(#5eb9d8, #2795ba);
+  background-image: -moz-linear-gradient(#5eb9d8, #2795ba);
+  background-image: -o-linear-gradient(#5eb9d8, #2795ba);
+  background-image: linear-gradient(#5eb9d8, #2795ba);
+  color: #fff;
+  padding: 0.5em 1em;
+  border: 1px solid #0c87b1;
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  -ms-border-radius: 1.25em;
+  -o-border-radius: 1.25em;
+  border-radius: 1.25em;
+  text-align: center;
+  font-weight: bold;
+  margin: 4px 8px;
+  padding: 2px 12px 2px 42px;
+}
+#nav-link:visited {
+  color: #fff;
+}
+#nav-link:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
+  background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
+  background-image: -moz-linear-gradient(#2e98bc, #1a627b);
+  background-image: -o-linear-gradient(#2e98bc, #1a627b);
+  background-image: linear-gradient(#2e98bc, #1a627b);
+  border: 1px solid #075069;
+  color: #fff;
+  text-decoration: none;
+}
+#nav-link:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  margin-top: 0;
+  background-position: 0 -504px;
+  height: 21px;
+  width: 28px;
+}
+
+.back-to-top-link {
+  display: block;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  *zoom: 1;
+}
+.back-to-top-link a {
+  position: relative;
+  float: right;
+  display: block;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5eb9d8), color-stop(100%, #2795ba));
+  background-image: -webkit-linear-gradient(#5eb9d8, #2795ba);
+  background-image: -moz-linear-gradient(#5eb9d8, #2795ba);
+  background-image: -o-linear-gradient(#5eb9d8, #2795ba);
+  background-image: linear-gradient(#5eb9d8, #2795ba);
+  color: #fff;
+  padding: 0.5em 1em;
+  border: 1px solid #0c87b1;
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  -ms-border-radius: 1.25em;
+  -o-border-radius: 1.25em;
+  border-radius: 1.25em;
+  text-align: center;
+  font-weight: bold;
+  margin: 4px;
+  padding: 4px 12px 4px 30px;
+}
+.back-to-top-link a:visited {
+  color: #fff;
+}
+.back-to-top-link a:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
+  background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
+  background-image: -moz-linear-gradient(#2e98bc, #1a627b);
+  background-image: -o-linear-gradient(#2e98bc, #1a627b);
+  background-image: linear-gradient(#2e98bc, #1a627b);
+  border: 1px solid #075069;
+  color: #fff;
+  text-decoration: none;
+}
+.back-to-top-link a:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  margin-top: 0;
+  background-position: 0 -420px;
+  height: 12px;
+  width: 12px;
 }

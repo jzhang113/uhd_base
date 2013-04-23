@@ -128,7 +128,6 @@
     <div id="header-wrapper">
       <div class="container clearfix">
         <header<?php print $header_attributes; ?>>
-          <a id="nav-link" href="#block-system-main-menu">Nav</a>
 
           <!-- start: UH&D title -->
           <h2 id="org-title">University Housing &amp; Dining</h2>
@@ -169,6 +168,7 @@
           <?php print $breadcrumb; ?>
         <?php endif; ?>
 
+        <a id="nav-link" href="#block-system-main-menu">Nav</a>
 
         <?php if ($site_logo || $site_name || $site_slogan): ?>
           <!-- start: Branding -->

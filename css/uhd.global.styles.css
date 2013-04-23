@@ -18,13 +18,8 @@ body.site-name-mothership ul#uhd-sites-links li.mothership, #block-system-main-m
  * @SEE http://zomigi.com/blog/essential-considerations-for-crafting-quality-media-queries/#mq-overlap-stack
  *
  */
-/*
- * Really small screens and up
- */
-/*
- * Smartphone sizes and up
- */
-/* @media only screen and (min-width: 320px) {} */
+/* Really small screens and up */
+/* Smartphone sizes and up */
 /* =================================================================================================
    Smartphone sizes and down
    ================================================================================================= */
@@ -95,16 +90,63 @@ body.site-name-mothership ul#uhd-sites-links li.mothership, #block-system-main-m
     margin: 0 !important;
   }
   #footer-wrapper .container .uhd-department-link {
-    margin-top: 8px;
+    margin: 8px;
+  }
+  #footer-wrapper .container ul.uhd-footer-links {
+    list-style-type: none !important;
   }
   #footer-wrapper .container ul.uhd-footer-links li {
     width: 100% !important;
+    border-left: none;
+    list-style-type: none !important;
   }
 }
-/*
- * Tablet sizes and up
- */
+/* END smartphone ================================================================================ */
+/* =================================================================================================
+   Tablet sizes
+   ================================================================================================= */
 @media only screen and (min-width: 768px) {
+  .uhd-department-description {
+    float: left;
+    width: 75%;
+  }
+
+  .uhd-department-link {
+    float: right;
+    width: 20%;
+  }
+
+  .uhd-wordmark-wrapper {
+    width: 20%;
+    padding-right: none;
+  }
+
+  ul.uhd-footer-links {
+    width: 75%;
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+  ul.uhd-footer-links li {
+    float: left;
+    width: 25%;
+  }
+  ul.uhd-footer-links li ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  ul.uhd-footer-links li ul li {
+    display: block;
+    float: none;
+    width: auto;
+  }
+}
+/* END tablets ================================================================================ */
+/* =================================================================================================
+   Desktop sizes
+   ================================================================================================= */
+@media only screen and (min-width: 1024px) {
   #nav-link {
     display: none !important;
   }
@@ -149,10 +191,7 @@ body.site-name-mothership ul#uhd-sites-links li.mothership, #block-system-main-m
     width: auto;
   }
 }
-/*
- * Desktops/laptops and up
- */
-/* @media only screen and (min-width: 1025px) {} */
+/* END desktops ================================================================================ */
 /*
  * @file
  * global.styles

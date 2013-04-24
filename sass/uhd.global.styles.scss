@@ -202,7 +202,10 @@ var {
 /*
  * Panels may need additional margin wrangling when in the $content region
  */
-#content .panel-display {}
+#content .panel-display {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 
 /*

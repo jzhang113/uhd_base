@@ -299,6 +299,11 @@ var {
 /*
  * Panels may need additional margin wrangling when in the $content region
  */
+#content .panel-display {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /*
  * Full Width Wrappers
  * These are used in the optional page--full-width-wrappers.tpl.php template.

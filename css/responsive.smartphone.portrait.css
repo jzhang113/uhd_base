@@ -101,7 +101,14 @@
 /* =================================================================================================
    Tablet sizes
    ================================================================================================= */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
+  nav#block-system-main-menu {
+    margin: 0 !important;
+    padding: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
   .uhd-department-description {
     float: left;
     width: 75%;
@@ -140,9 +147,9 @@
 }
 /* END tablets ================================================================================ */
 /* =================================================================================================
-   Desktop sizes
+   ALMOST Desktop sizes, but thinner than full page
    ================================================================================================= */
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1140px) {
   #nav-link {
     display: none !important;
   }

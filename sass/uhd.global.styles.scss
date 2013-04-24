@@ -1723,33 +1723,36 @@ ul.action-links {
         margin: 0;
         padding: 0;
 
-        // Second level menu item assigned .active-trail
-        // This could be assigned by the actual menu structure or by the menu_trail_by_path module
+        li {
 
-        // Anchor styles for second level items are different
-        a {
-          padding: 6px 24px 6px 48px;
-          text-indent: -12px;
-          
-          &:before {
-            background-image: none;
-          }
+          // Second level menu item assigned .active-trail
+          // This could be assigned by the actual menu structure or by the menu_trail_by_path module
 
-          /* Special case: top-level item is chosen */
-          &.active-trail {
-            // color: $hawk_gold;
-            // background-color: $none_more_black;
-
-            &:before {
-              background-image: none;
-            }
-          }
-
-          &.active {
-            background-color: $none_more_black;
-
+          // Anchor styles for second level items are different
+          a {
+            padding: 6px 24px 6px 48px;
+            text-indent: -12px;
+            
             &:before {
               background-image: none !important;
+            }
+
+            /* Special case: top-level item is chosen */
+            &.active-trail {
+              color: $hawk_gold;
+              background-color: $none_more_black;
+
+              &:before {
+                background-image: none;
+              }
+            }
+
+            &.active {
+              background-color: $none_more_black;
+
+              &:before {
+                background-image: none !important;
+              }
             }
           }
         }

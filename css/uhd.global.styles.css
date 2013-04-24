@@ -1293,21 +1293,25 @@ ul.action-links {
   margin: 0;
   padding: 0;
 }
-#block-system-main-menu ul li ul a {
+#block-system-main-menu ul li ul li a {
   padding: 6px 24px 6px 48px;
   text-indent: -12px;
   /* Special case: top-level item is chosen */
 }
-#block-system-main-menu ul li ul a:before {
-  background-image: none;
+#block-system-main-menu ul li ul li a:before {
+  background-image: none !important;
 }
-#block-system-main-menu ul li ul a.active-trail:before {
-  background-image: none;
-}
-#block-system-main-menu ul li ul a.active {
+#block-system-main-menu ul li ul li a.active-trail {
+  color: #fee100;
   background-color: black;
 }
-#block-system-main-menu ul li ul a.active:before {
+#block-system-main-menu ul li ul li a.active-trail:before {
+  background-image: none;
+}
+#block-system-main-menu ul li ul li a.active {
+  background-color: black;
+}
+#block-system-main-menu ul li ul li a.active:before {
   background-image: none !important;
 }
 

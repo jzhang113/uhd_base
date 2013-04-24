@@ -36,6 +36,11 @@
     width: 100%;
   }
 
+  .panel-display {
+    margin-left: -14px;
+    margin-right: -14px;
+  }
+
   div#branding {
     margin: 0 6px !important;
     width: 40%;
@@ -85,8 +90,14 @@
   #footer-wrapper .container .more-info {
     margin: 0 !important;
   }
-  #footer-wrapper .container .uhd-department-link {
+  #footer-wrapper .container .more-info .uhd-department-description {
     margin: 8px;
+    width: 100%;
+  }
+  #footer-wrapper .container .more-info .uhd-department-link {
+    float: right;
+    margin: 12px 8px;
+    width: 80%;
   }
   #footer-wrapper .container ul.uhd-footer-links {
     list-style-type: none !important;
@@ -95,6 +106,12 @@
     width: 100% !important;
     border-left: none;
     list-style-type: none !important;
+  }
+  #footer-wrapper .container ul.uhd-footer-links li.home {
+    text-align: center;
+  }
+  #footer-wrapper .container ul.uhd-footer-links li.home img {
+    max-width: 60%;
   }
 }
 /* END smartphone ================================================================================ */
@@ -691,12 +708,6 @@ div.messages {
  * Panel pages need negative margin equal to the gutter width applied to #content,
  * this is taken care of in theme settings as per above for normal gutters
  */
-#content .panel-display,
-#content .panel-flexible {
-  margin-left: -14px;
-  margin-right: -14px;
-}
-
 /* =============================================================================
     Flexible Media and Cross browser improvements
    ========================================================================== */

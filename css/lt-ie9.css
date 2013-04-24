@@ -149,7 +149,7 @@
 /* =================================================================================================
    ALMOST Desktop sizes, but thinner than full page
    ================================================================================================= */
-@media only screen and (max-width: 1140px) {
+@media only screen and (min-width: 1140px) {
   #nav-link {
     display: none !important;
   }

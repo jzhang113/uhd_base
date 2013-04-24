@@ -1215,9 +1215,9 @@ ul.action-links {
 /*
  * "Popular content" block
  */
-/*
- * "Main menu" block
- */
+/* ==================================================================================================
+   Main menu block
+   ================================================================================================== */
 #block-system-main-menu {
   padding-top: 20px;
   padding-bottom: 12px;
@@ -1302,6 +1302,7 @@ ul.action-links {
   background-image: none !important;
 }
 #block-system-main-menu ul li ul li a.active-trail {
+  color: #fee100;
   background-color: black;
 }
 #block-system-main-menu ul li ul li a.active-trail:before {
@@ -1316,6 +1317,12 @@ ul.action-links {
 }
 #block-system-main-menu ul li ul li a:hover {
   background-color: #525252 !important;
+}
+#block-system-main-menu ul li ul li.expanded.active-trail > a.active-trail {
+  color: white;
+}
+#block-system-main-menu ul li ul li.expanded.active-trail > a.active {
+  color: #fee100;
 }
 #block-system-main-menu ul li ul li ul li a {
   padding-left: 72px;

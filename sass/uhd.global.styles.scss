@@ -1637,9 +1637,9 @@ ul.action-links {
 #block-statistics-popular {}
 
 
-/*
- * "Main menu" block
- */
+/* ==================================================================================================
+   Main menu block
+   ================================================================================================== */
 #block-system-main-menu {
   padding-top: 20px;
   padding-bottom: 12px;
@@ -1736,6 +1736,7 @@ ul.action-links {
 
             /* Special case: top-level item is chosen */
             &.active-trail {
+              color: $hawk_gold;
               background-color: $none_more_black;
 
               &:before {
@@ -1755,6 +1756,11 @@ ul.action-links {
             &:hover {
               background-color: lighten($grey_dark_very, 12%) !important;
             }
+          }
+
+          &.expanded.active-trail {
+            > a.active-trail { color: white; }
+            > a.active { color: $hawk_gold; }
           }
 
           // Third level menus

@@ -1302,17 +1302,27 @@ ul.action-links {
   background-image: none !important;
 }
 #block-system-main-menu ul li ul li a.active-trail {
-  color: #fee100;
   background-color: black;
 }
 #block-system-main-menu ul li ul li a.active-trail:before {
   background-image: none;
 }
 #block-system-main-menu ul li ul li a.active {
+  color: #fee100;
   background-color: black;
 }
 #block-system-main-menu ul li ul li a.active:before {
   background-image: none !important;
+}
+#block-system-main-menu ul li ul li a:hover {
+  background-color: #525252 !important;
+}
+#block-system-main-menu ul li ul li ul li a {
+  padding-left: 72px;
+  background-color: black;
+}
+#block-system-main-menu ul li ul li ul li a:hover {
+  background-color: #525252 !important;
 }
 
 /*

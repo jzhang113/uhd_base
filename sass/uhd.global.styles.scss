@@ -1725,9 +1725,6 @@ ul.action-links {
 
         li {
 
-          // Second level menu item assigned .active-trail
-          // This could be assigned by the actual menu structure or by the menu_trail_by_path module
-
           // Anchor styles for second level items are different
           a {
             padding: 6px 24px 6px 48px;
@@ -1739,7 +1736,6 @@ ul.action-links {
 
             /* Special case: top-level item is chosen */
             &.active-trail {
-              color: $hawk_gold;
               background-color: $none_more_black;
 
               &:before {
@@ -1748,10 +1744,31 @@ ul.action-links {
             }
 
             &.active {
+              color: $hawk_gold;
               background-color: $none_more_black;
 
               &:before {
                 background-image: none !important;
+              }
+            }
+
+            &:hover {
+              background-color: lighten($grey_dark_very, 12%) !important;
+            }
+          }
+
+          // Third level menus
+          ul {
+
+            li {
+
+              a {
+                padding-left: 72px;
+                background-color: $none_more_black;
+
+                &:hover {
+                  background-color: lighten($grey_dark_very, 12%) !important;
+                }
               }
             }
           }

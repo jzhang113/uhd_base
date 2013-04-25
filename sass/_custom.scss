@@ -267,10 +267,11 @@ $gutter-width: 14px;
   padding: 10px;
   @include border-radius(8px);
   @include clearfix();
+  background-color: $grey_light_very;
 
-  &.views-row-odd, &.odd {
-    background-color: $grey_light_very;
-  }
+  // &.views-row-odd, &.odd {
+  //   background-color: $grey_light_very;
+  // }
 }
 
 

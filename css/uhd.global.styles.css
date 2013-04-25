@@ -1967,3 +1967,23 @@ body.node-type-location h2.field-label {
   height: 12px;
   width: 12px;
 }
+
+/* =============================================================================
+    Inline images via the WYSIWYG
+   ============================================================================= */
+img.media-image-left {
+  margin: 6px 12px 6px 0;
+}
+
+img.media-image-right {
+  margin: 6px 0 6px 12px;
+}
+
+a.feed-icon {
+  position: absolute;
+  top: -99999em;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  outline: 0;
+}

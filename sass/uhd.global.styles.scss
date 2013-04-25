@@ -2565,3 +2565,17 @@ body.node-type-location {
   }
 }
 
+/* =============================================================================
+    Inline images via the WYSIWYG
+   ============================================================================= */
+img.media-image-left {
+  margin: 6px 12px 6px 0;
+}
+img.media-image-right {
+  margin: 6px 0 6px 12px;
+}
+
+// hide all the rss feed icons for now
+a.feed-icon {
+  @include offscreen;
+}

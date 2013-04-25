@@ -293,8 +293,13 @@ body.site-name-university-catering ul#uhd-sites-links li.catering,
 body.site-name-university-vending ul#uhd-sites-links li.vending,
 body.site-name-mothership ul#uhd-sites-links li.mothership {
   border-bottom: 6px solid $none_more_black !important;
+<<<<<<< Updated upstream
   //@include sprites-sprite(menu-up-black, $dimensions: true, $offset-x: 50%, $offset-y: 38px);
   @include background-image(linear-gradient(#1d1c1c, $none_more_black));
+=======
+  //@include sprites-sprite(menu-up-black, $dimensions: true, $offset-x: 50%, $offset-y: 38px); 
+  @include background-image(linear-gradient(#333, $none_more_black));
+>>>>>>> Stashed changes
 
   a, a:hover {
     color: white !important;
@@ -2508,7 +2513,8 @@ body.node-type-location {
   }
 
   h2.field-label {
-    font-size: 1.6em;  // _HACK:  Needs to be based in rem or something and not ancient myth and hearsay.
+    //font-size: 1.6em;  // _HACK:  Needs to be based in rem or something and not ancient myth and hearsay.
+    @include font-size(1.6);
   }
 }
 

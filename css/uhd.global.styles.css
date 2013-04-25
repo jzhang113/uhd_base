@@ -379,11 +379,11 @@ body.site-name-university-catering ul#uhd-sites-links li.catering,
 body.site-name-university-vending ul#uhd-sites-links li.vending,
 body.site-name-mothership ul#uhd-sites-links li.mothership {
   border-bottom: 6px solid black !important;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1d1c1c), color-stop(100%, #000000));
-  background-image: -webkit-linear-gradient(#1d1c1c, #000000);
-  background-image: -moz-linear-gradient(#1d1c1c, #000000);
-  background-image: -o-linear-gradient(#1d1c1c, #000000);
-  background-image: linear-gradient(#1d1c1c, #000000);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #000000));
+  background-image: -webkit-linear-gradient(#333333, #000000);
+  background-image: -moz-linear-gradient(#333333, #000000);
+  background-image: -o-linear-gradient(#333333, #000000);
+  background-image: linear-gradient(#333333, #000000);
 }
 body.site-name-university-housing ul#uhd-sites-links li.housing a, body.site-name-university-housing ul#uhd-sites-links li.housing a:hover,
 body.site-name-university-dining ul#uhd-sites-links li.dining a,
@@ -613,6 +613,40 @@ ul.links li {
   margin: 0;
   color: white;
 }
+<<<<<<< Updated upstream
+=======
+.region-footer .more-info a.plain-button {
+  display: block;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5eb9d8), color-stop(100%, #2795ba));
+  background-image: -webkit-linear-gradient(#5eb9d8, #2795ba);
+  background-image: -moz-linear-gradient(#5eb9d8, #2795ba);
+  background-image: -o-linear-gradient(#5eb9d8, #2795ba);
+  background-image: linear-gradient(#5eb9d8, #2795ba);
+  color: #fff;
+  padding: 0.5em 1em;
+  border: 1px solid #0c87b1;
+  -webkit-border-radius: 1.25em;
+  -moz-border-radius: 1.25em;
+  -ms-border-radius: 1.25em;
+  -o-border-radius: 1.25em;
+  border-radius: 1.25em;
+  text-align: center;
+  font-weight: bold;
+}
+.region-footer .more-info a.plain-button:visited {
+  color: #fff;
+}
+.region-footer .more-info a.plain-button:hover, .region-footer .more-info a.plain-button:focus {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
+  background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
+  background-image: -moz-linear-gradient(#2e98bc, #1a627b);
+  background-image: -o-linear-gradient(#2e98bc, #1a627b);
+  background-image: linear-gradient(#2e98bc, #1a627b);
+  border: 1px solid #075069;
+  color: #fff;
+  text-decoration: none;
+}
+>>>>>>> Stashed changes
 
 /*
  * UH&D footer
@@ -1797,7 +1831,7 @@ body.node-type-location .uhd-header-content ul li a.inside-link {
 body.node-type-location .uhd-header-content ul li a.inside-link:visited {
   color: #fff;
 }
-body.node-type-location .uhd-header-content ul li a.inside-link:hover {
+body.node-type-location .uhd-header-content ul li a.inside-link:hover, body.node-type-location .uhd-header-content ul li a.inside-link:focus {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
   background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
   background-image: -moz-linear-gradient(#2e98bc, #1a627b);
@@ -1838,7 +1872,7 @@ body.node-type-location .uhd-header-content ul li a.maps-mail-link {
 body.node-type-location .uhd-header-content ul li a.maps-mail-link:visited {
   color: #fff;
 }
-body.node-type-location .uhd-header-content ul li a.maps-mail-link:hover {
+body.node-type-location .uhd-header-content ul li a.maps-mail-link:hover, body.node-type-location .uhd-header-content ul li a.maps-mail-link:focus {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
   background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
   background-image: -moz-linear-gradient(#2e98bc, #1a627b);
@@ -1860,7 +1894,8 @@ body.node-type-location .uhd-header-content .field-name-field-location-header-im
   max-width: 855px;
 }
 body.node-type-location h2.field-label {
-  font-size: 1.6em;
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 #nav-link {
@@ -1888,7 +1923,7 @@ body.node-type-location h2.field-label {
 #nav-link:visited {
   color: #fff;
 }
-#nav-link:hover {
+#nav-link:hover, #nav-link:focus {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
   background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
   background-image: -moz-linear-gradient(#2e98bc, #1a627b);
@@ -1941,7 +1976,7 @@ body.node-type-location h2.field-label {
 .back-to-top-link a:visited {
   color: #fff;
 }
-.back-to-top-link a:hover {
+.back-to-top-link a:hover, .back-to-top-link a:focus {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
   background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
   background-image: -moz-linear-gradient(#2e98bc, #1a627b);

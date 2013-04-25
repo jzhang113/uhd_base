@@ -691,10 +691,6 @@ ul.links {
       margin: 0;
       color: white;
     }
-
-    a.plain-button {
-      @include plain-button;
-    }
   }
 }
 
@@ -794,6 +790,10 @@ h1, h2, h3 {
   }
 }
 
+// global plain-button style
+a.plain-button {
+  @include plain-button;
+}
 
 /* =============================================================================
  *   Primary, Secondary and Menu Bar region menus

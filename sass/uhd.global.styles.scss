@@ -2528,3 +2528,8 @@ img.media-image-right {
 a.feed-icon {
   @include offscreen;
 }
+
+// Quick fix for using Media brower in custom content panes
+.ui-dialog.media-wrapper {
+  z-index: 2000;
+}

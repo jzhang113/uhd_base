@@ -1887,3 +1887,7 @@ a.feed-icon {
   overflow: hidden;
   outline: 0;
 }
+
+.ui-dialog.media-wrapper {
+  z-index: 2000;
+}

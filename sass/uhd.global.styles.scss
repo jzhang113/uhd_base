@@ -2435,85 +2435,85 @@ body.page-node {
   }
 }
 
-/* --- Location node (housing or dining) */
-body.node-type-location {
+// /* --- Location node (housing or dining) */
+// body.node-type-location {
 
-  .uhd-header-content {
-    position: relative;
-    margin-bottom: 12px;
+//   .uhd-header-content {
+//     position: relative;
+//     margin-bottom: 12px;
 
-    h1#page-title {
-      position: absolute;
-      bottom: 12px;
-      color: white;
-      z-index: 490;
-      @include text-shadow(rgba(black, 0.4) 1px 1px 0, rgba(black, 0.4) 2px 2px 0, rgba(black, 0.4) 3px 3px 0);
-    }
+//     h1#page-title {
+//       position: absolute;
+//       bottom: 12px;
+//       color: white;
+//       z-index: 490;
+//       @include text-shadow(rgba(black, 0.4) 1px 1px 0, rgba(black, 0.4) 2px 2px 0, rgba(black, 0.4) 3px 3px 0);
+//     }
 
-    ul {
-      position: absolute;
-      bottom: 12px;
-      right: 12px;
-      margin: 0;
-      z-index: 499;
-      list-style-type: none;
+//     ul {
+//       position: absolute;
+//       bottom: 12px;
+//       right: 12px;
+//       margin: 0;
+//       z-index: 499;
+//       list-style-type: none;
 
-      li {
-        margin: 0 0 12px 0;
-        text-align: right;
+//       li {
+//         margin: 0 0 12px 0;
+//         text-align: right;
 
-        a {
-          position: relative;
-          border: 1px solid white !important;
+//         a {
+//           position: relative;
+//           border: 1px solid white !important;
 
-          &:after {
-            content: "  >";
-          }
+//           &:after {
+//             content: "  >";
+//           }
 
-          &.inside-link {
-            @include plain-button;
-            padding-left: 48px;
-            font-size: 140%;
-            text-align: left;
-            &:before {
-              content: url("images/inside-location.png");
-              position: absolute;
-              z-index: 666;
-              left: 8px;
-              top: 4px;
-            }
-          }
-          &.maps-mail-link {
-            @include plain-button;
-            padding-left: 54px;
-            font-size: 120%;
-            text-align: left;
-            //width: 60%;
-            &:before {
-              content: url("images/mail-and-map.png");
-              position: absolute;
-              z-index: 666;
-              left: 12px;
-              top: 2px;
-            }
-          }
-        }
-      }
-    }
+//           &.inside-link {
+//             @include plain-button;
+//             padding-left: 48px;
+//             font-size: 140%;
+//             text-align: left;
+//             &:before {
+//               content: url("images/inside-location.png");
+//               position: absolute;
+//               z-index: 666;
+//               left: 8px;
+//               top: 4px;
+//             }
+//           }
+//           &.maps-mail-link {
+//             @include plain-button;
+//             padding-left: 54px;
+//             font-size: 120%;
+//             text-align: left;
+//             //width: 60%;
+//             &:before {
+//               content: url("images/mail-and-map.png");
+//               position: absolute;
+//               z-index: 666;
+//               left: 12px;
+//               top: 2px;
+//             }
+//           }
+//         }
+//       }
+//     }
 
-    .field-name-field-location-header-image {
-      img {
-        margin: -14px 0 0 -14px;  // _HACK: Look for a better way to find the origin.
-        max-width: 855px;  // _HACK:  Perhaps it will do until Phase 2: The Reckoning
-      }
-    }
-  }
+//     .field-name-field-location-header-image {
+//       img {
+//         margin: -14px 0 0 -14px;  // _HACK: Look for a better way to find the origin.
+//         max-width: 855px;  // _HACK:  Perhaps it will do until Phase 2: The Reckoning
+//       }
+//     }
+//   }
 
-  h2.field-label {
-    //font-size: 1.6em;  // _HACK:  Needs to be based in rem or something and not ancient myth and hearsay.
-    @include font-size(1.6);
-  }
-}
+//   h2.field-label {
+//     //font-size: 1.6em;  // _HACK:  Needs to be based in rem or something and not ancient myth and hearsay.
+//     @include font-size(1.6);
+//   }
+// }
 
 
 
@@ -2549,7 +2549,6 @@ body.node-type-location {
   a {
     position: relative;
     float: right;
-    //@include plain-button($grey_dark_very, $grey_dark_pretty, white);
     @include plain-button;
     margin: 4px;
     padding: 4px 12px 4px 30px;
@@ -2574,6 +2573,7 @@ img.media-image-left {
 img.media-image-right {
   margin: 6px 0 6px 12px;
 }
+
 
 // hide all the rss feed icons for now
 a.feed-icon {

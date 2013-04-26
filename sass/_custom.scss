@@ -290,3 +290,9 @@ $gutter-width: 14px;
   height: ceil($height*($percent/100));
   background-position: 0 floor(nth(sprite-position($map, $sprite), 2)  * ($percent/100) );
 }
+
+
+
+
+
+

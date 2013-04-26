@@ -67,8 +67,8 @@
   }
   #header-wrapper .container #header h2#org-title {
     margin: 4px 8px !important;
-    font-size: 10px;
-    font-size: 1rem;
+    font-size: 10px !important;
+    font-size: 1rem !important;
   }
   #header-wrapper .container #header ul#uhd-sites-links {
     display: none;
@@ -252,8 +252,8 @@ html {
 
 body {
   font-family: Ubuntu, "Droid Sans", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 14px !important;
+  font-size: 1.4rem !important;
 }
 
 body.cke_show_borders, body.mceContentBody {
@@ -303,8 +303,8 @@ var {
  */
 #main-content {
   margin-top: 14px;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 16px !important;
+  font-size: 1.6rem !important;
 }
 
 /*
@@ -1768,8 +1768,8 @@ body.node-type-location .uhd-header-content .field-name-field-location-header-im
   max-width: 855px;
 }
 body.node-type-location h2.field-label {
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 16px !important;
+  font-size: 1.6rem !important;
 }
 
 #nav-link {

@@ -78,8 +78,8 @@ $mono:                        Consolas, Monaco, 'Courier New', Courier, monospac
 // REM Font Sizing
 //-----------------------------------------------------------------------------
 @mixin font-size($sizeValue: 1.6) {
-  font-size: ($sizeValue * 10) + px;
-  font-size: $sizeValue + rem;
+  font-size: ($sizeValue * 10) + px !important;
+  font-size: $sizeValue + rem !important;
 }
 
 

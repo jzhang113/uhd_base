@@ -47,6 +47,9 @@ body {
   font-family: $sans-serif-small; // Set from _custom.scss font variables
   @include font-size(1.4);
 }
+body.cke_show_borders, body.mceContentBody {
+  font-size: auto;
+}
 
 
 /* =============================================================================
@@ -2430,7 +2433,7 @@ body.page-node {
       bottom: 12px;
       color: white;
       z-index: 490;
-      @include text-shadow(rgba(black, 0.4) 1px 1px 0, rgba(black, 0.4) 2px 2px 0, rgba(black, 0.4) 3px 3px 0);
+      @include text-shadow(rgba(black, 0.6) 1px 1px 0, rgba(black, 0.6) 2px 2px 0, rgba(black, 0.6) 3px 3px 0);
     }
   }
 }

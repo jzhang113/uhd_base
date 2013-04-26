@@ -256,6 +256,10 @@ body {
   font-size: 1.4rem;
 }
 
+body.cke_show_borders, body.mceContentBody {
+  font-size: auto;
+}
+
 /* =============================================================================
  *   HTML Elements
  * ========================================================================== */
@@ -1744,7 +1748,7 @@ body.page-node .uhd-header-content h1#page-title {
   bottom: 12px;
   color: white;
   z-index: 490;
-  text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0, rgba(0, 0, 0, 0.4) 2px 2px 0, rgba(0, 0, 0, 0.4) 3px 3px 0;
+  text-shadow: rgba(0, 0, 0, 0.6) 1px 1px 0, rgba(0, 0, 0, 0.6) 2px 2px 0, rgba(0, 0, 0, 0.6) 3px 3px 0;
 }
 
 /* --- Location node (header image and header title only) */

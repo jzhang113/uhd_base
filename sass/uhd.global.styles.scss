@@ -47,9 +47,6 @@ body {
   font-family: $sans-serif-small; // Set from _custom.scss font variables
   @include font-size(1.4);
 }
-body.cke_show_borders, body.mceContentBody {
-  font-size: auto;
-}
 
 
 /* =============================================================================

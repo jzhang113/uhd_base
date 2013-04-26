@@ -710,7 +710,7 @@ a.plain-button {
   border-radius: 1.25em;
   text-align: center;
   font-weight: bold;
-  width: auto;
+  width: 50%;
 }
 a.plain-button:visited {
   color: #fff;

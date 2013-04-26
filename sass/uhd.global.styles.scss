@@ -795,7 +795,7 @@ h1, h2, h3 {
 // global plain-button style
 a.plain-button {
   @include plain-button;
-  width: auto;
+  width: 50%;
 }
 
 /* =============================================================================

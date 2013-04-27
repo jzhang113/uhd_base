@@ -725,6 +725,18 @@ a.plain-button:hover, a.plain-button:focus {
   color: #fff;
   text-decoration: none;
 }
+a.plain-button.width-25 {
+  width: 25%;
+}
+a.plain-button.width-33 {
+  width: 33%;
+}
+a.plain-button.width-50 {
+  width: 50%;
+}
+a.plain-button.width-80 {
+  width: 80%;
+}
 
 /* =============================================================================
  *   Primary, Secondary and Menu Bar region menus

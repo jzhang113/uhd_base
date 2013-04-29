@@ -227,6 +227,7 @@ $gutter-width: 14px;
 //-----------------------------------------------------------------------------
 @mixin plain-button($bgcolor1: #5eb9d8, $bgcolor2: #2795ba, $bdcolor: #0c87b1) {
   display: block;
+  background-color: $bgcolor1;
   @include background-image(linear-gradient($bgcolor1, $bgcolor2));
   color: #fff;
   padding: 0.5em 1em;
@@ -241,6 +242,7 @@ $gutter-width: 14px;
   }
   
   &:hover, &:focus {
+    background-color: linear-gradient(darken($bgcolor1, 15%);
     @include background-image(linear-gradient(darken($bgcolor1, 15%), darken($bgcolor2, 15%)));
     border: 1px solid darken($bdcolor, 15%); 
     color: #fff;

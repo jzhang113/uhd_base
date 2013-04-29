@@ -696,6 +696,7 @@ h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus {
 /* --- Global plain-button style for editors */
 a.plain-button {
   display: block;
+  background-color: #5eb9d8;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5eb9d8), color-stop(100%, #2795ba));
   background-image: -webkit-linear-gradient(#5eb9d8, #2795ba);
   background-image: -moz-linear-gradient(#5eb9d8, #2795ba);
@@ -1778,6 +1779,7 @@ body.node-type-location h2.field-label {
   position: relative;
   float: right;
   display: block;
+  background-color: #5eb9d8;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5eb9d8), color-stop(100%, #2795ba));
   background-image: -webkit-linear-gradient(#5eb9d8, #2795ba);
   background-image: -moz-linear-gradient(#5eb9d8, #2795ba);
@@ -1831,6 +1833,7 @@ body.node-type-location h2.field-label {
   position: relative;
   float: right;
   display: block;
+  background-color: #5eb9d8;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5eb9d8), color-stop(100%, #2795ba));
   background-image: -webkit-linear-gradient(#5eb9d8, #2795ba);
   background-image: -moz-linear-gradient(#5eb9d8, #2795ba);

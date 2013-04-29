@@ -242,7 +242,7 @@ $gutter-width: 14px;
   }
   
   &:hover, &:focus {
-    background-color: linear-gradient(darken($bgcolor1, 15%);
+    background-color: darken($bgcolor1, 15%);
     @include background-image(linear-gradient(darken($bgcolor1, 15%), darken($bgcolor2, 15%)));
     border: 1px solid darken($bdcolor, 15%); 
     color: #fff;

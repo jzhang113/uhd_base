@@ -718,6 +718,7 @@ a.plain-button:visited {
   color: #fff;
 }
 a.plain-button:hover, a.plain-button:focus {
+  background-color: #2e98bc;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
   background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
   background-image: -moz-linear-gradient(#2e98bc, #1a627b);
@@ -1802,6 +1803,7 @@ body.node-type-location h2.field-label {
   color: #fff;
 }
 #nav-link:hover, #nav-link:focus {
+  background-color: #2e98bc;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
   background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
   background-image: -moz-linear-gradient(#2e98bc, #1a627b);
@@ -1856,6 +1858,7 @@ body.node-type-location h2.field-label {
   color: #fff;
 }
 .back-to-top-link a:hover, .back-to-top-link a:focus {
+  background-color: #2e98bc;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
   background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
   background-image: -moz-linear-gradient(#2e98bc, #1a627b);

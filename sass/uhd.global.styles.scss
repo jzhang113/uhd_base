@@ -795,14 +795,11 @@ h1, h2, h3 {
 // Global plain-button style
 a.plain-button {
   @include plain-button;
-  display: inline;
+  display: inline-block;
 
-  // default width is purposefully not defined and will probably be 100%
-  // use these for inline, WYSIWYG anchors
-  // &.width-25 { width: 25%; }
-  // &.width-33 { width: 33%; }
-  // &.width-50 { width: 50%; }
-  // &.width-80 { width: 80%; }
+  &:link, &:visited {
+    color: white;
+  }
 }
 
 /* =============================================================================
@@ -2539,4 +2536,9 @@ a.feed-icon {
 // Quick fix for using Media brower in custom content panes
 .ui-dialog.media-wrapper {
   z-index: 2000;
+}
+
+
+input#panelizer-save-default {
+  display: none;
 }

@@ -710,7 +710,7 @@ a.plain-button {
   border-radius: 1.25em;
   text-align: center;
   font-weight: bold;
-  display: inline;
+  display: inline-block;
 }
 a.plain-button:visited {
   color: #fff;
@@ -724,6 +724,9 @@ a.plain-button:hover, a.plain-button:focus {
   border: 1px solid #075069;
   color: #fff;
   text-decoration: none;
+}
+a.plain-button:link, a.plain-button:visited {
+  color: white;
 }
 
 /* =============================================================================
@@ -1890,4 +1893,8 @@ a.feed-icon {
 
 .ui-dialog.media-wrapper {
   z-index: 2000;
+}
+
+input#panelizer-save-default {
+  display: none;
 }

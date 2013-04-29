@@ -795,14 +795,14 @@ h1, h2, h3 {
 // Global plain-button style
 a.plain-button {
   @include plain-button;
-  width: auto;
+  display: inline;
 
   // default width is purposefully not defined and will probably be 100%
   // use these for inline, WYSIWYG anchors
-  &.width-25 { width: 25%; }
-  &.width-33 { width: 33%; }
-  &.width-50 { width: 50%; }
-  &.width-80 { width: 80%; }
+  // &.width-25 { width: 25%; }
+  // &.width-33 { width: 33%; }
+  // &.width-50 { width: 50%; }
+  // &.width-80 { width: 80%; }
 }
 
 /* =============================================================================

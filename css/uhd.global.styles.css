@@ -710,7 +710,7 @@ a.plain-button {
   border-radius: 1.25em;
   text-align: center;
   font-weight: bold;
-  width: auto;
+  display: inline;
 }
 a.plain-button:visited {
   color: #fff;
@@ -724,18 +724,6 @@ a.plain-button:hover, a.plain-button:focus {
   border: 1px solid #075069;
   color: #fff;
   text-decoration: none;
-}
-a.plain-button.width-25 {
-  width: 25%;
-}
-a.plain-button.width-33 {
-  width: 33%;
-}
-a.plain-button.width-50 {
-  width: 50%;
-}
-a.plain-button.width-80 {
-  width: 80%;
 }
 
 /* =============================================================================

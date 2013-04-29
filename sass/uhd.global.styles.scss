@@ -529,7 +529,7 @@ h1#page-title {
     margin-top: -2em;
     color: white;
     @include opacity(0.99);
-    @include text-shadow(rgba(black, 0.4) 1px 1px 0, rgba(black, 0.4) 2px 2px 0, rgba(black, 0.4) 3px 3px 0);
+    @include text-shadow(rgba(black, 0.6) -3px -3px 1px, rgba(black, 0.6) 3px 3px 1px, rgba(black, 0.6) -3px 3px 1px, rgba(black, 0.6) 3px -3px 1px);
   }
 }
 
@@ -792,7 +792,7 @@ h1, h2, h3 {
   }
 }
 
-// Global plain-button style
+/* --- Global plain-button style for editors */
 a.plain-button {
   @include plain-button;
   display: inline-block;
@@ -800,6 +800,11 @@ a.plain-button {
   &:link, &:visited {
     color: white;
   }
+}
+
+/* --- Global image-button style for editors */
+a.image-button {
+  // See this space for future offers!!!!
 }
 
 /* =============================================================================
@@ -2435,7 +2440,7 @@ body.page-node {
       bottom: 12px;
       color: white;
       z-index: 490;
-      @include text-shadow(rgba(black, 0.6) 1px 1px 0, rgba(black, 0.6) 2px 2px 0, rgba(black, 0.6) 3px 3px 0);
+      @include text-shadow(rgba(black, 0.6) -3px -3px 1px, rgba(black, 0.6) 3px 3px 1px, rgba(black, 0.6) -3px 3px 1px, rgba(black, 0.6) 3px -3px 1px);
     }
   }
 }
@@ -2452,7 +2457,7 @@ body.node-type-location {
       bottom: 12px;
       color: white;
       z-index: 490;
-      @include text-shadow(rgba(black, 0.6) 1px 1px 0, rgba(black, 0.6) 2px 2px 0, rgba(black, 0.6) 3px 3px 0);
+      @include text-shadow(rgba(black, 0.6) -3px -3px 1px, rgba(black, 0.6) 3px 3px 1px, rgba(black, 0.6) -3px 3px 1px, rgba(black, 0.6) 3px -3px 1px);
     }
 
     .field-name-field-location-header-image {

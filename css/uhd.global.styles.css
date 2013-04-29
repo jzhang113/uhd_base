@@ -510,7 +510,7 @@ h1#page-title.page-banner-image-exists {
   color: white;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=99);
   opacity: 0.99;
-  text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0, rgba(0, 0, 0, 0.4) 2px 2px 0, rgba(0, 0, 0, 0.4) 3px 3px 0;
+  text-shadow: rgba(0, 0, 0, 0.6) -3px -3px 1px, rgba(0, 0, 0, 0.6) 3px 3px 1px, rgba(0, 0, 0, 0.6) -3px 3px 1px, rgba(0, 0, 0, 0.6) 3px -3px 1px;
 }
 
 /* =============================================================================
@@ -693,8 +693,10 @@ h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus {
   text-decoration: none;
 }
 
+/* --- Global plain-button style for editors */
 a.plain-button {
   display: block;
+  background-color: #5eb9d8;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5eb9d8), color-stop(100%, #2795ba));
   background-image: -webkit-linear-gradient(#5eb9d8, #2795ba);
   background-image: -moz-linear-gradient(#5eb9d8, #2795ba);
@@ -716,6 +718,7 @@ a.plain-button:visited {
   color: #fff;
 }
 a.plain-button:hover, a.plain-button:focus {
+  background-color: #2e98bc;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
   background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
   background-image: -moz-linear-gradient(#2e98bc, #1a627b);
@@ -729,6 +732,7 @@ a.plain-button:link, a.plain-button:visited {
   color: white;
 }
 
+/* --- Global image-button style for editors */
 /* =============================================================================
  *   Primary, Secondary and Menu Bar region menus
  * ========================================================================== */
@@ -1748,7 +1752,7 @@ body.page-node .uhd-header-content h1#page-title {
   bottom: 12px;
   color: white;
   z-index: 490;
-  text-shadow: rgba(0, 0, 0, 0.6) 1px 1px 0, rgba(0, 0, 0, 0.6) 2px 2px 0, rgba(0, 0, 0, 0.6) 3px 3px 0;
+  text-shadow: rgba(0, 0, 0, 0.6) -3px -3px 1px, rgba(0, 0, 0, 0.6) 3px 3px 1px, rgba(0, 0, 0, 0.6) -3px 3px 1px, rgba(0, 0, 0, 0.6) 3px -3px 1px;
 }
 
 /* --- Location node (header image and header title only) */
@@ -1761,7 +1765,7 @@ body.node-type-location .uhd-header-content h1#page-title {
   bottom: 12px;
   color: white;
   z-index: 490;
-  text-shadow: rgba(0, 0, 0, 0.6) 1px 1px 0, rgba(0, 0, 0, 0.6) 2px 2px 0, rgba(0, 0, 0, 0.6) 3px 3px 0;
+  text-shadow: rgba(0, 0, 0, 0.6) -3px -3px 1px, rgba(0, 0, 0, 0.6) 3px 3px 1px, rgba(0, 0, 0, 0.6) -3px 3px 1px, rgba(0, 0, 0, 0.6) 3px -3px 1px;
 }
 body.node-type-location .uhd-header-content .field-name-field-location-header-image img {
   margin: -14px 0 0 -14px;
@@ -1776,6 +1780,7 @@ body.node-type-location h2.field-label {
   position: relative;
   float: right;
   display: block;
+  background-color: #5eb9d8;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5eb9d8), color-stop(100%, #2795ba));
   background-image: -webkit-linear-gradient(#5eb9d8, #2795ba);
   background-image: -moz-linear-gradient(#5eb9d8, #2795ba);
@@ -1798,6 +1803,7 @@ body.node-type-location h2.field-label {
   color: #fff;
 }
 #nav-link:hover, #nav-link:focus {
+  background-color: #2e98bc;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
   background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
   background-image: -moz-linear-gradient(#2e98bc, #1a627b);
@@ -1829,6 +1835,7 @@ body.node-type-location h2.field-label {
   position: relative;
   float: right;
   display: block;
+  background-color: #5eb9d8;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5eb9d8), color-stop(100%, #2795ba));
   background-image: -webkit-linear-gradient(#5eb9d8, #2795ba);
   background-image: -moz-linear-gradient(#5eb9d8, #2795ba);
@@ -1851,6 +1858,7 @@ body.node-type-location h2.field-label {
   color: #fff;
 }
 .back-to-top-link a:hover, .back-to-top-link a:focus {
+  background-color: #2e98bc;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e98bc), color-stop(100%, #1a627b));
   background-image: -webkit-linear-gradient(#2e98bc, #1a627b);
   background-image: -moz-linear-gradient(#2e98bc, #1a627b);

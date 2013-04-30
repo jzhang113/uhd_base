@@ -525,7 +525,7 @@ h1#page-title {
     margin-top: -2em;
     color: white;
     @include opacity(0.99);
-    @include text-shadow(rgba(black, 0.6) -3px -3px 1px, rgba(black, 0.6) 3px 3px 1px, rgba(black, 0.6) -3px 3px 1px, rgba(black, 0.6) 3px -3px 1px);
+    @include text-shadow(rgba(black, 0.9) -3px -3px 6px, rgba(black, 0.9) 3px 3px 6px, rgba(black, 0.9) -3px 3px 6px, rgba(black, 0.9) 3px -3px 6px);
   }
 }
 
@@ -2436,7 +2436,7 @@ body.page-node {
       bottom: 12px;
       color: white;
       z-index: 490;
-      @include text-shadow(rgba(black, 0.6) -3px -3px 1px, rgba(black, 0.6) 3px 3px 1px, rgba(black, 0.6) -3px 3px 1px, rgba(black, 0.6) 3px -3px 1px);
+      @include text-shadow(rgba(black, 0.9) -3px -3px 6px, rgba(black, 0.9) 3px 3px 6px, rgba(black, 0.9) -3px 3px 6px, rgba(black, 0.9) 3px -3px 6px);
     }
   }
 }
@@ -2453,7 +2453,7 @@ body.node-type-location {
       bottom: 12px;
       color: white;
       z-index: 490;
-      @include text-shadow(rgba(black, 0.6) -3px -3px 1px, rgba(black, 0.6) 3px 3px 1px, rgba(black, 0.6) -3px 3px 1px, rgba(black, 0.6) 3px -3px 1px);
+      @include text-shadow(rgba(black, 0.9) -3px -3px 6px, rgba(black, 0.9) 3px 3px 6px, rgba(black, 0.9) -3px 3px 6px, rgba(black, 0.9) 3px -3px 6px);
     }
 
     .field-name-field-location-header-image {

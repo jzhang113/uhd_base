@@ -500,7 +500,7 @@ h1#page-title.page-banner-image-exists {
   color: white;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=99);
   opacity: 0.99;
-  text-shadow: rgba(0, 0, 0, 0.6) -3px -3px 1px, rgba(0, 0, 0, 0.6) 3px 3px 1px, rgba(0, 0, 0, 0.6) -3px 3px 1px, rgba(0, 0, 0, 0.6) 3px -3px 1px;
+  text-shadow: rgba(0, 0, 0, 0.9) -3px -3px 6px, rgba(0, 0, 0, 0.9) 3px 3px 6px, rgba(0, 0, 0, 0.9) -3px 3px 6px, rgba(0, 0, 0, 0.9) 3px -3px 6px;
 }
 
 /* =============================================================================
@@ -1742,7 +1742,7 @@ body.page-node .uhd-header-content h1#page-title {
   bottom: 12px;
   color: white;
   z-index: 490;
-  text-shadow: rgba(0, 0, 0, 0.6) -3px -3px 1px, rgba(0, 0, 0, 0.6) 3px 3px 1px, rgba(0, 0, 0, 0.6) -3px 3px 1px, rgba(0, 0, 0, 0.6) 3px -3px 1px;
+  text-shadow: rgba(0, 0, 0, 0.9) -3px -3px 6px, rgba(0, 0, 0, 0.9) 3px 3px 6px, rgba(0, 0, 0, 0.9) -3px 3px 6px, rgba(0, 0, 0, 0.9) 3px -3px 6px;
 }
 
 /* --- Location node (header image and header title only) */
@@ -1755,7 +1755,7 @@ body.node-type-location .uhd-header-content h1#page-title {
   bottom: 12px;
   color: white;
   z-index: 490;
-  text-shadow: rgba(0, 0, 0, 0.6) -3px -3px 1px, rgba(0, 0, 0, 0.6) 3px 3px 1px, rgba(0, 0, 0, 0.6) -3px 3px 1px, rgba(0, 0, 0, 0.6) 3px -3px 1px;
+  text-shadow: rgba(0, 0, 0, 0.9) -3px -3px 6px, rgba(0, 0, 0, 0.9) 3px 3px 6px, rgba(0, 0, 0, 0.9) -3px 3px 6px, rgba(0, 0, 0, 0.9) 3px -3px 6px;
 }
 body.node-type-location .uhd-header-content .field-name-field-location-header-image img {
   margin: -14px 0 0 -14px;

@@ -382,7 +382,9 @@ body.site-name-mothership ul#uhd-sites-links li.mothership {
 /*
  * Wraps all the branding elements, logo, name and slogan
  */
-#branding {}
+#branding {
+
+}
 
 
 /*
@@ -391,11 +393,12 @@ body.site-name-mothership ul#uhd-sites-links li.mothership {
 #logo {
 
   img {
-    vertical-align: bottom;
+    @include offscreen();
+    // vertical-align: bottom;
 
-    &:hover {
-      @include opacity(0.9);
-    }
+    // &:hover {
+    //   @include opacity(0.9);
+    // }
   }
 }
 
@@ -403,32 +406,33 @@ body.site-name-mothership ul#uhd-sites-links li.mothership {
 /*
  * Wrapper for the site name and slogan (hgroup)
  */
-#name-and-slogan {}
+#name-and-slogan {
+  position: relative;
+}
 
 
 /*
  * Site name (h1)
  */
-#site-name {
-  @include offscreen();
-  // margin: 0;
+h1#site-name {
+  position: absolute;
+  top: 1;
+  right: 1;
+  margin: 0;
+  padding: 0;
 
-  // a {
-  //   text-transform: uppercase;
-  //   line-height: 2em;
-
-  //   &:link,
-  //   &:visited {
-  //     color: black;
-  //   }
-
-  //   &:hover,
-  //   &:active,
-  //   &:focus {
-  //     color: black;
-  //     text-decoration: none;
-  //   }
-  // }
+  a, a:link {
+    @include font-size(8.0);
+    line-height: 77px;
+    color: white;
+    text-decoration: none;
+    @include text-shadow(rgba(black, 0.9) 3px 3px 6px);
+    
+    &:hover, &:focus {
+      text-decoration: none;
+      color: darken(white, 5%);
+    }
+  }
 }
 
 /*

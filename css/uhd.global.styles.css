@@ -440,26 +440,42 @@ body.site-name-mothership ul#uhd-sites-links li.mothership {
  * Logo
  */
 #logo img {
-  vertical-align: bottom;
-}
-#logo img:hover {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-  opacity: 0.9;
-}
-
-/*
- * Wrapper for the site name and slogan (hgroup)
- */
-/*
- * Site name (h1)
- */
-#site-name {
   position: absolute;
   top: -99999em;
   width: 1px;
   height: 1px;
   overflow: hidden;
   outline: 0;
+}
+
+/*
+ * Wrapper for the site name and slogan (hgroup)
+ */
+#name-and-slogan {
+  position: relative;
+}
+
+/*
+ * Site name (h1)
+ */
+h1#site-name {
+  position: absolute;
+  top: 1;
+  right: 1;
+  margin: 0;
+  padding: 0;
+}
+h1#site-name a, h1#site-name a:link {
+  font-size: 80px !important;
+  font-size: 8rem !important;
+  line-height: 77px;
+  color: white;
+  text-decoration: none;
+  text-shadow: rgba(0, 0, 0, 0.9) 3px 3px 6px;
+}
+h1#site-name a:hover, h1#site-name a:focus, h1#site-name a:link:hover, h1#site-name a:link:focus {
+  text-decoration: none;
+  color: #f2f2f2;
 }
 
 /*

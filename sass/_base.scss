@@ -39,8 +39,4 @@ $legacy-support-for-ie7: true;
 //
 @import 'custom';
 
-
-$sprites-spacing: 72px;
-@import "sprites/*.png";
-
 @import "responsive.custom";

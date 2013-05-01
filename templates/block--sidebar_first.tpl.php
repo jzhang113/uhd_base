@@ -93,6 +93,8 @@
   <?php print render($title_suffix); ?>
 
 <?php print $inner_suffix . $outer_suffix; ?>
+<?php if ($back_to_top == TRUE): ?>
 <div class="back-to-top-link">
-	<a href="#top">Back to top</a>
+  <a href="#top">Back to top</a>
 </div>
+<?php endif; ?>

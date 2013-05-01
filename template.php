@@ -86,10 +86,16 @@ function uhd_base_process_comment(&$vars) {
 
 /**
  * Override or insert variables into the block templates.
+ *
+ * Set back_top_top flag if in the main menu block.
  */
-/* -- Delete this line if you want to use these functions
 function uhd_base_preprocess_block(&$vars) {
+  $vars['back_to_top'] = FALSE;
+  if ($vars['elements']['#block']->delta == 'main-menu') {
+    $vars['back_to_top'] = TRUE;
+  }
 }
+/*
 function uhd_base_process_block(&$vars) {
 }
 // */

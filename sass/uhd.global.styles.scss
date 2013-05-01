@@ -2471,21 +2471,15 @@ body.node-type-location {
   }
 
   h2.field-label {
-    //font-size: 1.6em;  // _HACK:  Needs to be based in rem or something and not ancient myth and hearsay.
     @include font-size(1.6);
   }
 }
 
 
 
-
-
-
-
 #nav-link {
   position: relative;
   float: right;
-  //@include plain-button($grey_dark_very, $grey_dark_pretty, white);
   @include plain-button;
   margin: 4px 8px;
   padding: 2px 12px 2px 42px;
@@ -2523,6 +2517,16 @@ body.node-type-location {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
 
 /* =============================================================================
     Inline images via the WYSIWYG

@@ -292,10 +292,10 @@ ul#uhd-sites-links {
     }
   }
 }
-body.site-name-university-housing ul#uhd-sites-links li.housing,
-body.site-name-university-dining ul#uhd-sites-links li.dining,
-body.site-name-university-catering ul#uhd-sites-links li.catering,
-body.site-name-university-vending ul#uhd-sites-links li.vending,
+body.site-name-housing ul#uhd-sites-links li.housing,
+body.site-name-dining ul#uhd-sites-links li.dining,
+body.site-name-catering ul#uhd-sites-links li.catering,
+body.site-name-vending ul#uhd-sites-links li.vending,
 body.site-name-mothership ul#uhd-sites-links li.mothership {
   border-bottom: 6px solid $none_more_black !important;
   @include sprites-sprite(menu-up-black, $dimensions: true, $offset-x: 66%, $offset-y: 38px);

@@ -52,7 +52,7 @@ function uhd_base_process_html(&$vars) {
 
 /**
  * Override or insert variables for the page templates.
- */
+ *//*
 
 function uhd_base_preprocess_page(&$vars) {
 

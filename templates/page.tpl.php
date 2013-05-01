@@ -142,13 +142,13 @@
               <a href="http://dining.uiowa.edu/">Dining</a>
             </li>
             <li class="catering">
-              <a href="http://catering.uiowa.edu/">Catering</a>
+              <a href="http://imu.uiowa.edu/catering/">Catering</a>
             </li>
             <!-- <li class="vending">
               <a href="http://vending.uiowa.edu/">Vending</a>
             </li> -->
             <li class="mothership last">
-              <a href="http://uhd.uiowa.edu/">UH&amp;D Admin</a>
+              <a href="http://housing.uiowa.edu/uhd-administration">UH&amp;D Admin</a>
             </li>
           </ul>
           <!-- end: UH&D sites menu -->

@@ -221,6 +221,17 @@ var {
   margin-right: 0;
 }
 
+/**
+ * Double the margin on pages and locations because they are panelized and
+ * we zero out the #main-content margin to accomodate header images.
+ */
+.node-type-page, .node-type-location {
+  #content .panel-display {
+    margin-left: 2 * $gutter-width;
+    margin-right: 2 * $gutter-width;
+  }
+}
+
 
 /*
  * Full Width Wrappers

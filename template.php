@@ -87,12 +87,12 @@ function uhd_base_process_comment(&$vars) {
 /**
  * Override or insert variables into the block templates.
  *
- * Set back_top_top flag if in the main menu block.
+ * Set is_main_menu_block boolean.
  */
 function uhd_base_preprocess_block(&$vars) {
-  $vars['back_to_top'] = FALSE;
+  $vars['is_main_menu_block'] = FALSE;
   if ($vars['elements']['#block']->delta == 'main-menu') {
-    $vars['back_to_top'] = TRUE;
+    $vars['is_main_menu_block'] = TRUE;
   }
 }
 /*

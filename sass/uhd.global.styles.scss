@@ -184,7 +184,7 @@ var {
  * Wraps the main-content-header, the content region and feed-icons. Use this wrapper to style the entire main content column
  */
 #main-content {
-  margin-top: 14px;
+  margin-top: $gutter-width;
   @include font-size(1.6);
 }
 

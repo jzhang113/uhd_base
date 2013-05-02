@@ -2430,13 +2430,6 @@ body.page-node {
     position: relative;
     margin-bottom: 12px;
 
-    .field-name-field-general-page-banner-image {
-      img {
-        margin: -14px 0 0 -14px;  // _HACK: Look for a better way to find the origin.
-        max-width: 855px;  // _HACK:  Perhaps it will do until Phase 2: The Reckoning
-      }
-    }
-
     h1#page-title {
       position: absolute;
       bottom: 12px;
@@ -2460,13 +2453,6 @@ body.node-type-location {
       color: white;
       z-index: 490;
       @include text-shadow(rgba(black, 0.9) -3px -3px 6px, rgba(black, 0.9) 3px 3px 6px, rgba(black, 0.9) -3px 3px 6px, rgba(black, 0.9) 3px -3px 6px);
-    }
-
-    .field-name-field-location-header-image {
-      img {
-        margin: -14px 0 0 -14px;  // _HACK: Look for a better way to find the origin.
-        max-width: 855px;  // _HACK:  Perhaps it will do until Phase 2: The Reckoning
-      }
     }
   }
 

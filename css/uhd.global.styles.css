@@ -756,6 +756,10 @@ a.plain-button:hover, a.plain-button:focus {
 a.plain-button:link, a.plain-button:visited {
   color: white;
 }
+a.plain-button.small {
+  font-size: 12px !important;
+  font-size: 1.2rem !important;
+}
 
 /* --- Global image-button style for editors */
 /* =============================================================================

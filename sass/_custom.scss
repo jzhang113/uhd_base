@@ -236,7 +236,7 @@ $gutter-width: 14px;
   text-align: center;
   font-weight: bold;
 
-  // if the mixin is applied to an anchor
+  // the mixin is best applied to an anchor
   &:visited {
     color: #fff;
   }
@@ -270,10 +270,6 @@ $gutter-width: 14px;
   @include border-radius(8px);
   @include clearfix();
   background-color: $grey_light_very;
-
-  // &.views-row-odd, &.odd {
-  //   background-color: $grey_light_very;
-  // }
 }
 
 
@@ -292,9 +288,3 @@ $gutter-width: 14px;
   height: ceil($height*($percent/100));
   background-position: 0 floor(nth(sprite-position($map, $sprite), 2)  * ($percent/100) );
 }
-
-
-
-
-
-

@@ -825,6 +825,10 @@ a.plain-button {
   &:link, &:visited {
     color: white;
   }
+
+  &.small {
+    @include font-size(1.2);
+  }
 }
 
 /* --- Global image-button style for editors */

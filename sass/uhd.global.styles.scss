@@ -450,7 +450,7 @@ h1#site-name {
     color: white;
     text-decoration: none;
     @include text-shadow(rgba(black, 0.9) 3px 3px 6px);
-    
+
     &:hover, &:focus {
       text-decoration: none;
       color: darken(white, 5%);

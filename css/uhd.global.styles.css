@@ -307,6 +307,16 @@ var {
   font-size: 1.6rem !important;
 }
 
+/**
+ * Zero out the margins for pages and locations as they have a header image
+ * that should fill the width 100%.
+ */
+.node-type-page #main-content, .node-type-location #main-content {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /*
  * Wraps the content region, avoid applying styles to this wrapper, its used mainly for position and invisible gutters and can be problematic to style
  */
@@ -319,6 +329,15 @@ var {
 #content .panel-display {
   margin-left: 0;
   margin-right: 0;
+}
+
+/**
+ * Double the margin on pages and locations because they are panelized and
+ * we zero out the #main-content margin to accomodate header images.
+ */
+.node-type-page #content .panel-display, .node-type-location #content .panel-display {
+  margin-left: 28px;
+  margin-right: 28px;
 }
 
 /*
@@ -1749,10 +1768,6 @@ body.page-node .uhd-header-content {
   position: relative;
   margin-bottom: 12px;
 }
-body.page-node .uhd-header-content .field-name-field-general-page-banner-image img {
-  margin: -14px 0 0 -14px;
-  max-width: 855px;
-}
 body.page-node .uhd-header-content h1#page-title {
   position: absolute;
   bottom: 12px;
@@ -1772,10 +1787,6 @@ body.node-type-location .uhd-header-content h1#page-title {
   color: white;
   z-index: 490;
   text-shadow: rgba(0, 0, 0, 0.9) -3px -3px 6px, rgba(0, 0, 0, 0.9) 3px 3px 6px, rgba(0, 0, 0, 0.9) -3px 3px 6px, rgba(0, 0, 0, 0.9) 3px -3px 6px;
-}
-body.node-type-location .uhd-header-content .field-name-field-location-header-image img {
-  margin: -14px 0 0 -14px;
-  max-width: 855px;
 }
 body.node-type-location h2.field-label {
   font-size: 16px !important;

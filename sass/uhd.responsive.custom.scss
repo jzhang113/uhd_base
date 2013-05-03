@@ -129,7 +129,7 @@
         list-style-type: none !important;
 
         li {
-          width: 100% !important;
+          width: 90% !important; // Quick fix to remove horizontal scroll on mobile. @TODO: Redo margin/padding in default styles?
           border-left: none;
           list-style-type: none !important;
 

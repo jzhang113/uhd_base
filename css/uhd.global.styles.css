@@ -639,9 +639,13 @@ ul.links li {
   text-transform: uppercase;
   color: #666666;
 }
-.region-footer .more-info p {
+.region-footer .more-info p.uhd-department-description {
   margin: 0;
+  text-indent: none;
   color: white;
+}
+.region-footer .more-info a.plain-button {
+  float: right;
 }
 
 /*

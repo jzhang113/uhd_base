@@ -714,9 +714,14 @@ ul.links {
       color: $grey_dark_pretty;
     }
 
-    p {
+    p.uhd-department-description {
       margin: 0;
+      text-indent: none;
       color: white;
+    }
+
+    a.plain-button {
+      float: right;
     }
   }
 }

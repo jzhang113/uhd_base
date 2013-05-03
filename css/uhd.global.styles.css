@@ -336,8 +336,8 @@ var {
  * we zero out the #main-content margin to accomodate header images.
  */
 .node-type-page #content .panel-display, .node-type-location #content .panel-display {
-  margin-left: 28px;
-  margin-right: 28px;
+  margin-left: 14px;
+  margin-right: 14px;
 }
 
 /*
@@ -1778,6 +1778,7 @@ body.page-node .uhd-header-content {
 }
 body.page-node .uhd-header-content h1#page-title {
   position: absolute;
+  left: 12px;
   bottom: 12px;
   color: white;
   z-index: 490;
@@ -1791,6 +1792,7 @@ body.node-type-location .uhd-header-content {
 }
 body.node-type-location .uhd-header-content h1#page-title {
   position: absolute;
+  left: 12px;
   bottom: 12px;
   color: white;
   z-index: 490;

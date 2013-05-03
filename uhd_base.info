@@ -15,6 +15,7 @@
   ; See each stylesheet for extensive documentation and help.
   stylesheets[screen][] = css/uhd.global.base.css
   stylesheets[screen][] = css/uhd.global.styles.css
+  stylesheets[screen][] = css/uhd.responsive.custom.css
 
   ; Print - uncomment to load basic print styles.
   ; stylesheets[print][] = css/print.css

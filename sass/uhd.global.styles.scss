@@ -2469,6 +2469,7 @@ body.page-node {
       color: white;
       z-index: 490;
       @include text-shadow(rgba(black, 0.9) -3px -3px 6px, rgba(black, 0.9) 3px 3px 6px, rgba(black, 0.9) -3px 3px 6px, rgba(black, 0.9) 3px -3px 6px);
+      filter: progid:DXImageTransform.Microsoft.Glow(color=#000000, strength=3);
     }
   }
 }
@@ -2487,6 +2488,7 @@ body.node-type-location {
       color: white;
       z-index: 490;
       @include text-shadow(rgba(black, 0.9) -3px -3px 6px, rgba(black, 0.9) 3px 3px 6px, rgba(black, 0.9) -3px 3px 6px, rgba(black, 0.9) 3px -3px 6px);
+      filter: progid:DXImageTransform.Microsoft.Glow(color=#000000, strength=3);
     }
   }
 
@@ -2573,3 +2575,4 @@ a.feed-icon {
 input#panelizer-save-default {
   display: none;
 }
+

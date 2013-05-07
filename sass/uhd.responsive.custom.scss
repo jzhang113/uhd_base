@@ -81,6 +81,7 @@
       #header {
 
         h2#org-title {
+          float: right;
           margin: 4px 8px !important;
           @include font-size(1.0);
         }
@@ -95,10 +96,15 @@
   #content-wrapper {
 
     .container {
-      padding-top: 23px !important;
+      padding-top: 0 !important;
 
       #uhd-title-bar {
         width: 100%;
+
+        h1#site-name a {
+          @include font-size(3.0);
+          @include opacity(0.9);
+        }
       }
     }
   }

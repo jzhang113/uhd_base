@@ -62,6 +62,7 @@
     border-bottom: 2px solid #fee100 !important;
   }
   #header-wrapper .container #header h2#org-title {
+    float: right;
     margin: 4px 8px !important;
     font-size: 10px !important;
     font-size: 1rem !important;
@@ -71,10 +72,16 @@
   }
 
   #content-wrapper .container {
-    padding-top: 23px !important;
+    padding-top: 0 !important;
   }
   #content-wrapper .container #uhd-title-bar {
     width: 100%;
+  }
+  #content-wrapper .container #uhd-title-bar h1#site-name a {
+    font-size: 30px !important;
+    font-size: 3rem !important;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+    opacity: 0.9;
   }
 
   #footer-wrapper {

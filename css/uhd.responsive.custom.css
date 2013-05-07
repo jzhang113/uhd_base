@@ -47,10 +47,6 @@
     border-top-left-radius: 0 !important;
   }
 
-  h1#page-title {
-    font-size: 120%;
-  }
-
   nav#block-system-main-menu {
     margin: 0 !important;
     padding: 0;
@@ -64,8 +60,8 @@
   #header-wrapper .container #header h2#org-title {
     float: right;
     margin: 4px 8px !important;
-    font-size: 10px !important;
-    font-size: 1rem !important;
+    font-size: 12px !important;
+    font-size: 1.2rem !important;
   }
   #header-wrapper .container #header ul#uhd-sites-links {
     display: none;
@@ -77,11 +73,22 @@
   #content-wrapper .container #uhd-title-bar {
     width: 100%;
   }
+  #content-wrapper .container #uhd-title-bar h1#site-name {
+    position: relative;
+    margin-top: -36px;
+  }
   #content-wrapper .container #uhd-title-bar h1#site-name a {
-    font-size: 30px !important;
-    font-size: 3rem !important;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-    opacity: 0.9;
+    font-size: 22px !important;
+    font-size: 2.2rem !important;
+    color: black;
+    line-height: 34px;
+    text-shadow: none;
+  }
+  #content-wrapper .container h1#page-title {
+    bottom: 0;
+    left: 0;
+    font-size: 28px !important;
+    font-size: 2.8rem !important;
   }
 
   #footer-wrapper {

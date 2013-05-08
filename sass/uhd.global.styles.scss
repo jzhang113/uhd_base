@@ -2491,10 +2491,10 @@ body.node-type-location {
       color: white;
       z-index: 490;
       @include text-shadow(rgba(black, 0.9) -3px -3px 6px, rgba(black, 0.9) 3px 3px 6px, rgba(black, 0.9) -3px 3px 6px, rgba(black, 0.9) 3px -3px 6px);
-      filter:
-      progid:DXImageTransform.Microsoft.MotionBlur(strength=13, direction=310)
-      progid:DXImageTransform.Microsoft.Blur(pixelradius=2)
-      progid:DXImageTransform.Microsoft.Wheel(duration=3);
+      // filter:
+      // progid:DXImageTransform.Microsoft.MotionBlur(strength=13, direction=310)
+      // progid:DXImageTransform.Microsoft.Blur(pixelradius=2)
+      // progid:DXImageTransform.Microsoft.Wheel(duration=3);
     }
   }
 

@@ -1588,7 +1588,6 @@ body.node-type-location .uhd-header-content h1#page-title {
   color: white;
   z-index: 490;
   text-shadow: rgba(0, 0, 0, 0.9) -3px -3px 6px, rgba(0, 0, 0, 0.9) 3px 3px 6px, rgba(0, 0, 0, 0.9) -3px 3px 6px, rgba(0, 0, 0, 0.9) 3px -3px 6px;
-  filter: progid:DXImageTransform.Microsoft.MotionBlur(strength=13, direction=310) progid:DXImageTransform.Microsoft.Blur(pixelradius=2) progid:DXImageTransform.Microsoft.Wheel(duration=3);
 }
 body.node-type-location h2.field-label {
   font-size: 16px !important;

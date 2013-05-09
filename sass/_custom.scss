@@ -260,6 +260,17 @@ $gutter-width: 14px;
   font-weight: bold;
 }
 
+//-----------------------------------------------------------------------------
+// Buttons & pills
+//-----------------------------------------------------------------------------
+@mixin text-glow-page-title {
+  @include text-shadow(rgba(black, 0.9) -3px -3px 6px, rgba(black, 0.9) 3px 3px 6px, rgba(black, 0.9) -3px 3px 6px, rgba(black, 0.9) 3px -3px 6px);
+  // filter:
+  // progid:DXImageTransform.Microsoft.MotionBlur(strength=13, direction=310)
+  // progid:DXImageTransform.Microsoft.Blur(pixelradius=2)
+  // progid:DXImageTransform.Microsoft.Wheel(duration=3);
+}
+
 
 //-----------------------------------------------------------------------------
 // Attempt at unifying styles
@@ -286,4 +297,23 @@ $gutter-width: 14px;
   width: ceil($width*($percent/100));
   height: ceil($height*($percent/100));
   background-position: 0 floor(nth(sprite-position($map, $sprite), 2)  * ($percent/100) );
+}
+
+
+//-----------------------------------------------------------------------------
+// DEBUG code for media query breakpoints
+//-----------------------------------------------------------------------------
+@mixin debug-message($message: 'nothing') {
+  /* --- DEBUG FLAG!!! --- */
+  // &:before {
+  //   position: absolute;
+  //   top: 2px;
+  //   left: 2px;
+  //   content: $message;
+  //   @include font-size(1.0);
+  //   color: $hawk_gold;
+  //   font-weight: bold;
+  //   z-index: 490;
+  // }
+  /* --- END DEBUG FLAG --- */
 }

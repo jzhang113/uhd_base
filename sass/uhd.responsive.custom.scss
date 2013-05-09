@@ -25,13 +25,15 @@
 
 
 /* =================================================================================================
-   Smartphone sizes and down
+   Smartphone and down
    ================================================================================================= */
 
-  // N.B. All !importants should disappear when the desktop styles are moved in here, too
+// N.B. All !importants should disappear when the desktop styles are moved in here, too
 
-@media only screen and (max-width: 480px) {
-
+@media only screen and (max-width: 500px) {
+  body {
+    @include debug-message('1 [lte 500]');
+  }
   /*
    * Float Region blocks example:
    * In smaller screen sizes we can remove the float and widths so all blocks
@@ -52,24 +54,9 @@
     margin-left: -$gutter-width;
     margin-right: -$gutter-width;
   }
+  
 
-  div#branding {
-    margin: 0 6px !important;
-    width: 40%;
-    height: 40%;
-  }
-  #columns {
-    border-top-left-radius: 0 !important;
-  }
-
-  nav#block-system-main-menu {
-    margin: 0 !important;
-    padding: 0;
-    border-top-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  // --- Header
+  // --- Header ---------------------------------------------
   #header-wrapper {
     border-bottom: 2px solid $hawk_gold !important;
 
@@ -89,8 +76,9 @@
       }
     }
   }
+  // --------------------------------------------------------
 
-  // --- Content
+  // --- Content --------------------------------------------
   #content-wrapper {
 
     .container {
@@ -120,7 +108,26 @@
     }
   }
 
-  // --- Footer
+  div#branding {
+    margin: 0 6px !important;
+    width: 40%;
+    height: 40%;
+  }
+
+  // --- --- Sidebar first (navigation)
+  nav#block-system-main-menu {
+    margin: 0 !important;
+    padding: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #columns {
+    border-top-left-radius: 0 !important;
+  }
+  // --------------------------------------------------------
+
+  // --- Footer ---------------------------------------------
   #footer-wrapper {
     border-top: 2px solid $hawk_gold !important;
 
@@ -142,7 +149,6 @@
         }
       }
 
-
       ul.uhd-footer-links {
         list-style-type: none !important;
 
@@ -161,21 +167,28 @@
       }
     }
   }
-} /* END smartphone ================================================================================ */
+  // --------------------------------------------------------
+
+} 
+/* END Smartphone ================================================================================ */
 
 
 
 /* =================================================================================================
-   Tablet sizes
-   ================================================================================================= */
+   Tablets 1
+================================================================================================= */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 501px) and (max-width: 799px) {
+  body {
+    @include debug-message('2 [501-799]');
+  }
+
   #nav-link {
-    //display: none !important;
+    display: none !important;
   }
 
   .back-to-top-link {
-    //display: none !important;
+    display: none !important;
   }
 
   nav#block-system-main-menu {
@@ -184,6 +197,9 @@
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;
   }
+  #columns {
+    border-top-left-radius: 0 !important;
+  }
 
   .uhd-department-description {
     float: left;
@@ -200,6 +216,57 @@
     padding-right: none;
   }
 
+  // --- Header ---------------------------------------------
+  #header-wrapper {
+    border-bottom: 2px solid $hawk_gold !important;
+
+    .container {
+
+      #header {
+
+        h2#org-title {
+          float: right;
+          margin: 4px 8px !important;
+          @include font-size(1.2);
+        }
+
+        ul#uhd-sites-links {
+          display: none;
+        }
+      }
+    }
+  }
+  // --------------------------------------------------------
+
+  // --- Content -------------------------------------------
+  .container {
+    padding-top: 0 !important;
+
+    #uhd-title-bar {
+      width: 100%;
+
+      h1#site-name {
+        position: relative;
+        margin-top: -36px;
+
+        a {
+          @include font-size(2.2);
+          color: black;
+          line-height: 34px;
+          text-shadow: none;
+        }
+      }
+    }
+
+    h1#page-title {
+      bottom: 0;
+      left: 0;
+      @include font-size(2.8);
+    }
+  }
+  // --------------------------------------------------------
+
+  // --- Footer ---------------------------------------------
   ul.uhd-footer-links {
     width: 75%;
     float: right;
@@ -220,15 +287,37 @@
       }
     }
   }
-} /* END tablets ================================================================================ */
+  // --------------------------------------------------------
 
+} 
+/* END Tablets 1 ================================================================================ */
 
 
 /* =================================================================================================
-   ALMOST Desktop sizes, but thinner than full page
-   ================================================================================================= */
+   Tablets 2
+================================================================================================= */
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 800px) {
+  body {
+    @include debug-message('3 [gte 800]');
+  }
+
+  // --- Content --------------------------------------------
+
+
+  // --- --- Sidebar first (navigation)
+  nav#block-system-main-menu {
+    border-top-left-radius: 0;
+  }
+
+  #columns {
+    border-top-left-radius: 0;
+  }
+  // --------------------------------------------------------
+
+
+
+
   #nav-link {
     display: none !important;
   }
@@ -272,4 +361,89 @@
       }
     }
   }
-} /* END desktops ================================================================================ */
+} 
+/* END Tablets 2 ================================================================================ */
+
+
+/* =================================================================================================
+   Desktop
+================================================================================================= */
+
+@media only screen and (min-width: 1140px) {
+  body {
+    @include debug-message('4 [gte 1140px]');
+  }
+
+  // --- Header ---------------------------------------------
+
+  // --------------------------------------------------------
+
+
+  // --- Content --------------------------------------------
+
+  // --- --- Sidebar first (navigation)
+  nav#block-system-main-menu {
+    padding-top: 20px;
+    padding-bottom: 12px;
+    background-color: lighten($grey_dark_very, 8%);
+    @include border-top-left-radius(8px);
+    @include border-bottom-right-radius(8px);
+  }
+  #columns {
+    @include border-top-left-radius(14px);
+  }
+  // --------------------------------------------------------
+
+
+  // --- Footer ---------------------------------------------
+
+  // --------------------------------------------------------
+
+
+  #nav-link {
+    display: none !important;
+  }
+
+  .back-to-top-link {
+    display: none !important;
+  }
+
+  .uhd-department-description {
+    float: left;
+    width: 75%;
+  }
+
+  .uhd-department-link {
+    float: right;
+    width: 20%;
+  }
+
+  .uhd-wordmark-wrapper {
+    width: 20%;
+    padding-right: none;
+  }
+
+  ul.uhd-footer-links {
+    width: 75%;
+    float: right;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      width: 25%;
+      ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        li {
+          display: block;
+          float: none;
+          width: auto;
+        }
+      }
+    }
+  }
+} 
+/* END desktops ================================================================================ */
+
+

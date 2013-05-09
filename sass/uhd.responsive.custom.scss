@@ -48,7 +48,6 @@
 
   // --- Header ---------------------------------------------
   #header-wrapper {
-    border-bottom: 2px solid $hawk_gold !important;
 
     .container {
 
@@ -79,12 +78,12 @@
 
         h1#site-name {
           position: relative;
-          margin-top: -36px;
+          margin-top: -40px;
 
           a {
             @include font-size(2.2);
             color: black;
-            line-height: 34px;
+            line-height: 40px;
             text-shadow: none;
           }
         }
@@ -119,41 +118,20 @@
 
   // --- Footer ---------------------------------------------
   #footer-wrapper {
-    border-top: 2px solid $hawk_gold !important;
+    ul.uhd-footer-links {
+      list-style-type: none;
 
-    .container {
-      padding-top: 32px !important;
+      > li {
+        margin-left: 8px;
+        width: 100%;
 
-      .more-info {
-        margin: 0 !important;
-
-        .uhd-department-description {
-          margin: 8px;
-          width: 100%;
+        &.home img { 
+          max-width: 33%; 
         }
 
-        .uhd-department-link {
-          float: right;
-          margin: 12px 8px;
-          width: 80%;
-        }
-      }
-
-      ul.uhd-footer-links {
-        list-style-type: none;
-
-        > li {
-          margin-left: 8px;
-          width: 100%;
-
-          &.home img { 
-            max-width: 33%; 
-          }
-
-          ul {
-            li {
-              margin: 0;
-            }
+        ul {
+          li {
+            margin: 0;
           }
         }
       }
@@ -181,7 +159,6 @@
 
   // --- Header ---------------------------------------------
   #header-wrapper {
-    border-bottom: 2px solid $hawk_gold !important;
 
     .container {
 
@@ -223,12 +200,12 @@
 
       h1#site-name {
         position: relative;
-        margin-top: -36px;
+        margin-top: -40px;
 
         a {
           @include font-size(2.2);
           color: black;
-          line-height: 34px;
+          line-height: 40px;
           text-shadow: none;
         }
       }
@@ -245,19 +222,8 @@
 
   // --- Footer ---------------------------------------------
 
-  .uhd-department-description {
-    float: left;
-    width: 75%;
-  }
-
-  .uhd-department-link {
-    float: right;
-    width: 20%;
-  }
-
-  .uhd-wordmark-wrapper {
-    width: 20%;
-    padding-right: none;
+  .more-info {
+    margin: 0 !important;
   }
 
   ul.uhd-footer-links {
@@ -322,19 +288,8 @@
     display: none !important;
   }
 
-  .uhd-department-description {
-    float: left;
-    width: 75%;
-  }
-
-  .uhd-department-link {
-    float: right;
-    width: 20%;
-  }
-
-  .uhd-wordmark-wrapper {
-    width: 20%;
-    padding-right: none;
+  .more-info {
+    margin: 0 !important;
   }
 
   ul.uhd-footer-links {
@@ -390,21 +345,6 @@
   // --- Footer ---------------------------------------------
   .back-to-top-link {
     display: none !important;
-  }
-
-  .uhd-department-description {
-    float: left;
-    width: 75%;
-  }
-
-  .uhd-department-link {
-    float: right;
-    width: 20%;
-  }
-
-  .uhd-wordmark-wrapper {
-    width: 20%;
-    padding-right: none;
   }
 
   ul.uhd-footer-links {

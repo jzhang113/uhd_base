@@ -707,21 +707,26 @@ ul.links {
 .region-footer {
 
   .more-info {
-    margin: 12px 0;
+    margin: 12px 0 !important;
 
     h2 {
       text-transform: uppercase;
       color: $grey_dark_pretty;
     }
 
-    p.uhd-department-description {
-      margin: 0;
-      text-indent: none;
+    .uhd-department-description {
+      float: left;
+      margin: 8px;
       color: white;
     }
 
-    a.plain-button {
+    .uhd-department-link {
       float: right;
+      margin: 12px 8px;
+
+      a {
+        float: right;
+      }
     }
   }
 }

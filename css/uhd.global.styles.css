@@ -423,18 +423,22 @@ ul.links li {
  * Footer region
  */
 .region-footer .more-info {
-  margin: 12px 0;
+  margin: 12px 0 !important;
 }
 .region-footer .more-info h2 {
   text-transform: uppercase;
   color: #666666;
 }
-.region-footer .more-info p.uhd-department-description {
-  margin: 0;
-  text-indent: none;
+.region-footer .more-info .uhd-department-description {
+  float: left;
+  margin: 8px;
   color: white;
 }
-.region-footer .more-info a.plain-button {
+.region-footer .more-info .uhd-department-link {
+  float: right;
+  margin: 12px 8px;
+}
+.region-footer .more-info .uhd-department-link a {
   float: right;
 }
 

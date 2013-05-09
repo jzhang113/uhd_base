@@ -140,19 +140,21 @@
       }
 
       ul.uhd-footer-links {
-        list-style-type: none !important;
+        list-style-type: none;
 
-        li {
-          width: 90% !important; // Quick fix to remove horizontal scroll on mobile. @TODO: Redo margin/padding in default styles?
-          border-left: none;
-          list-style-type: none !important;
+        > li {
+          margin-left: 8px;
+          width: 100%;
 
-          &.home {
-            text-align: center;
-
-            img { max-width: 60%; }
+          &.home img { 
+            max-width: 33%; 
           }
 
+          ul {
+            li {
+              margin: 0;
+            }
+          }
         }
       }
     }
@@ -242,9 +244,6 @@
 
 
   // --- Footer ---------------------------------------------
-  .back-to-top-link {
-    display: none !important;
-  }
 
   .uhd-department-description {
     float: left;
@@ -262,22 +261,19 @@
   }
 
   ul.uhd-footer-links {
-    width: 75%;
-    float: right;
-    margin: 0;
-    padding: 0;
-    li {
+    
+     > li {
       float: left;
-      width: 25%;
-      ul {
-        display: block;
-        margin: 0;
-        padding: 0;
-        li {
-          display: block;
-          float: none;
-          width: auto;
-        }
+      width: 40%;
+
+      &.home {
+        width: 100%;
+
+        img { max-width: 25%; }
+      }
+      &.admin, &.dining {
+        clear: both;
+        margin-left: 8px;
       }
     }
   }
@@ -342,23 +338,10 @@
   }
 
   ul.uhd-footer-links {
-    width: 75%;
-    float: right;
-    margin: 0;
-    padding: 0;
-    li {
+    
+    > li {
       float: left;
       width: 25%;
-      ul {
-        display: block;
-        margin: 0;
-        padding: 0;
-        li {
-          display: block;
-          float: none;
-          width: auto;
-        }
-      }
     }
   }
   // --------------------------------------------------------
@@ -425,23 +408,9 @@
   }
 
   ul.uhd-footer-links {
-    width: 75%;
-    float: right;
-    margin: 0;
-    padding: 0;
-    li {
-      float: left;
-      width: 25%;
-      ul {
-        display: block;
-        margin: 0;
-        padding: 0;
-        li {
-          display: block;
-          float: none;
-          width: auto;
-        }
-      }
+
+    > li {
+      width: 17%;
     }
   }
   // --------------------------------------------------------

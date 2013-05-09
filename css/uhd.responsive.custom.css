@@ -106,18 +106,17 @@
     width: 80%;
   }
   #footer-wrapper .container ul.uhd-footer-links {
-    list-style-type: none !important;
+    list-style-type: none;
   }
-  #footer-wrapper .container ul.uhd-footer-links li {
-    width: 90% !important;
-    border-left: none;
-    list-style-type: none !important;
+  #footer-wrapper .container ul.uhd-footer-links > li {
+    margin-left: 8px;
+    width: 100%;
   }
-  #footer-wrapper .container ul.uhd-footer-links li.home {
-    text-align: center;
+  #footer-wrapper .container ul.uhd-footer-links > li.home img {
+    max-width: 33%;
   }
-  #footer-wrapper .container ul.uhd-footer-links li.home img {
-    max-width: 60%;
+  #footer-wrapper .container ul.uhd-footer-links > li ul li {
+    margin: 0;
   }
 }
 /* END Level 1:  Smartphone and down ================================================================================ */
@@ -178,10 +177,6 @@
     font-size: 2.8rem !important;
   }
 
-  .back-to-top-link {
-    display: none !important;
-  }
-
   .uhd-department-description {
     float: left;
     width: 75%;
@@ -197,25 +192,19 @@
     padding-right: none;
   }
 
-  ul.uhd-footer-links {
-    width: 75%;
-    float: right;
-    margin: 0;
-    padding: 0;
-  }
-  ul.uhd-footer-links li {
+  ul.uhd-footer-links > li {
     float: left;
-    width: 25%;
+    width: 40%;
   }
-  ul.uhd-footer-links li ul {
-    display: block;
-    margin: 0;
-    padding: 0;
+  ul.uhd-footer-links > li.home {
+    width: 100%;
   }
-  ul.uhd-footer-links li ul li {
-    display: block;
-    float: none;
-    width: auto;
+  ul.uhd-footer-links > li.home img {
+    max-width: 25%;
+  }
+  ul.uhd-footer-links > li.admin, ul.uhd-footer-links > li.dining {
+    clear: both;
+    margin-left: 8px;
   }
 }
 /* END Level 2:  Tablets narrow ================================================================================ */
@@ -259,25 +248,9 @@
     padding-right: none;
   }
 
-  ul.uhd-footer-links {
-    width: 75%;
-    float: right;
-    margin: 0;
-    padding: 0;
-  }
-  ul.uhd-footer-links li {
+  ul.uhd-footer-links > li {
     float: left;
     width: 25%;
-  }
-  ul.uhd-footer-links li ul {
-    display: block;
-    margin: 0;
-    padding: 0;
-  }
-  ul.uhd-footer-links li ul li {
-    display: block;
-    float: none;
-    width: auto;
   }
 }
 /* END Level 3:  Tablets wide ================================================================================ */
@@ -331,25 +304,8 @@
     padding-right: none;
   }
 
-  ul.uhd-footer-links {
-    width: 75%;
-    float: right;
-    margin: 0;
-    padding: 0;
-  }
-  ul.uhd-footer-links li {
-    float: left;
-    width: 25%;
-  }
-  ul.uhd-footer-links li ul {
-    display: block;
-    margin: 0;
-    padding: 0;
-  }
-  ul.uhd-footer-links li ul li {
-    display: block;
-    float: none;
-    width: auto;
+  ul.uhd-footer-links > li {
+    width: 17%;
   }
 }
 /* END Level 4:  Desktop ================================================================================ */

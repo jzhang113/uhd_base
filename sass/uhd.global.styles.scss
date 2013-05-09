@@ -264,15 +264,12 @@ var {
   background-color: white;
   border-bottom: 6px solid $hawk_gold;
 
-  .container {
+  #header {
 
-    #header {
-
-      h2#org-title {
-        float: left;
-        margin: 8px;
-        text-transform: uppercase;
-      }
+    h2#org-title {
+      float: left;
+      margin: 8px;
+      text-transform: uppercase;
     }
   }
 }
@@ -2454,49 +2451,30 @@ tr.error {
 
 /* =============================================================================
     UHD header content
-   ============================================================================= */
+============================================================================= */
 
-/* --- Basic page */
-body.page-node {
+.uhd-header-content {
+  position: relative;
 
-  .uhd-header-content {
-    position: relative;
-    margin-bottom: 12px;
-
-    h1#page-title {
-      position: absolute;
-      left: 12px;
-      bottom: 12px;
-      color: white;
-      z-index: 490;
-      @include text-glow-page-title;
-    }
+  h1#page-title {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    padding: 0;
+    z-index: 490;
+    @include text-glow-big;
+    color: white;
   }
 }
 
-/* --- Location node (header image and header title only) */
-body.node-type-location {
-
-  .uhd-header-content {
-    position: relative;
-    margin-bottom: 12px;
-
-    h1#page-title {
-      position: absolute;
-      left: 12px;
-      bottom: 12px;
-      color: white;
-      z-index: 490;
-      @include text-glow-page-title;
-    }
-  }
-
-  h2.field-label {
-    @include font-size(1.6);
-  }
+h2.field-label {
+  @include font-size(1.6);
 }
 
 
+/* =============================================================================
+    Small screen jump links
+============================================================================= */
 #nav-link {
   position: relative;
   float: right;

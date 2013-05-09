@@ -261,14 +261,18 @@ $gutter-width: 14px;
 }
 
 //-----------------------------------------------------------------------------
-// Buttons & pills
+// Text shadows and glows
 //-----------------------------------------------------------------------------
-@mixin text-glow-page-title {
+@mixin text-glow-big {
   @include text-shadow(rgba(black, 0.9) -3px -3px 6px, rgba(black, 0.9) 3px 3px 6px, rgba(black, 0.9) -3px 3px 6px, rgba(black, 0.9) 3px -3px 6px);
   // filter:
   // progid:DXImageTransform.Microsoft.MotionBlur(strength=13, direction=310)
   // progid:DXImageTransform.Microsoft.Blur(pixelradius=2)
   // progid:DXImageTransform.Microsoft.Wheel(duration=3);
+}
+
+@mixin text-glow-small {
+  @include text-shadow(rgba(black, 0.9) -2px -2px 3px, rgba(black, 0.9) 2px 2px 3px, rgba(black, 0.9) -2px 2px 3px, rgba(black, 0.9) 2px -2px 3px);
 }
 
 

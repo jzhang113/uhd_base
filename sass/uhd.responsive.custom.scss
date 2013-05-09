@@ -49,19 +49,16 @@
   // --- Header ---------------------------------------------
   #header-wrapper {
 
-    .container {
+    #header {
 
-      #header {
+      h2#org-title {
+        float: right;
+        margin: 4px 8px !important;
+        @include font-size(1.2);
+      }
 
-        h2#org-title {
-          float: right;
-          margin: 4px 8px !important;
-          @include font-size(1.2);
-        }
-
-        ul#uhd-sites-links {
-          display: none;
-        }
+      ul#uhd-sites-links {
+        display: none;
       }
     }
   }
@@ -90,8 +87,8 @@
       }
 
       h1#page-title {
-        bottom: 0;
-        left: 0;
+        bottom: 12px;
+        left: 12px;
         @include font-size(2.8);
       }
     }

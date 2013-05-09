@@ -16,35 +16,22 @@
  */
 
 
-/* Really small screens and up */
-// @media only screen and (min-width: 220px) {}
-
-
-/* Smartphone sizes and up */
-// @media only screen and (min-width: 320px) {}
-
 
 /* =================================================================================================
-   Smartphone and down
-   ================================================================================================= */
+   Level 1:  Smartphone and down
+================================================================================================= */
 
-// N.B. All !importants should disappear when the desktop styles are moved in here, too
+// N.B. All !importants should disappear when the desktop styles are moved in here, eventually.
 
 @media only screen and (max-width: 500px) {
+  html {
+    // base font size adjustment
+  }
+
   body {
     @include debug-message('1 [lte 500]');
   }
-  /*
-   * Float Region blocks example:
-   * In smaller screen sizes we can remove the float and widths so all blocks
-   * stack instead of displaying horizonally. The selector used here is an
-   * "attribute selector" which will match on any float block class. Use your
-   * inspector or Firebug to get the classes from the page output if you need
-   * more granular control over block alignment and stacking.
-   *
-   * "Float Region blocks" is an extension for floating blocks in regions, see
-   * your themes appearance settings, under the Extensions tab.
-   */
+  
   .region[class*="float-blocks"] .block {
     float: none;
     width: 100%;
@@ -55,6 +42,9 @@
     margin-right: -$gutter-width;
   }
   
+  #page-wrapper {
+    background-image: none;
+  }
 
   // --- Header ---------------------------------------------
   #header-wrapper {
@@ -170,50 +160,21 @@
   // --------------------------------------------------------
 
 } 
-/* END Smartphone ================================================================================ */
+/* END Level 1:  Smartphone and down ================================================================================ */
 
 
 
 /* =================================================================================================
-   Tablets 1
+   Level 2:  Tablets narrow
 ================================================================================================= */
 
 @media only screen and (min-width: 501px) and (max-width: 799px) {
+  html {
+    // base font size adjustment
+  }
+
   body {
     @include debug-message('2 [501-799]');
-  }
-
-  #nav-link {
-    display: none !important;
-  }
-
-  .back-to-top-link {
-    display: none !important;
-  }
-
-  nav#block-system-main-menu {
-    margin: 0 !important;
-    padding: 0;
-    border-top-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  #columns {
-    border-top-left-radius: 0 !important;
-  }
-
-  .uhd-department-description {
-    float: left;
-    width: 75%;
-  }
-
-  .uhd-department-link {
-    float: right;
-    width: 20%;
-  }
-
-  .uhd-wordmark-wrapper {
-    width: 20%;
-    padding-right: none;
   }
 
   // --- Header ---------------------------------------------
@@ -238,7 +199,20 @@
   }
   // --------------------------------------------------------
 
+
   // --- Content -------------------------------------------
+
+  // --- --- Sidebar first (navigation)
+  nav#block-system-main-menu {
+    margin: 0 !important;
+    padding: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  #columns {
+    border-top-left-radius: 0 !important;
+  }
+
   .container {
     padding-top: 0 !important;
 
@@ -266,62 +240,8 @@
   }
   // --------------------------------------------------------
 
+
   // --- Footer ---------------------------------------------
-  ul.uhd-footer-links {
-    width: 75%;
-    float: right;
-    margin: 0;
-    padding: 0;
-    li {
-      float: left;
-      width: 25%;
-      ul {
-        display: block;
-        margin: 0;
-        padding: 0;
-        li {
-          display: block;
-          float: none;
-          width: auto;
-        }
-      }
-    }
-  }
-  // --------------------------------------------------------
-
-} 
-/* END Tablets 1 ================================================================================ */
-
-
-/* =================================================================================================
-   Tablets 2
-================================================================================================= */
-
-@media only screen and (min-width: 800px) {
-  body {
-    @include debug-message('3 [gte 800]');
-  }
-
-  // --- Content --------------------------------------------
-
-
-  // --- --- Sidebar first (navigation)
-  nav#block-system-main-menu {
-    border-top-left-radius: 0;
-  }
-
-  #columns {
-    border-top-left-radius: 0;
-  }
-  // --------------------------------------------------------
-
-
-
-
-  #nav-link {
-    display: none !important;
-  }
-
   .back-to-top-link {
     display: none !important;
   }
@@ -361,15 +281,101 @@
       }
     }
   }
+  // --------------------------------------------------------
+
 } 
-/* END Tablets 2 ================================================================================ */
+/* END Level 2:  Tablets narrow ================================================================================ */
 
 
 /* =================================================================================================
-   Desktop
+   Level 3:  Tablets wide
+================================================================================================= */
+
+@media only screen and (min-width: 800px) {
+  html {
+    // base font size adjustment
+  }
+
+  body {
+    @include debug-message('3 [gte 800]');
+  }
+
+  // --- Header ---------------------------------------------
+
+  // --------------------------------------------------------
+
+
+  // --- Content --------------------------------------------
+  #nav-link {
+    display: none !important;
+  }
+
+  // --- --- Sidebar first (navigation)
+  nav#block-system-main-menu {
+    border-top-left-radius: 0;
+  }
+
+  #columns {
+    border-top-left-radius: 0;
+  }
+  // --------------------------------------------------------
+
+
+  // --- Footer ---------------------------------------------
+  .back-to-top-link {
+    display: none !important;
+  }
+
+  .uhd-department-description {
+    float: left;
+    width: 75%;
+  }
+
+  .uhd-department-link {
+    float: right;
+    width: 20%;
+  }
+
+  .uhd-wordmark-wrapper {
+    width: 20%;
+    padding-right: none;
+  }
+
+  ul.uhd-footer-links {
+    width: 75%;
+    float: right;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      width: 25%;
+      ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        li {
+          display: block;
+          float: none;
+          width: auto;
+        }
+      }
+    }
+  }
+  // --------------------------------------------------------
+
+} 
+/* END Level 3:  Tablets wide ================================================================================ */
+
+
+/* =================================================================================================
+   Level 4:  Desktop
 ================================================================================================= */
 
 @media only screen and (min-width: 1140px) {
+  html {
+    // base font size adjustment
+  }
+
   body {
     @include debug-message('4 [gte 1140px]');
   }
@@ -380,6 +386,9 @@
 
 
   // --- Content --------------------------------------------
+  #nav-link {
+    display: none !important;
+  }
 
   // --- --- Sidebar first (navigation)
   nav#block-system-main-menu {
@@ -396,14 +405,6 @@
 
 
   // --- Footer ---------------------------------------------
-
-  // --------------------------------------------------------
-
-
-  #nav-link {
-    display: none !important;
-  }
-
   .back-to-top-link {
     display: none !important;
   }
@@ -443,7 +444,8 @@
       }
     }
   }
-} 
-/* END desktops ================================================================================ */
+  // --------------------------------------------------------
 
+} 
+/* END Level 4:  Desktop ================================================================================ */
 

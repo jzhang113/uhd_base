@@ -218,7 +218,7 @@ body.site-name-mothership ul#uhd-sites-links li.mothership {
  */
 #content-wrapper .container {
   position: relative;
-  padding-top: 55px;
+  padding-top: 45px;
 }
 
 /*
@@ -269,15 +269,15 @@ body.site-name-mothership ul#uhd-sites-links li.mothership {
  */
 h1#site-name {
   position: absolute;
-  top: 1;
+  top: 6px;
   right: 1;
   margin: 0;
   padding: 0;
 }
 h1#site-name a, h1#site-name a:link {
-  font-size: 60px !important;
-  font-size: 6rem !important;
-  line-height: 55px;
+  font-size: 64px !important;
+  font-size: 6.4rem !important;
+  line-height: 45px;
   color: white;
   text-decoration: none;
   text-shadow: rgba(0, 0, 0, 0.9) 3px 3px 6px;

@@ -25,7 +25,7 @@
 
 @media only screen and (max-width: 500px) {
   html {
-    // base font size adjustment
+    font-size: 62.5%;
   }
 
   body {
@@ -110,6 +110,10 @@
 
   #columns {
     border-top-left-radius: 0 !important;
+  }
+
+  h2 {
+    @include font-size(1.8);
   }
   // --------------------------------------------------------
 

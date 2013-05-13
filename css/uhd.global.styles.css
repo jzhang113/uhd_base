@@ -1290,6 +1290,10 @@ ul.action-links {
 /*
  * Wrapper for a form element (or group of form elements) and its label
  */
+.form-item input.form-text {
+  width: 100%;
+  max-width: 600px;
+}
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {

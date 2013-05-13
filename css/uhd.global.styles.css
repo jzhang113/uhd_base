@@ -1292,7 +1292,6 @@ ul.action-links {
  */
 .form-item input.form-text {
   width: 100%;
-  max-width: 600px;
 }
 .form-item input.error,
 .form-item textarea.error,

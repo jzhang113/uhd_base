@@ -275,8 +275,8 @@ h1#site-name {
   padding: 0;
 }
 h1#site-name a, h1#site-name a:link {
-  font-size: 60px !important;
-  font-size: 6rem !important;
+  font-size: 64px !important;
+  font-size: 6.4rem !important;
   line-height: 45px;
   color: white;
   text-decoration: none;

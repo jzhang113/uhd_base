@@ -250,12 +250,12 @@ $gutter-width: 14px;
   }
 }
 
-@mixin plain-pill($bgcolor: #900) {
+@mixin plain-pill($bgcolor: #900, $radius: 1em) {
   display: block;
   background-color: $bgcolor;
   color: #fff;
   padding: 0.25em 1em;
-  @include border-radius(1em);
+  @include border-radius($radius);
   text-align: center;
   font-weight: bold;
 }

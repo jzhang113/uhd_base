@@ -361,7 +361,7 @@ body.site-name-mothership ul#uhd-sites-links li.mothership {
 
   .container {
     position: relative;
-    padding-top: 55px;
+    padding-top: 45px;
   }
 }
 
@@ -436,14 +436,14 @@ body.site-name-mothership ul#uhd-sites-links li.mothership {
  */
 h1#site-name {
   position: absolute;
-  top: 1;
+  top: 6px;
   right: 1;
   margin: 0;
   padding: 0;
 
   a, a:link {
     @include font-size(6.0);
-    line-height: 55px;
+    line-height: 45px;
     color: white;
     text-decoration: none;
     @include text-shadow(rgba(black, 0.9) 3px 3px 6px);

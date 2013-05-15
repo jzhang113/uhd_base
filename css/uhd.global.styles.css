@@ -152,7 +152,7 @@ var {
 }
 #header-wrapper #header h2#org-title {
   float: left;
-  margin: 8px;
+  margin: 8px 0 0 8px;
   text-transform: uppercase;
 }
 

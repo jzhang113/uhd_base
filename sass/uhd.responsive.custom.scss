@@ -75,7 +75,7 @@
 
         h1#site-name {
           position: relative;
-          margin-top: -40px;
+          margin-top: -46px;
 
           a {
             @include font-size(2.2);
@@ -87,9 +87,14 @@
       }
 
       h1#page-title {
-        bottom: 12px;
-        left: 12px;
-        @include font-size(2.8);
+        @include font-size(2.4);
+        margin-top: 24px;
+        left: 8px;
+
+        &.page-banner-image-exists {
+          bottom: 12px;
+          left: 12px;
+        }
       }
     }
   }

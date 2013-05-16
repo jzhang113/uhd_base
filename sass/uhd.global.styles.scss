@@ -2547,3 +2547,25 @@ input#panelizer-save-default {
   display: none;
 }
 
+/* =============================================================================
+    News and events lists
+============================================================================= */
+.news-events-list {
+
+  .views-row {
+    padding: 6px 0;
+    border-bottom: 1px dotted $grey_light_very;
+  }
+
+  .views-field-title {
+    padding-left: 8px;
+    text-indent: -8px;
+    font-weight: bold;
+    line-height: 1.2em;
+  }
+
+  .item-date {
+    color: $grey_dark_pretty;
+    @include font-size(1.4);
+  }
+}

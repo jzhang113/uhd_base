@@ -822,6 +822,7 @@ h1, h2, h3 {
 
 /* --- Global plain-button style for editors */
 a.plain-button {
+  position: relative;
   @include plain-button;
   display: inline-block;
 
@@ -831,6 +832,18 @@ a.plain-button {
 
   &.small {
     @include font-size(1.2);
+  }
+
+  &.flickr {
+    padding-left: 40px;
+    
+    &:before {
+      content: url("images/flickr-wk-36.png");
+      position: absolute;
+      z-index: 490;
+      left: 12px;
+      top: 6px;
+    }
   }
 }
 

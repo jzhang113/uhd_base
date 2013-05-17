@@ -309,15 +309,15 @@ $gutter-width: 14px;
 //-----------------------------------------------------------------------------
 @mixin debug-message($message: 'nothing') {
   /* --- DEBUG FLAG!!! --- */
-  // &:before {
-  //   position: absolute;
-  //   top: 2px;
-  //   left: 2px;
-  //   content: $message;
-  //   @include font-size(1.0);
-  //   color: $hawk_gold;
-  //   font-weight: bold;
-  //   z-index: 490;
-  // }
+  &:before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    content: $message;
+    @include font-size(1.0);
+    color: $hawk_gold;
+    font-weight: bold;
+    z-index: 490;
+  }
   /* --- END DEBUG FLAG --- */
 }

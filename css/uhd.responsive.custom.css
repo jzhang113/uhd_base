@@ -22,6 +22,17 @@
     /* --- DEBUG FLAG!!! --- */
     /* --- END DEBUG FLAG --- */
   }
+  body:before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    content: "1 [lte 500]";
+    font-size: 10px !important;
+    font-size: 1rem !important;
+    color: #fee100;
+    font-weight: bold;
+    z-index: 490;
+  }
 
   .region[class*="float-blocks"] .block {
     float: none;
@@ -120,6 +131,17 @@
     /* --- DEBUG FLAG!!! --- */
     /* --- END DEBUG FLAG --- */
   }
+  body:before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    content: "2 [501-799]";
+    font-size: 10px !important;
+    font-size: 1rem !important;
+    color: #fee100;
+    font-weight: bold;
+    z-index: 490;
+  }
 
   #header-wrapper .container #header h2#org-title {
     float: right;
@@ -194,6 +216,17 @@
     /* --- DEBUG FLAG!!! --- */
     /* --- END DEBUG FLAG --- */
   }
+  body:before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    content: "3 [gte 800]";
+    font-size: 10px !important;
+    font-size: 1rem !important;
+    color: #fee100;
+    font-weight: bold;
+    z-index: 490;
+  }
 
   #nav-link {
     display: none !important;
@@ -228,6 +261,17 @@
   body {
     /* --- DEBUG FLAG!!! --- */
     /* --- END DEBUG FLAG --- */
+  }
+  body:before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    content: "4 [gte 1140px]";
+    font-size: 10px !important;
+    font-size: 1rem !important;
+    color: #fee100;
+    font-weight: bold;
+    z-index: 490;
   }
 
   #nav-link {

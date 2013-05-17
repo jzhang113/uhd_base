@@ -562,7 +562,7 @@ a.plain-button.flickr {
   padding-left: 40px;
 }
 a.plain-button.flickr:before {
-  content: url("images/flickr-wk-36.png");
+  content: url("images/flickr-wk-32.png");
   position: absolute;
   z-index: 490;
   left: 12px;
@@ -1429,7 +1429,7 @@ tr.odd {
 }
 tr.info, tr.even, tr:nth-child(2n+2) {
   border-bottom: 0;
-  background-color: #f5f5f5;
+  background-color: whitesmoke;
 }
 tr.odd td.active {
   background-color: #eeeeee;

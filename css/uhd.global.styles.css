@@ -559,14 +559,14 @@ a.plain-button.small {
   font-size: 1.2rem !important;
 }
 a.plain-button.flickr {
-  padding-left: 40px;
+  padding-left: 44px;
 }
 a.plain-button.flickr:before {
-  content: url("images/flickr-wk-32.png");
+  content: url("images/icon-flickr-square.png");
   position: absolute;
   z-index: 490;
-  left: 12px;
-  top: 6px;
+  left: 8px;
+  top: 1px;
 }
 
 /* --- Global image-button style for editors */

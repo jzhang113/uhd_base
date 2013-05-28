@@ -507,7 +507,7 @@ a:link, a:visited {
   color: #0e6cb3;
 }
 a:hover, a:focus {
-  text-decoration: underline;
+  text-decoration: none;
   color: #0a4f84;
 }
 

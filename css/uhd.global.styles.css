@@ -320,13 +320,6 @@ h1#page-title {
   padding: 8px 12px;
   font-size: 3em;
 }
-h1#page-title.page-banner-image-exists {
-  margin-top: -2em;
-  color: white;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=99);
-  opacity: 0.99;
-  text-shadow: rgba(0, 0, 0, 0.9) -3px -3px 6px, rgba(0, 0, 0, 0.9) 3px 3px 6px, rgba(0, 0, 0, 0.9) -3px 3px 6px, rgba(0, 0, 0, 0.9) 3px -3px 6px;
-}
 
 /* =============================================================================
  *   Misc Global Styles

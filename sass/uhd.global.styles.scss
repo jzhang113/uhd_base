@@ -543,16 +543,10 @@ h1#site-name {
 
 h1#page-title {
   float: left;
+  clear: both;
   margin: 0;
   padding: 8px 12px;
   font-size: 3em;
-
-  // &.page-banner-image-exists {
-  //   margin-top: -2em;
-  //   color: white;
-  //   @include opacity(0.99);
-  //   @include text-shadow(rgba(black, 0.9) -3px -3px 6px, rgba(black, 0.9) 3px 3px 6px, rgba(black, 0.9) -3px 3px 6px, rgba(black, 0.9) 3px -3px 6px);
-  // }
 }
 
 

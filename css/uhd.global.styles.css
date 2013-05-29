@@ -316,6 +316,7 @@ h1#site-name a:hover, h1#site-name a:focus, h1#site-name a:link:hover, h1#site-n
 
 h1#page-title {
   float: left;
+  clear: both;
   margin: 0;
   padding: 8px 12px;
   font-size: 3em;

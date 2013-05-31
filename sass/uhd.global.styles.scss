@@ -2560,8 +2560,7 @@ input#panelizer-save-default {
 .news-events-list {
 
   .views-row {
-    padding: 6px 0;
-    border-bottom: 1px dotted $grey_light_very;
+    @include list-view-styles;
   }
 
   .views-field-title {

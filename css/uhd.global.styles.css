@@ -1729,8 +1729,14 @@ input#panelizer-save-default {
     News and events lists
 ============================================================================= */
 .news-events-list .views-row {
-  padding: 6px 0;
-  border-bottom: 1px dotted #cccccc;
+  margin: 8px 0;
+  padding: 10px;
+  overflow: hidden;
+  *zoom: 1;
+  border-bottom: 1px dotted #aaaaaa;
+}
+.news-events-list .views-row:last-child {
+  border-bottom: 0;
 }
 .news-events-list .views-field-title {
   padding-left: 8px;

@@ -284,6 +284,10 @@ $gutter-width: 14px;
   padding: 10px;
   @include clearfix();
   border-bottom: 1px dotted $grey_light_pretty;
+
+  &:last-child {
+    border-bottom: 0;
+  }
 }
 
 

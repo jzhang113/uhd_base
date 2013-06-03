@@ -110,6 +110,10 @@
   #footer-wrapper ul.uhd-footer-links > li ul li {
     margin: 0;
   }
+
+  .block-masquerade {
+    width: 80% !important;
+  }
 }
 /* END Level 1:  Smartphone and down ================================================================================ */
 /* =================================================================================================
@@ -187,6 +191,10 @@
   ul.uhd-footer-links > li.admin, ul.uhd-footer-links > li.dining {
     clear: both;
     margin-left: 8px;
+  }
+
+  .block-masquerade {
+    width: 80% !important;
   }
 }
 /* END Level 2:  Tablets narrow ================================================================================ */

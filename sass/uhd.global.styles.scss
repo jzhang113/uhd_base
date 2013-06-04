@@ -2078,7 +2078,7 @@ ul.action-links {
  */
 .form-item {
   input.form-text {
-    width: 100%;
+    width: 90%;
   }
   input.error,
   textarea.error,
@@ -2575,3 +2575,4 @@ input#panelizer-save-default {
     @include font-size(1.4);
   }
 }
+

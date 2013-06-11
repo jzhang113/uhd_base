@@ -169,8 +169,6 @@
     text-shadow: none;
   }
   .container h1#page-title {
-    bottom: 0;
-    left: 0;
     font-size: 28px !important;
     font-size: 2.8rem !important;
   }

@@ -148,7 +148,7 @@
               <a href="http://vending.uiowa.edu/">Vending</a>
             </li> -->
             <li class="mothership last">
-              <a href="http://housing.uiowa.edu/uhd-administration">UH&amp;D Admin</a>
+              <a href="http://housing.uiowa.edu/departments/hr/index.html">UH&amp;D Admin</a>
             </li>
           </ul>
           <!-- end: UH&D sites menu -->
@@ -301,32 +301,32 @@
                 <li class="home">
                   <a href="http://uhd.uiowa.edu/"><img src="<?php print $GLOBALS['base_url'] . '/' . drupal_get_path('theme', 'uhd_base') . '/images/full-wordmark-wt.png'; ?>" title="University Housing &amp; Dining at The University of Iowa" alt="University Housing &amp; Dining at The University of Iowa" /></a>
                 </li>
-                <li class="admin"><h3>UH&amp;D Admin</h3>
+                <li class="admin"><h3><a href="http://housing.uiowa.edu/departments/hr/index.html">UH&amp;D Admin</a></h3>
                   <ul>
-                    <li><a href="#">Employment</a></li>
-                    <li><a href="#">Structure</a></li>
-                    <li><a href="#">Policies</a></li>
+                    <li><a href="http://housing.uiowa.edu/departments/hr/employment_opp.htm">Employment</a></li>
+                    <li><a href="http://housing.uiowa.edu/departments/index.htm">Organization</a></li>
+                    <li><a href="http://housing.uiowa.edu/departments/hr/index.html">Policies &amp; Procedures</a></li>
                   </ul>
                 </li>
-                <li class="housing"><h3>Housing</h3>
+                <li class="housing"><h3><a href="http://housing.uiowa.edu">Housing</a></h3>
                   <ul>
-                    <li><a href="#">Life@Iowa</a></li>
-                    <li><a href="#">Residence Halls</a></li>
-                    <li><a href="#">Living Learning Communities</a></li>
+                    <li><a href="http://fye.uiowa.edu/admitted-now-what/living-learning-communities">Living Learning Communities</a></li>
+                    <li><a href="http://housing.uiowa.edu/departments/reslife/residencehalls.htm">Residence Halls</a></li>
+                    <li><a href="http://www.liveon.uiowa.edu/">LiveOn</a></li>
                   </ul>
                 </li>
-                <li class="dining"><h3>Dining</h3>
+                <li class="dining"><h3><a href="http://dining.uiowa.edu">Dining</a></h3>
                   <ul>
-                    <li><a href="#">Locations</a></li>
-                    <li><a href="#">Menus</a></li>
-                    <li><a href="#">Dining Tools</a></li>
+                    <li><a href="http://dining.uiowa.edu">Locations</a></li>
+                    <li><a href="http://dining.uiowa.edu/market-place-menus">Menus</a></li>
+                    <li><a href="http://dining.uiowa.edu/meal-plan-rates">Meal Plan Info</a></li>
                   </ul>
                 </li>
-                <li class="last catering"><h3>Catering</h3>
+                <li class="last catering"><h3><a href="http://imu.uiowa.edu/catering">Catering</a></h3>
                   <ul>
-                    <li><a href="#">Locations</a></li>
-                    <li><a href="#">Menus</a></li>
-                    <li><a href="#">Reservations</a></li>
+                    <li><a href="http://imu.uiowa.edu/catering/">Menus</a></li>
+                    <li><a href="http://imu.uiowa.edu/meetings/">Meetings</a></li>
+                    <li><a href="http://imu.uiowa.edu/weddings/">Weddings</a></li>
                   </ul>
                 </li>
                 <!-- <li class="last vending"><h3>Vending</h3>

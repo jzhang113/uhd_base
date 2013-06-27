@@ -142,7 +142,7 @@
               <a href="http://dining.uiowa.edu/">Dining</a>
             </li>
             <li class="catering">
-              <a href="http://imu.uiowa.edu/catering/">Catering</a>
+              <a href="http://catering.uiowa.edu/">Catering</a>
             </li>
             <!-- <li class="vending">
               <a href="http://vending.uiowa.edu/">Vending</a>

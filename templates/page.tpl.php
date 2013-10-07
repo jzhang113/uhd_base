@@ -322,11 +322,11 @@
                     <li><a href="http://dining.uiowa.edu/meal-plan-rates">Meal Plan Info</a></li>
                   </ul>
                 </li>
-                <li class="last catering"><h3><a href="http://imu.uiowa.edu/catering">Catering</a></h3>
+                <li class="last catering"><h3><a href="http://catering.uiowa.edu">Catering</a></h3>
                   <ul>
-                    <li><a href="http://imu.uiowa.edu/catering/">Menus</a></li>
+                    <li><a href="http://catering.uiowa.edu/menus">Menus</a></li>
                     <li><a href="http://imu.uiowa.edu/meetings/">Meetings</a></li>
-                    <li><a href="http://imu.uiowa.edu/weddings/">Weddings</a></li>
+                    <li><a href="http://catering.uiowa.edu/weddings/">Weddings</a></li>
                   </ul>
                 </li>
                 <!-- <li class="last vending"><h3>Vending</h3>

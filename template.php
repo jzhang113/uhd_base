@@ -25,20 +25,11 @@
 /**
  * Preprocess variables for the html template.
  */
-/* -- Delete this line to enable.
-function uhd_base_preprocess_html(&$vars) {
-  global $theme_key;
-
-  // Two examples of adding custom classes to the body.
-
-  // Add a body class for the active theme name.
-  // $vars['classes_array'][] = drupal_html_class($theme_key);
-
-  // Browser/platform sniff - adds body classes such as ipad, webkit, chrome etc.
-  // $vars['classes_array'][] = css_browser_selector();
-
+function uhd_base_preprocess_html(&$variables) {
+  // Add typekit javascript and load it.
+  drupal_add_js('//use.typekit.net/ibs7kal.js', 'external');
+  drupal_add_js('jQuery(document).ready(function () {try{Typekit.load();}catch(e){}});', 'inline');
 }
-// */
 
 
 /**

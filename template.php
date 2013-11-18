@@ -27,7 +27,7 @@
  */
 function uhd_base_preprocess_html(&$variables) {
   // Add typekit javascript and load it.
-  drupal_add_js('//use.typekit.net/ibs7kal.js', 'external');
+  drupal_add_js('//use.typekit.net/fbq7djj.js', 'external');
   drupal_add_js('jQuery(document).ready(function () {try{Typekit.load();}catch(e){}});', 'inline');
 }
 

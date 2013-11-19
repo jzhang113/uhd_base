@@ -449,7 +449,8 @@ h1#site-name {
   font-family: proxima-nova, sans-serif;
 
   a, a:link {
-    @include font-size(6.4);
+    //@include font-size(6.4); -- hide for now to solve some strange inheritance bug.
+    font-size: 64px;
     line-height: 45px;
     color: white;
     text-decoration: none;

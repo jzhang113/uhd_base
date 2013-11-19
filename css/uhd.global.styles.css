@@ -46,8 +46,8 @@ html {
 
 body {
   font-family: Ubuntu, "Droid Sans", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-size: 14px !important;
-  font-size: 1.4rem !important;
+  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 /* =============================================================================
@@ -97,8 +97,8 @@ var {
  */
 #main-content {
   margin-top: 14px;
-  font-size: 16px !important;
-  font-size: 1.6rem !important;
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 /**
@@ -281,8 +281,7 @@ h1#site-name {
   font-family: proxima-nova, sans-serif;
 }
 h1#site-name a, h1#site-name a:link {
-  font-size: 64px !important;
-  font-size: 6.4rem !important;
+  font-size: 64px;
   line-height: 45px;
   color: white;
   text-decoration: none;
@@ -555,8 +554,8 @@ a.plain-button:link, a.plain-button:visited {
   color: white;
 }
 a.plain-button.small {
-  font-size: 12px !important;
-  font-size: 1.2rem !important;
+  font-size: 12px;
+  font-size: 1.2rem;
 }
 a.plain-button.flickr {
   padding-left: 44px;
@@ -1592,8 +1591,8 @@ div.messages ul {
 }
 
 h2.field-label {
-  font-size: 16px !important;
-  font-size: 1.6rem !important;
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 /* =============================================================================
@@ -1752,6 +1751,6 @@ input#panelizer-save-default {
 }
 .news-events-list .item-date {
   color: #666666;
-  font-size: 14px !important;
-  font-size: 1.4rem !important;
+  font-size: 14px;
+  font-size: 1.4rem;
 }

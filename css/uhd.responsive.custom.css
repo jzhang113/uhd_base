@@ -35,8 +35,8 @@
   #header-wrapper #header h2#org-title {
     float: right;
     margin: 4px 8px !important;
-    font-size: 12px !important;
-    font-size: 1.2rem !important;
+    font-size: 12px;
+    font-size: 1.2rem;
   }
   #header-wrapper #header ul#uhd-sites-links {
     display: none;
@@ -53,15 +53,15 @@
     margin-top: -46px;
   }
   #content-wrapper .container #uhd-title-bar h1#site-name a {
-    font-size: 22px !important;
-    font-size: 2.2rem !important;
+    font-size: 22px;
+    font-size: 2.2rem;
     color: black;
     line-height: 40px;
     text-shadow: none;
   }
   #content-wrapper .container h1#page-title {
-    font-size: 24px !important;
-    font-size: 2.4rem !important;
+    font-size: 24px;
+    font-size: 2.4rem;
     margin-top: 24px;
     left: 8px;
   }
@@ -88,8 +88,8 @@
   }
 
   h2 {
-    font-size: 18px !important;
-    font-size: 1.8rem !important;
+    font-size: 18px;
+    font-size: 1.8rem;
   }
 
   #footer-wrapper ul.uhd-footer-links {
@@ -123,8 +123,8 @@
   #header-wrapper .container #header h2#org-title {
     float: right;
     margin: 4px 8px !important;
-    font-size: 12px !important;
-    font-size: 1.2rem !important;
+    font-size: 12px;
+    font-size: 1.2rem;
   }
   #header-wrapper .container #header ul#uhd-sites-links {
     display: none;
@@ -152,15 +152,15 @@
     margin-top: -40px;
   }
   .container #uhd-title-bar h1#site-name a {
-    font-size: 22px !important;
-    font-size: 2.2rem !important;
+    font-size: 22px;
+    font-size: 2.2rem;
     color: black;
     line-height: 40px;
     text-shadow: none;
   }
   .container h1#page-title {
-    font-size: 28px !important;
-    font-size: 2.8rem !important;
+    font-size: 28px;
+    font-size: 2.8rem;
   }
 
   .more-info {

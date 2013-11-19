@@ -153,6 +153,7 @@ var {
 #header-wrapper #header h2#org-title {
   float: left;
   margin: 8px 0 0 8px;
+  font-family: proxima-nova-condensed, sans-serif;
   text-transform: uppercase;
 }
 
@@ -273,7 +274,7 @@ h1#site-name {
   right: 1;
   margin: 0;
   padding: 0;
-  font-family: proxima-nova, ubuntu;
+  font-family: proxima-nova, sans-serif;
 }
 h1#site-name a, h1#site-name a:link {
   font-size: 64px !important;

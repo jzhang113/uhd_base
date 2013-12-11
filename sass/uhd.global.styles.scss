@@ -321,11 +321,10 @@ body.site-name-housing ul#uhd-sites-links li.housing,
 body.site-name-dining ul#uhd-sites-links li.dining,
 body.site-name-catering ul#uhd-sites-links li.catering,
 body.site-name-vending ul#uhd-sites-links li.vending,
-body.site-name-mothership ul#uhd-sites-links li.mothership {
-  border-bottom: 6px solid $none_more_black !important;
-  @include sprites-sprite(menu-up-black, $dimensions: true, $offset-x: 66%, $offset-y: 38px);
+body.site-name-uhampampd-admin ul#uhd-sites-links li.mothership {
+  border-bottom: 6px solid $none_more_black;
+  //@include sprites-sprite(menu-up-black, $dimensions: true, $offset-x: 66%, $offset-y: 38px);
 }
-
 
 /*
  * Wraps the nav elements
@@ -1703,7 +1702,7 @@ ul.action-links {
 /* ==================================================================================================
    Main menu block
    ================================================================================================== */
-#block-system-main-menu {
+#block-system-main-menu, #block-menu-block-1 {
   padding-top: 20px;
   padding-bottom: 12px;
   background-color: lighten($grey_dark_very, 8%);

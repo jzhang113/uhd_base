@@ -1,8 +1,4 @@
-.sprites-sprite, body.site-name-housing ul#uhd-sites-links li.housing,
-body.site-name-dining ul#uhd-sites-links li.dining,
-body.site-name-catering ul#uhd-sites-links li.catering,
-body.site-name-vending ul#uhd-sites-links li.vending,
-body.site-name-mothership ul#uhd-sites-links li.mothership, #block-system-main-menu ul li a:before, #block-system-main-menu ul li.active-trail a.active-trail:before, #block-system-main-menu ul li.active-trail > a.active:before, #block-system-main-menu ul li.expanded > a.active:before, #nav-link:before, .back-to-top-link a:before, .back-to-top-link a:visited:before {
+.sprites-sprite, #block-system-main-menu ul li a:before, #block-menu-block-1 ul li a:before, #block-system-main-menu ul li.active-trail a.active-trail:before, #block-menu-block-1 ul li.active-trail a.active-trail:before, #block-system-main-menu ul li.active-trail > a.active:before, #block-menu-block-1 ul li.active-trail > a.active:before, #block-system-main-menu ul li.expanded > a.active:before, #block-menu-block-1 ul li.expanded > a.active:before, #nav-link:before, .back-to-top-link a:before, .back-to-top-link a:visited:before {
   background: url('images/sprites-s01d330b695.png') no-repeat;
 }
 
@@ -199,11 +195,8 @@ body.site-name-housing ul#uhd-sites-links li.housing,
 body.site-name-dining ul#uhd-sites-links li.dining,
 body.site-name-catering ul#uhd-sites-links li.catering,
 body.site-name-vending ul#uhd-sites-links li.vending,
-body.site-name-mothership ul#uhd-sites-links li.mothership {
-  border-bottom: 6px solid black !important;
-  background-position: 66% -94px;
-  height: 12px;
-  width: 12px;
+body.site-name-uhampampd-admin ul#uhd-sites-links li.mothership {
+  border-bottom: 6px solid black;
 }
 
 /*
@@ -1088,7 +1081,7 @@ ul.action-links {
 /* ==================================================================================================
    Main menu block
    ================================================================================================== */
-#block-system-main-menu {
+#block-system-main-menu, #block-menu-block-1 {
   padding-top: 20px;
   padding-bottom: 12px;
   background-color: #474747;
@@ -1099,11 +1092,11 @@ ul.action-links {
   -webkit-border-bottom-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-#block-system-main-menu ul {
+#block-system-main-menu ul, #block-menu-block-1 ul {
   margin: 0;
   padding: 0;
 }
-#block-system-main-menu ul li {
+#block-system-main-menu ul li, #block-menu-block-1 ul li {
   position: relative;
   list-style-image: none;
   list-style-type: none;
@@ -1111,14 +1104,14 @@ ul.action-links {
   /* Special case: top-level item is chosen */
   /* Special case:  Selected, top-level item has children */
 }
-#block-system-main-menu ul li a {
+#block-system-main-menu ul li a, #block-menu-block-1 ul li a {
   display: block;
   padding: 10px 24px;
   border-bottom: 1px solid #333333;
   color: white;
   text-decoration: none;
 }
-#block-system-main-menu ul li a:before {
+#block-system-main-menu ul li a:before, #block-menu-block-1 ul li a:before {
   content: "";
   position: absolute;
   top: 12px;
@@ -1128,77 +1121,77 @@ ul.action-links {
   height: 12px;
   width: 12px;
 }
-#block-system-main-menu ul li a:hover {
+#block-system-main-menu ul li a:hover, #block-menu-block-1 ul li a:hover {
   background-color: #525252;
 }
-#block-system-main-menu ul li.first.menu-depth-1 a {
+#block-system-main-menu ul li.first.menu-depth-1 a, #block-menu-block-1 ul li.first.menu-depth-1 a {
   border-top: 1px solid #333333;
 }
-#block-system-main-menu ul li.active-trail {
+#block-system-main-menu ul li.active-trail, #block-menu-block-1 ul li.active-trail {
   background-color: #333333;
 }
-#block-system-main-menu ul li.active-trail a {
+#block-system-main-menu ul li.active-trail a, #block-menu-block-1 ul li.active-trail a {
   border-bottom: 1px solid #404040;
 }
-#block-system-main-menu ul li.active-trail a.active-trail:before {
+#block-system-main-menu ul li.active-trail a.active-trail:before, #block-menu-block-1 ul li.active-trail a.active-trail:before {
   background-position: 0 -528px;
   height: 12px;
   width: 12px;
 }
-#block-system-main-menu ul li.active-trail > a.active {
+#block-system-main-menu ul li.active-trail > a.active, #block-menu-block-1 ul li.active-trail > a.active {
   color: #fee100;
   background-color: black;
 }
-#block-system-main-menu ul li.active-trail > a.active:before {
+#block-system-main-menu ul li.active-trail > a.active:before, #block-menu-block-1 ul li.active-trail > a.active:before {
   background-position: 0 0;
   height: 12px;
   width: 12px;
 }
-#block-system-main-menu ul li.expanded > a.active:before {
+#block-system-main-menu ul li.expanded > a.active:before, #block-menu-block-1 ul li.expanded > a.active:before {
   background-position: 0 -528px;
   height: 12px;
   width: 12px;
 }
-#block-system-main-menu ul li ul {
+#block-system-main-menu ul li ul, #block-menu-block-1 ul li ul {
   margin: 0;
   padding: 0;
 }
-#block-system-main-menu ul li ul li a {
+#block-system-main-menu ul li ul li a, #block-menu-block-1 ul li ul li a {
   padding: 6px 24px 6px 48px;
   text-indent: -12px;
   /* Special case: top-level item is chosen */
 }
-#block-system-main-menu ul li ul li a:before {
+#block-system-main-menu ul li ul li a:before, #block-menu-block-1 ul li ul li a:before {
   background-image: none !important;
 }
-#block-system-main-menu ul li ul li a.active-trail {
+#block-system-main-menu ul li ul li a.active-trail, #block-menu-block-1 ul li ul li a.active-trail {
   color: #fee100;
   background-color: black;
 }
-#block-system-main-menu ul li ul li a.active-trail:before {
+#block-system-main-menu ul li ul li a.active-trail:before, #block-menu-block-1 ul li ul li a.active-trail:before {
   background-image: none;
 }
-#block-system-main-menu ul li ul li a.active {
+#block-system-main-menu ul li ul li a.active, #block-menu-block-1 ul li ul li a.active {
   color: #fee100;
   background-color: black;
 }
-#block-system-main-menu ul li ul li a.active:before {
+#block-system-main-menu ul li ul li a.active:before, #block-menu-block-1 ul li ul li a.active:before {
   background-image: none !important;
 }
-#block-system-main-menu ul li ul li a:hover {
+#block-system-main-menu ul li ul li a:hover, #block-menu-block-1 ul li ul li a:hover {
   background-color: #525252 !important;
 }
-#block-system-main-menu ul li ul li.expanded.active-trail > a.active-trail {
+#block-system-main-menu ul li ul li.expanded.active-trail > a.active-trail, #block-menu-block-1 ul li ul li.expanded.active-trail > a.active-trail {
   color: white;
 }
-#block-system-main-menu ul li ul li.expanded.active-trail > a.active {
+#block-system-main-menu ul li ul li.expanded.active-trail > a.active, #block-menu-block-1 ul li ul li.expanded.active-trail > a.active {
   color: #fee100;
 }
-#block-system-main-menu ul li ul li ul li a {
+#block-system-main-menu ul li ul li ul li a, #block-menu-block-1 ul li ul li ul li a {
   padding-left: 72px;
   background-color: black;
 }
-#block-system-main-menu ul li ul li ul li a:hover {
+#block-system-main-menu ul li ul li ul li a:hover, #block-menu-block-1 ul li ul li ul li a:hover {
   background-color: #525252 !important;
 }
 

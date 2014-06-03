@@ -148,7 +148,7 @@
               <a href="http://vending.uiowa.edu/">Vending</a>
             </li> -->
             <li class="mothership last">
-              <a href="http://housing.uiowa.edu/departments/">UH&amp;D Admin</a>
+              <a href="http://housing.uiowa.edu/uhd-admin/">UH&amp;D Admin</a>
             </li>
           </ul>
           <!-- end: UH&D sites menu -->

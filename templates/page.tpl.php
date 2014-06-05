@@ -301,11 +301,11 @@
                 <li class="home">
                   <a href="http://www.housing.uiowa.edu/"><img src="<?php print $GLOBALS['base_url'] . '/' . drupal_get_path('theme', 'uhd_base') . '/images/full-wordmark-wt.png'; ?>" title="University Housing &amp; Dining at The University of Iowa" alt="University Housing &amp; Dining at The University of Iowa" /></a>
                 </li>
-                <li class="admin"><h3><a href="http://housing.uiowa.edu/departments">UH&amp;D Admin</a></h3>
+                <li class="admin"><h3><a href="http://housing.uiowa.edu/uhd-admin">UH&amp;D Admin</a></h3>
                   <ul>
-                    <li><a href="http://housing.uiowa.edu/departments/hr/employment_opp.htm">Employment</a></li>
-                    <li><a href="http://housing.uiowa.edu/departments">Organization</a></li>
-                    <li><a href="http://housing.uiowa.edu/policy">Policies &amp; Procedures</a></li>
+                    <li><a href="http://housing.uiowa.edu/uhd-admin/employment-opportunities">Employment</a></li>
+                    <li><a href="http://housing.uiowa.edu/uhd-admin/about-us">Organization</a></li>
+                    <li><a href="http://housing.uiowa.edu/uhd-admin/uhd-policies">Policies &amp; Procedures</a></li>
                   </ul>
                 </li>
                 <li class="housing"><h3><a href="http://housing.uiowa.edu">Housing</a></h3>

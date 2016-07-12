@@ -8,7 +8,7 @@
   release     = 7.x-3.x
   engine      = phptemplate
   screenshot  = uhd_base.png
-  version = 7.x-1.0-dev1
+  version = 7.x-1.0
 
 ;----------// Stylesheets
 

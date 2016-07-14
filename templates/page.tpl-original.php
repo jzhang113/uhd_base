@@ -259,7 +259,7 @@
             <div id="uhd_base_footer">
               <ul class="uhd-footer-links">
                 <li class="home">
-                  <a href="http://uhd.uiowa.edu/"><img src="<?php print $GLOBALS['base_url'] . '/' . drupal_get_path('theme', 'uhd_base') . '/images/full-wordmark-wt.png'; ?>" title="University Housing &amp; Dining at The University of Iowa" alt="University Housing &amp; Dining at The University of Iowa" /></a>
+                  <a href="https://uhd.uiowa.edu/"><img src="<?php print $GLOBALS['base_url'] . '/' . drupal_get_path('theme', 'uhd_base') . '/images/full-wordmark-wt.png'; ?>" title="University Housing &amp; Dining at The University of Iowa" alt="University Housing &amp; Dining at The University of Iowa" /></a>
                 </li>
                 <li class="admin"><h3>UH&amp;D Administration</h3>
                   <ul>
